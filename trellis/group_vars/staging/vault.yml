@@ -4,21 +4,21 @@ vault_mysql_root_password: stagingpw
 # Documentation: https://roots.io/trellis/docs/security/
 vault_users:
   - name: "{{ admin_user }}"
-    password: example_password
+    password: cedreo-designer_password
     salt: "generateme"
 
 # Variables to accompany `group_vars/staging/wordpress_sites.yml`
-# Note: the site name (`example.com`) must match up with the site name in the above file.
+# Note: the site name (`cedreo-designer.com`) must match up with the site name in the above file.
 vault_wordpress_sites:
-  example.com:
+  cedreo-designer.com:
     env:
-      db_password: example_dbpassword
+      db_password: cedreo-designer_dbpassword
       # Generate your keys here: https://roots.io/salts.html
-      auth_key: "generateme"
-      secure_auth_key: "generateme"
-      logged_in_key: "generateme"
-      nonce_key: "generateme"
-      auth_salt: "generateme"
-      secure_auth_salt: "generateme"
-      logged_in_salt: "generateme"
-      nonce_salt: "generateme"
+      auth_key: "F^m5{f;5+BU&y8KgBL]rd?z){r%?f0%#Ye-@T;tN4ixK;gJC@4|tMjLIEIrh3!$3"
+      secure_auth_key: "PzX$F-(WmB=Jboc$E[].EG`=?;bFwdFT<`0{n;PT(Fb(=HeOt?Io1oIw4{W;74;A"
+      logged_in_key: "u5q6$[|p*WN@d.fEw3&/WG:CNI<DNRt8llG;:&8UJpf+cIX0$-oe@QXji_C7-y.H"
+      nonce_key: "D=bFyO/nMk(<<H5Nc&fU=Fc1<FYWZ!lfc-3)u{,?3%4^j=<#^rJ4emm1CIt*a>*%"
+      auth_salt: "A9J}wpFXka=cYN.d>4oPu;;_+k6wA=BA*-?CnKpmww$d8+I`Dz&$u@=R,iI]H*#U"
+      secure_auth_salt: "&_lhZ!B)`W;BuwsI0,ZVdr5Y<MV5mdvp{Fsr+.@s`Njr`y|zE+ZQXJu#E(SryK[7"
+      logged_in_salt: "MIei>=*v93F^jEjb-RYBwG-hb/Jt-;o},Zz)bVwa<EM-]%d/vbmf9HQNAC=,e=uo"
+      nonce_salt: "jg+f>JIc_@/mV8A|]|.sT5BBz3j%?gSHzZ&GY@O(f3Mi5_ln;:QJy<Yu9{$]Tu3%"
