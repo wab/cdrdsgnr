@@ -14,5 +14,5 @@
     "publicPath": "/app/themes/cedreo-designer/dist/"
   },
   "devUrl": "http://cedreo-designer.dev",
-  "devPort": 3500
+  "devPort": 3000
 }
