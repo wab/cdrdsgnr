@@ -22,8 +22,8 @@ var scriptsFilename = (argv.release) ? 'scripts/[name]_[hash].js' : 'scripts/[na
 
 jsLoader = {
   test: /\.js$/,
-  exclude: /(node_modules|bower_components)/,
-  loaders: [ 'babel?presets[]=es2015&cacheDirectory' ]
+  exclude: [ /(node_modules|bower_components)(?![/|\\](bootstrap|foundation-sites))/ ],
+  loaders: [ 'babel?presets[]='+path.resolve('./node_modules/babel-preset-es2015')+'&cacheDirectory' ]
 };
 
 if (argv.watch) { // '--watch' to add monkey-hot
@@ -53,7 +53,7 @@ var assetsPluginProcessOutput = function (assets) {
     }
   }
   return JSON.stringify(results);
-}
+};
 
 /**
  * Loop through webpack entry
@@ -80,7 +80,7 @@ var addHotMiddleware = function (entry) {
     }
   }
   return results;
-}
+};
 
 webpackConfig = {
   context: path.resolve(config.context),
@@ -94,7 +94,7 @@ webpackConfig = {
     preLoaders: [
       {
         test: /\.js?$/,
-        exclude: /(node_modules|bower_components)/,
+        include: path.resolve('assets'),
         loader: 'eslint'
       }
     ],
@@ -120,7 +120,7 @@ webpackConfig = {
         test: /\.(png|jpg|jpeg|gif)(\?.*)?$/,
         loaders: [
           'file?' + qs.stringify({
-            name: '[path][name].[ext]'
+            name: 'images/[name]_[md5:hash:hex:8].[ext]'
           }),
           'image-webpack?' + JSON.stringify({
             bypassOnDebug:true,
@@ -140,8 +140,16 @@ webpackConfig = {
       },
       {
         test: /\.(ttf|eot|svg)(\?.*)?$/,
+        exclude: path.resolve('assets/svg'),
         loader: 'file?' + qs.stringify({
-          name: '[path][name].[ext]'
+          name: 'fonts/[name]_[md5:hash:hex:8].[ext]'
+        }),
+      },
+      {
+        test: /\.svg$/,
+        include: path.resolve('assets/svg'),
+        loader: 'file?' + qs.stringify({
+          name: 'svg/[name].[ext]'
         })
       },
       {
@@ -149,7 +157,7 @@ webpackConfig = {
         loader: 'url?' + qs.stringify({
           limit: 10000,
           mimetype: "application/font-woff",
-          name: "[path][name].[ext]"
+          name: "fonts/[name]_[md5:hash:hex:8].[ext]"
         })
       }
     ]
@@ -174,6 +182,7 @@ webpackConfig = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
+      'Tether': 'tether',
       'window.Tether': 'tether'
     })
   ],
