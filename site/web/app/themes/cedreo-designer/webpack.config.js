@@ -94,7 +94,6 @@ webpackConfig = {
     preLoaders: [
       {
         test: /\.js?$/,
-        exclude: /(node_modules|bower_components)/,
         include: path.resolve('assets'),
         loader: 'eslint'
       }
