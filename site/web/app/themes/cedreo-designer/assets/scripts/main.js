@@ -3,6 +3,8 @@ import 'jquery'
 import 'foundation-sites/js/foundation.core';
 import 'foundation-sites/js/foundation.util.mediaQuery';
 
+import '../svg/cedreo-designer.svg';
+
 // import local dependencies
 import Router from './util/router';
 import common from './routes/Common';

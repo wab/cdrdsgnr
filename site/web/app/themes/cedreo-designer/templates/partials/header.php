@@ -2,7 +2,7 @@
   <div class="row column">
     <a class="brand" href="<?= esc_url(home_url('/')); ?>">
       <svg>
-        <use xlink:href="<?php echo get_template_directory_uri(); ?>/dist/images/svg/logo.svg#horizontal"></use>
+        <use xlink:href="<?php echo get_template_directory_uri(); ?>/dist/svg/cedreo-designer.svg#horizontal"></use>
       </svg>
     </a>
     <nav class="nav-primary">

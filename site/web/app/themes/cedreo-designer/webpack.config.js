@@ -140,8 +140,16 @@ webpackConfig = {
       },
       {
         test: /\.(ttf|eot|svg)(\?.*)?$/,
+        exclude: path.resolve('assets/svg'),
         loader: 'file?' + qs.stringify({
           name: 'fonts/[name]_[md5:hash:hex:8].[ext]'
+        }),
+      },
+      {
+        test: /\.svg$/,
+        include: path.resolve('assets/svg'),
+        loader: 'file?' + qs.stringify({
+          name: 'svg/[name].[ext]'
         })
       },
       {
