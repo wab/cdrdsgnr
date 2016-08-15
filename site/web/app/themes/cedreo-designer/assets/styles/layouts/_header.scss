@@ -1,4 +1,124 @@
-.banner .nav li {
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
 }
-.banner .nav a {
+
+.logo {
+  max-height: 100%;
+  width: auto;
+  padding: 0.2rem 0;
+  @include breakpoint(medium) {
+    height: $headerHeight;
+  }
+
+  @include breakpoint(small only) {
+    width: 2rem;
+    .colorChange {
+      color: $white;
+    }
+  }
 }
+
+.nav-primary {
+  //@extend .float-right;
+
+  .menu-item {
+
+    a {
+      font-size: .9rem;
+      padding: 1rem;
+      vertical-align: middle;
+      position: relative;
+      border-right: 1px solid rgba(0,0,0,0.2);
+      transition: background 0.3s;
+      color: $body-font-color;
+      text-align: center;
+      @include breakpoint(medium) {
+        height: $headerHeight;
+        display: table-cell;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0px;
+        background: $primary-color;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all 0.2s ease;
+        color: $body-font-color;
+      }
+
+      &:hover, &:focus {
+        background-color: #fff;
+        &:after {
+          height: 0.5rem;
+        }
+      }
+
+    }
+
+    &.current-menu-item a {
+      background-color: #fff;
+
+      &:after {
+        height: 0.5rem;
+      }
+
+    }
+  }
+
+  .link-home, .link-signin, .link-login {
+    a {
+      &:before {
+        content: '';
+        @include fa-icon();
+
+        @include breakpoint(medium) {
+          font-size: 1.4em;
+          display: block;
+        }
+
+      }
+    }
+  }
+
+  .link-home a {
+
+    &:before {
+      content: $fa-var-home;
+    }
+  }
+  .link-signin, .link-login {
+    a {
+      color: $white;
+      background: darken($primary-color, 10%);
+      border-right: 0;
+      &:before {
+        content: $fa-var-home;
+        @include breakpoint(medium) {
+          margin-top: -1em;
+        }
+      }
+      &:hover {
+        color: $body-font-color;
+      }
+    }
+  }
+
+  .link-login a {
+    background: $primary-color;
+  }
+}
+

@@ -2,6 +2,7 @@
 import 'jquery'
 import 'foundation-sites/js/foundation.core';
 import 'foundation-sites/js/foundation.util.mediaQuery';
+import 'foundation-sites/js/foundation.responsiveToggle';
 
 import '../svg/cedreo-designer.svg';
 
