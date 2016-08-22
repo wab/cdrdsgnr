@@ -17,7 +17,7 @@
 #     chdir: "{{ project.local_path }}/web/app/themes/cedreo-designer"
 #
 - name: Run npm build
-  command: npm build:production
+  command: npm run build:production
   connection: local
   args:
     chdir: "{{ project.local_path }}/web/app/themes/cedreo-designer"
