@@ -14,10 +14,10 @@
 #   command: bower install
 #   connection: local
 #   args:
-#     chdir: "{{ project.local_path }}/web/app/themes/sage"
+#     chdir: "{{ project.local_path }}/web/app/themes/cedreo-designer"
 #
-- name: Build
-  command: npm run build:production
+- name: Run npm build
+  command: npm build:production
   connection: local
   args:
     chdir: "{{ project.local_path }}/web/app/themes/cedreo-designer"

@@ -9,7 +9,9 @@ wordpress_sites:
         redirects:
           - www.cedreo-designer.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: admin@cedreo-designer.dev
+    admin_user: wadmin
+    admin_email: wab2com@gmail.com
+    site_title: Cedreo Designer
     multisite:
       enabled: false
     ssl:
