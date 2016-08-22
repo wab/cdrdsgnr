@@ -4,6 +4,11 @@
 # Uncomment the lines below and replace `sage` with your theme folder
 #
 # ---
+- name: Run Composer install in Theme
+   command: composer install
+   args:
+     chdir: "{{ project.local_path }}/web/app/themes/cedreo-designer"
+
 - name: Run npm install
   command: npm install
   connection: local
