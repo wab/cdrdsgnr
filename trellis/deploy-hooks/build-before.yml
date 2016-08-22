@@ -5,9 +5,9 @@
 #
 # ---
 - name: Run Composer install in Theme
-   command: composer install
-   args:
-     chdir: "{{ project.local_path }}/web/app/themes/cedreo-designer"
+  command: composer install
+  args:
+    chdir: "{{ deploy_helper.new_release_path }}/web/app/themes/cedreo-designer"
 
 - name: Run npm install
   command: npm install
