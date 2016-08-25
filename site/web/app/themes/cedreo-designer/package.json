@@ -63,7 +63,8 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.12.14",
     "webpack-dev-middleware": "^1.6",
-    "webpack-hot-middleware": "^2.10.0"
+    "webpack-hot-middleware": "^2.10.0",
+    "webpack-svgstore-plugin": "^3.0.3"
   },
   "dependencies": {
     "foundation-sites": "^6.2.3",
