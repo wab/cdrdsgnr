@@ -1,5 +1,6 @@
 .mainfooter {
-  background: $dark-gray;
+  background: url(../images/footer-bg.png);
+  background-size: cover;
   border-top: solid 1px $primary-color;
   color: $white;
 }
