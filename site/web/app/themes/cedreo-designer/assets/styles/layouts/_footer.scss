@@ -1,0 +1,32 @@
+.mainfooter {
+  background: $dark-gray;
+  color: $white;
+}
+
+.ours {
+  padding: $global-padding 0;
+  background: $black;
+  p a {
+    color: inherit;
+  }
+}
+
+.widget--area {
+  padding: $global-padding 0;
+  @include grid-row;
+
+  .widget {
+    @include grid-column;
+
+    @include breakpoint(medium) {
+      @include grid-column-size(4);
+    }
+  }
+}
+
+.reseaux--list {
+  margin-bottom: 0;
+}
+.reseaux--item {
+  display: inline-block;
+}
