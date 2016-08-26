@@ -13,7 +13,7 @@
       <li class="step--item">Obtenez des rendus étonnants</li>
     </ol>
     <div class="cta">
-      <a href="#" class="button accent try">Essai gratuit</a>
+      <a href="#" class="button accent try"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg> Essai gratuit</a>
       <span class="picto"></span>
       <a href="#" class="button">présentation vidéo</a>
     </div>

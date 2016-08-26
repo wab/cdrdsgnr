@@ -12,10 +12,16 @@
   }
 }
 
+.brand {
+  display: inline-block;
+  margin: 0;
+  height: $headerHeight;
+}
+
 .logo {
-  max-height: 100%;
+  max-height: $headerHeight;
   width: auto;
-  padding: 0.2rem 0;
+
   @include breakpoint(medium) {
     height: $headerHeight;
   }
@@ -80,40 +86,26 @@
   }
 
   .link-home, .link-signin, .link-login {
-    a {
-      &:before {
-        content: '';
-        @include fa-icon();
-
-        @include breakpoint(medium) {
-          font-size: 1.4em;
-          display: block;
-        }
-
-      }
+    .icon {
+      font-size: 1.2em;
     }
   }
 
-  .link-home a {
-
-    &:before {
-      content: $fa-var-home;
-    }
-  }
   .link-signin, .link-login {
     a {
       color: $white;
       background: darken($primary-color, 10%);
       border-right: 0;
-      &:before {
-        content: $fa-var-home;
-        @include breakpoint(medium) {
-          margin-top: -1em;
-        }
-      }
+      position: relative;
       &:hover {
         color: $body-font-color;
       }
+    }
+
+    .icon {
+      position: absolute;
+      top: calc(50% - 1.6em);
+      left: calc(50% - 0.5em);
     }
   }
 

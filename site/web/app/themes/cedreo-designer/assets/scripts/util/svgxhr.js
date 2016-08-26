@@ -1,20 +1,23 @@
 /**
  * Load svg via ajax
- * @param  {string} url path to svg sprite
- * @generator: webpack-svgstore-plugin
- * @see: https://www.npmjs.com/package/webpack-svgstore-plugin
- * @return {[type]}     [description]
+ * base on https://github.com/mrsum/webpack-svgstore-plugin svgXHR
  */
 export default class svgxhr {
-  constructor(options) {
+  constructor(options, pathsvg) {
     this.options = options;
+    this.pathsvg = pathsvg;
   }
   loadsvg() {
     var url = false;
     var baseUrl = undefined;
+    var pathsvg = undefined;
 
     this.options && this.options.filename
       ? url = this.options.filename
+      : null;
+
+    this.pathsvg
+      ? pathsvg = this.pathsvg
       : null;
 
     if (!url) return false;
@@ -33,7 +36,7 @@ export default class svgxhr {
       }
     }
 
-    _fullPath = (baseUrl + '/app/themes/cedreo-designer/dist/' + url).replace(/([^:]\/)\/+/g, '$1');
+    _fullPath = (baseUrl + pathsvg + url).replace(/([^:]\/)\/+/g, '$1');
     _ajax.open('GET', _fullPath, true);
     _ajax.onprogress = function() {};
     _ajax.onload = function() {

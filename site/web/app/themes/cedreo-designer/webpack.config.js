@@ -189,9 +189,12 @@ webpackConfig = {
     new SvgStore({
       // svgo options
       svgoOptions: {
-        plugins: [
-          { removeTitle: true }
-        ]
+        plugins: [{
+          removeTitle: false,
+          collapseGroups: true,
+          removeEmptyContainers: true,
+          removeEditorsNSData: true
+        }]
       }
     })
   ],

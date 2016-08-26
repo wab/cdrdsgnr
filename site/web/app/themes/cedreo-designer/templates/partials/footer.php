@@ -17,11 +17,11 @@
   <div class="ours text-center">
     <p><a href="#">Conditions d'utilisation</a> - <a href="#">Mentions légales</a> - &copy; Copyright 2016 Mysketcher</p>
     <ul class="reseaux--list no-bullet">
-      <li class="reseaux--item">twitter</li>
-      <li class="reseaux--item">facebook</li>
-      <li class="reseaux--item">google-plus</li>
-      <li class="reseaux--item">youtube</li>
-      <li class="reseaux--item">pinterest</li>
+      <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-twitter"></use></svg></a></li>
+      <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-facebook"></use></svg></a></li>
+      <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-google-plus"></use></svg></a></li>
+      <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-youtube-play"></use></svg></a></li>
+      <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-pinterest"></use></svg></a></li>
     </ul>
   </div>
 </footer>
