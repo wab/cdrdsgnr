@@ -90,21 +90,47 @@ $tabletOffset: 3rem;
   position: relative;
   padding: $global-padding;
 
-  &:not(:last-child) {
-    padding-right: 4rem;
 
-    &:after {
-      content: 'arrow';
+  .icon-step {
+    display: none;
+    color: $primary-color;
+    font-size: 2rem;
+    position: absolute;
+    top: calc(50% - 1rem);
+    right: -2rem;
+  }
+
+  &:not(:last-child) {
+
+    margin-right: 3rem;
+
+    .icon-step {
       display: inline-block;
-      position: absolute;
-      top: 50%;
-      right: 0;
     }
   }
 }
-
 .step--title {
   font-size: 1.5rem;
   font-weight: bold;
   color: $primary-color;
+}
+
+.why--list {
+  @extend .no-bullet;
+  padding: $global-padding * 2;
+  background: $white;
+
+}
+.why--item {
+  margin-bottom: 1em;
+  position: relative;
+  padding-left: 2.5rem;
+
+  .icon {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 0.8rem);
+    font-size: 1.6rem;
+    color: $primary-color;
+  }
 }

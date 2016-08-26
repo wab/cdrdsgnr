@@ -8,9 +8,9 @@
   <header class="banner">
     <h1 class="site--title"><span class="textcolor">Plans 3D</span>, rendus intérieurs et extérieurs en haute qualité, <span class="textcolor">simplement et rapidement</span></h1>
     <ol class="step--list">
-      <li class="step--item">Dessiner votre projet</li>
-      <li class="step--item">Meubler et décorer</li>
-      <li class="step--item">Obtenez des rendus étonnants</li>
+      <li class="step--item">Dessiner votre projet<svg class="icon icon-step"><use xlink:href="#icon-step"></use></svg></li>
+      <li class="step--item">Meubler et décorer<svg class="icon icon-step"><use xlink:href="#icon-step"></use></svg></li>
+      <li class="step--item">Obtenez des rendus étonnants<svg class="icon icon-step"><use xlink:href="#icon-step"></use></svg></li>
     </ol>
     <div class="cta">
       <a href="#" class="button accent try"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg> Essai gratuit</a>
@@ -83,16 +83,19 @@
         <img src="" alt="plan">
         <h2 class="step--title">Dessinez vos plans facilement et rapidement</h2>
         <p>Créez votre plan dans un éditeur 2D clair en intégrant des cloisonnements, des mezzanines, des pentes de toits et en ajoutant des ouvertures personnalisables.</p>
+        <svg class="icon icon-step"><use xlink:href="#icon-step"></use></svg>
       </li>
       <li class="step--item">
         <img src="" alt="cananpé">
         <h2 class="step--title">Concevez votre intérieur en quelques clics</h2>
         <p>Votre plan est prêt, vous pouvez le modifier avec des milliers de produits et matériaux de notre catalogue et génériques.</p>
+        <svg class="icon icon-step"><use xlink:href="#icon-step"></use></svg>
       </li>
       <li class="step--item">
         <img src="" alt="rendu 3D">
         <h2 class="step--title">Générez des photos 3D de haute qualité</h2>
         <p>Obtenez une qualité de rendu stupéfiante en moins de 1 min. Choisissez juste votre point de vue et votre environnement; nous calculons votre photo en moins de 1 min!</p>
+        <svg class="icon icon-step"><use xlink:href="#icon-step"></use></svg>
       </li>
     </ol>
   </section>
@@ -116,20 +119,20 @@
     <div class="row">
       <div class="columns medium-6">
         <ul class="why--list">
-          <li>La façon la plus facile et la plus rapide de produire des plans d'architecte et des rendus intérieurs 3D</li>
-          <li>Aucune formation nécessaire</li>
-          <li>Pas besoin de télécharger et d'installer quoi que ce soit</li>
-          <li>Options de rendu avancées pour un travail professionnel</li>
-          <li>Un résultat professionnel en quelques minutes</li>
+          <li class="why--item"><svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg> La façon la plus facile et la plus rapide de produire des plans d'architecte et des rendus intérieurs 3D</li>
+          <li class="why--item"><svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg> Aucune formation nécessaire</li>
+          <li class="why--item"><svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg> Pas besoin de télécharger et d'installer quoi que ce soit</li>
+          <li class="why--item"><svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg> Options de rendu avancées pour un travail professionnel</li>
+          <li class="why--item"><svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg> Un résultat professionnel en quelques minutes</li>
         </ul>
       </div>
       <div class="columns medium-6">
 
         <ul class="why--list">
-          <li>La meilleure qualité de rendu au monde pour un logiciel de plan</li>
-          <li>+ de 1000 articles et matériaux personnalisables de haute qualité pour personnaliser votre intérieur</li>
-          <li>Rendus intérieurs et extérieurs</li>
-          <li>Payer ce que vous utilisez</li>
+          <li class="why--item"><svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg> La meilleure qualité de rendu au monde pour un logiciel de plan</li>
+          <li class="why--item"><svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg> + de 1000 articles et matériaux personnalisables de haute qualité pour personnaliser votre intérieur</li>
+          <li class="why--item"><svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg> Rendus intérieurs et extérieurs</li>
+          <li class="why--item"><svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg> Payer ce que vous utilisez</li>
         </ul>
       </div>
     </div>
