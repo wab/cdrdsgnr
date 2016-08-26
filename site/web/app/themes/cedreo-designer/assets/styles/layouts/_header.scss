@@ -12,6 +12,10 @@
   }
 }
 
+.top-bar-left {
+  height: $headerHeight;
+}
+
 .brand {
   display: inline-block;
   margin: 0;
@@ -21,6 +25,7 @@
 .logo {
   max-height: $headerHeight;
   width: auto;
+  padding: .4em;
 
   @include breakpoint(medium) {
     height: $headerHeight;
@@ -104,8 +109,14 @@
 
     .icon {
       position: absolute;
-      top: calc(50% - 1.6em);
+      top: calc(50% - 2rem);
       left: calc(50% - 0.5em);
+    }
+  }
+
+  .link-signin {
+    .icon {
+      font-size: 1.6em;
     }
   }
 

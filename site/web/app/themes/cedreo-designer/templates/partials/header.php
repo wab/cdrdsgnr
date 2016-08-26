@@ -1,8 +1,8 @@
 <header class="mainheader">
-    <div class="title-bar" data-responsive-toggle="navigation-principale" data-hide-for="medium">
+<!--     <div class="title-bar" data-responsive-toggle="navigation-principale" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
       <div class="title-bar-title"><?php bloginfo('name'); ?></div>
-    </div>
+    </div> -->
 
     <div class="top-bar" id="navigation-principale">
       <div class="top-bar-left show-for-medium">
