@@ -3,12 +3,12 @@
     <div class="widget">
       <h3>My Sketcher</h3>
       <nav class="nav-footer">
-        <ul class="no-bullet">
-          <li><a href="<?php bloginfo('url'); ?>/qui-sommes-nous">Qui sommes-nous ?</a></li>
-          <li><a href="<?php bloginfo('url'); ?>/tutoriels">Tutoriels</a></li>
-          <li><a href="">Forum</a></li>
-          <li><a href="<?php bloginfo('url'); ?>/partenaires">Devenez partenaires</a></li>
-          <li><a href="<?php bloginfo('url'); ?>/contact">Contact</a></li>
+        <ul class="no-bullet nav-footer--menu">
+          <li class="nav-footer--item"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg> <a class="nav-footer--link" href="<?php bloginfo('url'); ?>/qui-sommes-nous">Qui sommes-nous ?</a></li>
+          <li class="nav-footer--item"><svg class="icon icon-tutos"><use xlink:href="#icon-tutos"></use></svg> <a class="nav-footer--link" href="<?php bloginfo('url'); ?>/tutoriels">Tutoriels</a></li>
+          <li class="nav-footer--item"><svg class="icon icon-users"><use xlink:href="#icon-users"></use></svg> <a class="nav-footer--link" href="">Forum</a></li>
+          <li class="nav-footer--item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg> <a class="nav-footer--link" href="<?php bloginfo('url'); ?>/partenaires">Devenez partenaires</a></li>
+          <li class="nav-footer--item"><svg class="icon icon-envelop"><use xlink:href="#icon-envelop"></use></svg> <a class="nav-footer--link" href="<?php bloginfo('url'); ?>/contact">Contact</a></li>
         </ul>
       </nav>
     </div>

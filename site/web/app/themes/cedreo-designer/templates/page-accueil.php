@@ -13,11 +13,12 @@
       <li class="step--item">Obtenez des rendus étonnants<svg class="icon icon-step"><use xlink:href="#icon-step"></use></svg></li>
     </ol>
     <div class="cta">
-      <a href="#" class="button accent try"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg> Essai gratuit</a>
-      <span class="picto"></span>
+      <a href="#" class="button alert try"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg> Essai gratuit</a>
+      <span class="picto"><svg class="icon icon-timer"><use xlink:href="#icon-timer"></use></svg></span>
       <a href="#" class="button">présentation vidéo</a>
     </div>
   </header>
+
 
   <section class="demonstration section">
     <div class="demonstration--wrapper">

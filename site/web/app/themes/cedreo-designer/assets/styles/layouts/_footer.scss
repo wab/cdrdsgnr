@@ -25,6 +25,47 @@
   }
 }
 
+.nav-footer--item {
+  position: relative;
+  .icon {
+    margin-right: .3em;
+    font-size: 2em;
+    color: $primary-color;
+    position: relative;
+    top: 0.3em;
+  }
+}
+.nav-footer--link {
+  color: inherit;
+}
+
+.widget_recent_entries {
+  ul {
+    @extend .no-bullet;
+    li {
+
+      display: flex;
+      align-items: center;
+
+      a {
+        color: inherit;
+        order: 2;
+      }
+
+      .post-date {
+        color: $primary-color;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        max-width: 2em;
+        margin-right: 1em;
+        font-size: 1.5rem;
+        line-height: 1;
+      }
+    }
+  }
+}
+
 .reseaux--list {
   margin-bottom: 0;
 }

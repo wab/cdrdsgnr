@@ -1,7 +1,15 @@
+body {
+  font-size: 1rem;
+}
 .section {
   padding: $global-padding 0;
 }
 
 .textcolor {
   color: $primary-color;
+}
+
+.button {
+  text-transform: uppercase;
+  font-weight: bold;
 }

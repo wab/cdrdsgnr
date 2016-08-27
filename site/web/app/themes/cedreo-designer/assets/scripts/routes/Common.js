@@ -15,8 +15,8 @@ export default {
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
     $(document).foundation();
-    $('.link-home a').text('').append('<svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg><span class="hide-for-medium">Accueil</span>')
-    $('.link-login a').append('<svg class="icon icon-power"><use xlink:href="#icon-power"></use></svg>')
-    $('.link-signin a').append('<svg class="icon icon-key"><use xlink:href="#icon-key"></use></svg>')
+    $('.link-home a').text('').prepend('<svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg><span class="hide-for-medium">Accueil</span>')
+    $('.link-login a').prepend('<svg class="icon icon-power"><use xlink:href="#icon-power"></use></svg>')
+    $('.link-signin a').prepend('<svg class="icon icon-key"><use xlink:href="#icon-key"></use></svg>')
   }
 };
