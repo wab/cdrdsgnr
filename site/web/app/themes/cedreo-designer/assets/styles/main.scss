@@ -1,11 +1,8 @@
 @import "common/settings";
 
 // Import npm dependencies
-
 @import "~foundation-sites/scss/foundation";
-@import "~font-awesome/scss/font-awesome";
-
-@import '~foundation-sites/scss/util/util';
+@import "~owl.carousel/src/scss/owl.carousel";
 
 @import "common/includes";
 @import "common/global";

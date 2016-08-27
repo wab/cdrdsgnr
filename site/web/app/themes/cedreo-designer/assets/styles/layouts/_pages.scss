@@ -49,6 +49,11 @@ $tabletOffset: 3rem;
     @include grid-col-size(6);
   }
 }
+.demonstration--title {
+  .icon {
+    font-size: 1.6em;
+  }
+}
 
 .secteurs {
   background: $primary-color;

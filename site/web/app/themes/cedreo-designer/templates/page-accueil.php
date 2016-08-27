@@ -23,11 +23,14 @@
   <section class="demonstration section">
     <div class="demonstration--wrapper">
       <div class="demonstration--column text-center">
-        <h2>Ces images peuvent êtes faites <strong>en moins de <span class="textcolor">20 minutes</span></strong><br><span class="textcolor">vous voulez savoir comment ?</span></h2>
+        <h2 class="demonstration--title">Ces images peuvent êtes faites <strong>en moins de <span class="textcolor">20 minutes</span></strong><br><span class="textcolor">vous voulez savoir comment ?<br><svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg></span></h2>
       </div>
       <div class="demonstration--column">
-        <div class="owl-carousel">
-          carousel
+        <div class="owl-carousel owl-theme">
+          <div class="slides"><img src="https://unsplash.it/g/800/450/?image=1" alt=""></div>
+          <div class="slides"><img src="https://unsplash.it/g/800/450/?image=2" alt=""></div>
+          <div class="slides"><img src="https://unsplash.it/g/800/450/?image=3" alt=""></div>
+          <div class="slides"><img src="https://unsplash.it/g/800/450/?image=4" alt=""></div>
         </div>
       </div>
     </div>
@@ -103,13 +106,20 @@
 
   <section class="section help">
     <div class="row">
-      <div class="columns medium-6">photos</div>
+      <div class="columns medium-6">
+        <div class="images-grid">
+          <div class="images-grid--item"><img src="https://unsplash.it/g/400/200/?image=1" alt=""></div>
+          <div class="images-grid--item"><img src="https://unsplash.it/g/400/200/?image=2" alt=""></div>
+          <div class="images-grid--item"><img src="https://unsplash.it/g/400/200/?image=3" alt=""></div>
+          <div class="images-grid--item"><img src="https://unsplash.it/g/400/200/?image=4" alt=""></div>
+        </div>
+      </div>
       <div class="columns medium-6">
         <h2>Besoin d'aide pour réaliser vos plans ?</h2>
         <ul class="menu vertical">
-          <li><a href="#">Accédez au forum</a></li>
-          <li><a href="#">Consultez les tutoriels</a></li>
-          <li><a href="#">Contactez-nous</a></li>
+          <li><a href="#"><svg class="icon icon-users"><use xlink:href="#icon-users"></use></svg>Accédez au forum</a></li>
+          <li><a href="#"><svg class="icon icon-tutos"><use xlink:href="#icon-tutos"></use></svg>Consultez les tutoriels</a></li>
+          <li><a href="#"><svg class="icon icon-envelop"><use xlink:href="#icon-envelop"></use></svg>Contactez-nous</a></li>
         </ul>
       </div>
     </div>

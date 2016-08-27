@@ -13,3 +13,12 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.images-grid {
+  @include grid-row;
+  @include grid-layout(2, '.images-grid--item');
+
+  .images-grid--item {
+    padding: $global-padding / 2;
+  }
+}
