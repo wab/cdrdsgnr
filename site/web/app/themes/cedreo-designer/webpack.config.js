@@ -118,10 +118,11 @@ webpackConfig = {
         ])
       },
       {
-        test: /\.(png|jpg|jpeg|gif)(\?.*)?$/,
+        test: /\.(png|jpg|jpeg|gif|svg)(\?.*)?$/,
+        exclude: [path.resolve('assets/fonts')],
         loaders: [
           'file?' + qs.stringify({
-            name: 'images/[name]_[md5:hash:hex:8].[ext]'
+            name: 'images/[name].[ext]'
           }),
           'image-webpack?' + JSON.stringify({
             bypassOnDebug:true,
@@ -134,24 +135,20 @@ webpackConfig = {
             },
             svgo: {
               removeUnknownsAndDefaults: false,
-              cleanupIDs: false
+              cleanupIDs: false,
+              cleanupAttrs: true,
+              collapseGroups: true,
+              removeDimensions: true
             }
           })
         ]
       },
       {
         test: /\.(ttf|eot|svg)(\?.*)?$/,
-        exclude: path.resolve('assets/svg'),
+        exclude: [path.resolve('assets/svg')],
         loader: 'file?' + qs.stringify({
           name: 'fonts/[name]_[md5:hash:hex:8].[ext]'
         }),
-      },
-      {
-        test: /\.svg$/,
-        include: path.resolve('assets/svg'),
-        loader: 'file?' + qs.stringify({
-          name: 'svg/[name].[ext]'
-        })
       },
       {
         test: /\.woff(2)?(\?.*)?$/,
@@ -193,7 +190,8 @@ webpackConfig = {
           removeTitle: false,
           collapseGroups: true,
           removeEmptyContainers: true,
-          removeEditorsNSData: true
+          removeEditorsNSData: true,
+          removeDimensions: true
         }]
       }
     })
