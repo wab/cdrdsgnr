@@ -2,7 +2,8 @@ body {
   font-size: 1rem;
 }
 .section {
-  padding: $global-padding 0;
+  padding: ($global-padding * 2) 0;
+  position: relative;
 }
 
 .textcolor {
@@ -21,4 +22,31 @@ body {
   .images-grid--item {
     padding: $global-padding / 2;
   }
+}
+
+[class^="icon"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  margin: 0;
+  stroke-width: 0;
+  fill: currentColor;
+  position: relative;
+  top: .1em;
+}
+
+.picto {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: darken($primary-color, 15%);
+  color: $white;
+  border-radius: 50%;
+  position: absolute;
+  top: -2rem;
+  left: calc(50% - 2rem);
+  font-size: 2rem;
 }

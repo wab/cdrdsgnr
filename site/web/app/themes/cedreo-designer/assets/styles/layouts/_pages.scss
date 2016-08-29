@@ -1,5 +1,6 @@
 .banner {
-  background: url(../images/banner-bg.jpg);
+  background: url(../images/banner-bg.jpg) center;
+  background-size: cover;
   text-align: center;
   color: $white;
 }
@@ -10,35 +11,33 @@
   color: $white;
   font-size: 1.5rem;
 }
+
 $tabletOffset: 3rem;
 
 .cta {
   background: transparent;
   position: relative;
   bottom: -2rem;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 2;
+
+  .picto {
+    position: static;
+  }
 
   .button {
     margin-bottom: 0;
   }
-
-  .picto {
-    font-size: 2rem;
-    display: inline-block;
-    line-height: 4rem;
-    width: 4rem;
-    height: 4rem;
-    background: darken($primary-color, 15%);
-    border-radius: 50%;
-  }
 }
 
 .demonstration {
-  background: url(../images/demonstration-bg.png) center;
-  padding-top: 4rem;
+  background: url(../images/demonstration-bg.png) top center;
+  background-size: 100%;
+  padding-top: 3rem;
+  padding-bottom: $tabletOffset + ($global-padding * 2);
+  margin-bottom: -$tabletOffset;
 }
 .demonstration--wrapper {
   @include grid-row;
@@ -50,15 +49,29 @@ $tabletOffset: 3rem;
   }
 }
 .demonstration--title {
-  .icon {
+  [class^="icon"] {
     font-size: 1.6em;
   }
 }
 
 .secteurs {
-  background: $primary-color;
+
   text-align: center;
   color: $white;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -$tabletOffset;
+    background-color: $primary-color;
+    z-index: -1;
+
+  }
 }
 
 .secteurs--list {
@@ -66,9 +79,6 @@ $tabletOffset: 3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-.secteurs--list {
-
 }
 .secteurs--title {
   font-size: 1.2rem;
@@ -121,7 +131,6 @@ $tabletOffset: 3rem;
   position: relative;
   padding: $global-padding;
 
-
   .icon-step {
     display: none;
     color: $primary-color;
@@ -139,16 +148,69 @@ $tabletOffset: 3rem;
       display: inline-block;
     }
   }
+
 }
 .step--title {
-  font-size: 1.5rem;
+
+  font-size: 1.5em;
   font-weight: bold;
   color: $primary-color;
+
+  .banner &  {
+
+    color: $white;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    margin-bottom: 0;
+
+    &:before {
+      content: '1';
+      display: block;
+      font-size: 1.6rem;
+      text-align: center;
+      width: 3rem;
+      height: 3rem;
+      line-height: 3rem;
+      border: solid 1px $primary-color;
+      border-radius: 50%;
+      color: $primary-color;
+      margin-right: 0.5rem;
+    }
+  }
+}
+.step--item {
+  &:nth-child(2) {
+    .step--title:before {
+      content: '2';
+    }
+  }
+  &:nth-child(3) {
+    .step--title:before {
+      content: '3';
+    }
+  }
+}
+
+.help {
+  background: url(../images/help-bg.jpg) center no-repeat;
+  background-size: cover;
+  color: $white;
+  a {
+    color: inherit;
+  }
+}
+
+.why {
+  background: url(../images/why-bg.png) bottom no-repeat;
+  background-size: cover;
 }
 
 .why--list {
   @extend .no-bullet;
-  padding: $global-padding * 2;
+  padding: $global-padding;
   background: $white;
 
 }
@@ -157,7 +219,7 @@ $tabletOffset: 3rem;
   position: relative;
   padding-left: 2.5rem;
 
-  .icon {
+  [class^="icon"] {
     position: absolute;
     left: 0;
     top: calc(50% - 0.8rem);
