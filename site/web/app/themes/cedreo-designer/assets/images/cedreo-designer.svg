@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg">
-<symbol id="horizontal" viewBox="0 0 621.1 165.9">
-	<tilte>Cedreo Designer</tilte>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 621.1 165.9">
+	<title>Cedreo Designer</title>
 	<g>
 		<polygon fill="#3B3B3B" points="123.6,90.3 92,109.2 90.9,93 112.3,70.3 90.4,87.1 89.5,73.4 102,53.7 89,66.1 86,24.5 86,137.7
 			94,137.7 92.6,117.8 			"/>
@@ -108,5 +107,4 @@
 			</g>
 		</g>
 	</g>
-</symbol>
 </svg>

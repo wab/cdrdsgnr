@@ -4,7 +4,7 @@ import 'foundation-sites/js/foundation.core';
 import 'foundation-sites/js/foundation.util.mediaQuery';
 import 'foundation-sites/js/foundation.responsiveToggle';
 
-import '../svg/cedreo-designer.svg';
+import '../images/cedreo-designer.svg';
 
 // import local dependencies
 import Router from './util/router';

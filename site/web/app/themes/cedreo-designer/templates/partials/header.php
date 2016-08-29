@@ -7,9 +7,7 @@
     <div class="top-bar" id="navigation-principale">
       <div class="top-bar-left show-for-medium">
         <a class="brand" href="<?= esc_url(home_url('/')); ?>">
-          <svg class="logo">
-            <use xlink:href="<?php echo get_template_directory_uri(); ?>/dist/svg/cedreo-designer.svg#horizontal"></use>
-          </svg>
+          <img class="logo" src="<?php echo get_template_directory_uri(); ?>/dist/images/cedreo-designer.svg" alt="Cedreo Designer">
         </a>
       </div>
       <nav class="top-bar-right nav-primary">
