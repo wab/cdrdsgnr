@@ -1,7 +1,7 @@
 {
-  "context": "assets",
   "entry": {
     "main": [
+      "./scripts/util/public-path.js",
       "./scripts/main.js",
       "./styles/main.scss"
     ],
@@ -9,10 +9,6 @@
       "./scripts/customizer.js"
     ]
   },
-  "output": {
-    "path": "dist",
-    "publicPath": "/app/themes/cedreo-designer/dist/"
-  },
-  "devUrl": "http://cedreo-designer.dev",
-  "devPort": 3000
+  "publicPath": "/app/themes/cedreo-designer",
+  "devUrl": "http://cedreo-designer.dev"
 }
