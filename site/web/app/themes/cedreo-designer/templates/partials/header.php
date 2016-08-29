@@ -8,7 +8,7 @@
       <div class="top-bar-left show-for-medium">
         <a class="brand" href="<?= esc_url(home_url('/')); ?>">
           <svg class="logo">
-            <use xlink:href="<?php echo get_template_directory_uri(); ?>/dist/images/cedreo-designer.svg#horizontal"></use>
+            <use xlink:href="<?php echo get_template_directory_uri(); ?>/dist/svg/cedreo-designer.svg#horizontal"></use>
           </svg>
         </a>
       </div>

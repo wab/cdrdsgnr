@@ -18,6 +18,8 @@ var config = require('./assets/config');
 var scriptsFilename = (argv.release) ? 'scripts/[name]_[hash].js' : 'scripts/[name].js',
     stylesFilename = (argv.release) ? 'styles/[name]_[hash].css' : 'styles/[name].css',
     sourceMapQueryStr = (argv.release) ? '-sourceMap' : '+sourceMap',
+    assets = 'assets/',
+    dist = 'dist/',
     jsLoader,
     webpackConfig;
 
@@ -84,18 +86,18 @@ var addHotMiddleware = function (entry) {
 };
 
 webpackConfig = {
-  context: path.resolve(config.context),
+  context: path.resolve(assets),
   entry: config.entry,
   output: {
-    path: path.join(__dirname, config.output.path),
-    publicPath: config.output.publicPath,
+    path: path.join(__dirname, dist),
+    publicPath: path.join(config.publicPath, dist),
     filename: scriptsFilename
   },
   module: {
     preLoaders: [
       {
         test: /\.js?$/,
-        include: path.resolve('assets'),
+        include: path.resolve(assets),
         loader: 'eslint'
       }
     ],
@@ -103,6 +105,7 @@ webpackConfig = {
       jsLoader,
       {
         test: /\.css$/,
+        include: path.resolve(assets),
         loader: ExtractTextPlugin.extract('style', [
           'css?' + sourceMapQueryStr,
           'postcss'
@@ -110,6 +113,7 @@ webpackConfig = {
       },
       {
         test: /\.scss$/,
+        include: path.resolve(assets),
         loader: ExtractTextPlugin.extract('style', [
           'css?' + sourceMapQueryStr,
           'postcss',
@@ -119,13 +123,13 @@ webpackConfig = {
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg)(\?.*)?$/,
-        exclude: [path.resolve('assets/fonts')],
+        include: path.resolve(assets),
         loaders: [
           'file?' + qs.stringify({
-            name: 'images/[name].[ext]'
+            name: '[path][name].[ext]'
           }),
           'image-webpack?' + JSON.stringify({
-            bypassOnDebug:true,
+            bypassOnDebug: true,
             progressive: true,
             optimizationLevel: 7,
             interlaced: true,
@@ -135,27 +139,33 @@ webpackConfig = {
             },
             svgo: {
               removeUnknownsAndDefaults: false,
-              cleanupIDs: false,
-              cleanupAttrs: true,
-              collapseGroups: true,
-              removeDimensions: true
+              cleanupIDs: false
             }
           })
         ]
       },
       {
-        test: /\.(ttf|eot|svg)(\?.*)?$/,
-        exclude: [path.resolve('assets/svg')],
+        test: /\.(ttf|eot)(\?.*)?$/,
+        include: path.resolve(assets),
         loader: 'file?' + qs.stringify({
-          name: 'fonts/[name]_[md5:hash:hex:8].[ext]'
-        }),
+          name: '[path][name]_[md5:hash:hex:8].[ext]'
+        })
       },
       {
         test: /\.woff(2)?(\?.*)?$/,
+        include: path.resolve(assets),
         loader: 'url?' + qs.stringify({
           limit: 10000,
           mimetype: "application/font-woff",
-          name: "fonts/[name]_[md5:hash:hex:8].[ext]"
+          name: "[path][name]_[md5:hash:hex:8].[ext]"
+        })
+      },
+      // Use file-loader for node_modules/ assets
+      {
+        test: /\.(ttf|eot|woff(2)?|png|jpg|jpeg|gif|svg)(\?.*)?$/,
+        include: /node_modules/,
+        loader: 'file?' + qs.stringify({
+          name: 'vendor/[name]_[md5:hash:hex:8].[ext]'
         })
       }
     ]
@@ -171,7 +181,7 @@ webpackConfig = {
     jquery: 'jQuery'
   },
   plugins: [
-    new Clean([config.output.path]),
+    new Clean([dist]),
     new ExtractTextPlugin(stylesFilename, {
       allChunks: true,
       disable: (argv.watch === true) // '--watch' disable ExtractTextPlugin
@@ -194,6 +204,9 @@ webpackConfig = {
           removeDimensions: true
         }]
       }
+    }),
+    new webpack.DefinePlugin({
+      WEBPACK_PUBLIC_PATH: (argv.watch === true) ? JSON.stringify(path.join(config.publicPath, dist)) : false
     })
   ],
   postcss: [
@@ -228,7 +241,7 @@ if (argv.watch) {
 // '--release' to push additional plugins to webpackConfig
 if (argv.release) {
   webpackConfig.plugins.push(new AssetsPlugin({
-    path: path.join(__dirname, config.output.path),
+    path: path.join(__dirname, dist),
     filename: 'assets.json',
     fullPath: false,
     processOutput: assetsPluginProcessOutput
