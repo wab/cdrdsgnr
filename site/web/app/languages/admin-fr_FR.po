@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-08-22 15:20:10+0000\n"
+"PO-Revision-Date: 2016-08-23 09:46:30+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -141,7 +141,7 @@ msgstr "%s mises à jour ont échoué."
 
 #: wp-admin/includes/class-wp-plugins-list-table.php:369
 msgid "Search installed plugins..."
-msgstr "Rechercher parmi les extensions installées..."
+msgstr "Recherchez parmi vos extensions..."
 
 #: wp-admin/plugin-install.php:82
 msgid "Plugins hook into WordPress to extend its functionality with custom features. Plugins are developed independently from the core WordPress application by thousands of developers all over the world. All plugins in the official <a href=\"%s\" target=\"_blank\">WordPress Plugin Directory</a> are compatible with the license WordPress uses."
@@ -7006,7 +7006,7 @@ msgstr "Passer la souris au-dessus d&rsquo;une ligne de la liste d&rsquo;article
 
 #: wp-admin/plugins.php:512
 msgid "Search Installed Plugins"
-msgstr "Chercher parmi les extensions installées"
+msgstr "Recherchez parmi vos extensions"
 
 #: wp-admin/nav-menus.php:19
 msgid "Your theme does not support navigation menus or widgets."
