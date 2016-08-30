@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9ce804950d68d45f8416e7f309152071",
-    "content-hash": "72da0a1a406e4163f4b17c5ac21032a8",
+    "hash": "20c90a1357cce01babc1425f265c05ab",
+    "content-hash": "bbe97e0bd4eda72fc70abc8216c44241",
     "packages": [
         {
             "name": "composer/installers",
@@ -456,16 +456,16 @@
             "homepage": "https://wordpress.org/plugins/autodescription/"
         },
         {
-            "name": "wpackagist-plugin/convert-post-types",
-            "version": "1.4",
+            "name": "wpackagist-plugin/embedly",
+            "version": "4.0.12",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/convert-post-types/",
-                "reference": "tags/1.4"
+                "url": "https://plugins.svn.wordpress.org/embedly/",
+                "reference": "tags/4.0.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/convert-post-types.1.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/embedly.4.0.12.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -473,7 +473,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/convert-post-types/"
+            "homepage": "https://wordpress.org/plugins/embedly/"
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
@@ -574,26 +574,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/types/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.4.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.4.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.4.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-plugin/wp-migrate-db",

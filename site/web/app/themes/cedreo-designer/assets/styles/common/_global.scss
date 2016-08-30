@@ -1,6 +1,9 @@
 body {
   font-size: 1rem;
 }
+.wrap {
+  background: darken($white, 4%);
+}
 .section {
   padding: ($global-padding * 2) 0;
   position: relative;
