@@ -3,6 +3,17 @@
   background-size: cover;
   text-align: center;
   color: $white;
+  @include clearfix();
+
+  min-height: 25vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  .home & {
+    justify-content: space-between;
+  }
+
 }
 
 .site--title {
@@ -52,68 +63,6 @@ $tabletOffset: 3rem;
   [class^="icon"] {
     font-size: 1.6em;
   }
-}
-
-.secteurs {
-
-  text-align: center;
-  color: $white;
-  position: relative;
-
-  &:before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -$tabletOffset;
-    background-color: $primary-color;
-    z-index: -1;
-
-  }
-}
-
-.secteurs--list {
-  @extend .no-bullet;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.secteurs--title {
-  font-size: 1.2rem;
-}
-.secteurs--link {
-  color: inherit;
-}
-
-.tablet {
-  @include grid-row;
-  padding: $global-padding;
-  border: solid 50px #000;
-  border-bottom: none;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  position: relative;
-  // top: -$tabletOffset;
-  background: url(../images/tablet-bg.jpg) center no-repeat;
-
-  &:before {
-    content: '';
-    display: inline-block;
-    width: 28px;
-    height: 16px;
-    background: url(../images/tablet-camera.jpg) center;
-    position: absolute;
-    top: -33px;
-    left: calc(50% - 14px);
-  }
-}
-.tablet--title {
-  display: inline-block;
-  padding: $global-padding;
-  background: url(../images/tablet-title-bg.png);
-  line-height: 1em;
 }
 
 .step {
@@ -181,7 +130,7 @@ $tabletOffset: 3rem;
     }
   }
 }
-.step--item {
+.banner .step--item {
   &:nth-child(2) {
     .step--title:before {
       content: '2';
@@ -198,9 +147,40 @@ $tabletOffset: 3rem;
   background: url(../images/help-bg.jpg) center no-repeat;
   background-size: cover;
   color: $white;
-  a {
-    color: inherit;
+
+  .menu {
+    font-size: 1.6rem;
+    li {
+      margin-bottom: .4em;
+    }
+
+    a {
+      color: inherit;
+      position: relative;
+      padding-left: 2rem + ($global-padding * 2);
+
+      &:hover, &:focus {
+        background: rgba(0,0,0,0.2);
+      }
+
+      &.contactlink {
+        background: rgba(255,255,255,0.8);
+        color: $primary-color;
+      }
+
+      [class^="icon"] {
+        font-size: 2rem;
+        vertical-align: bottom;
+        margin-right: .5em;
+        position: absolute;
+        left: $global-padding;
+        top: calc(50% - 1rem);
+      }
+    }
+
   }
+
+
 }
 
 .why {
