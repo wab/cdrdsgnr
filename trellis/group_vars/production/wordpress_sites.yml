@@ -3,19 +3,27 @@
 # Define accompanying passwords/secrets in group_vars/production/vault.yml
 
 wordpress_sites:
-  example.com:
+  cedreo-designer.com:
     site_hosts:
-      - canonical: example.com
+      - canonical: cedreo-designer.com
         redirects:
-          - www.example.com
+          - www.cedreo-designer.com
+          - cedreo-designer.fr
+          - www.cedreo-designer.fr
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:example/example.com.git # replace with your Git repo URL
+    repo: git@github.com:wab/cedreo-designer.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
-    branch: master
+    branch: develop
     multisite:
       enabled: false
     ssl:
-      enabled: false
+      enabled: true
       provider: letsencrypt
+    env:
+      wp_home: https://cedreo-designer.com
+      wp_siteurl: https://cedreo-designer.com/wp
     cache:
-      enabled: false
+      enabled: true
+      duration: 30s
+      skip_cache_uri: /wp-admin/|/xmlrpc.php|wp-.*.php|/feed/|index.php|sitemap(_index)?.xml
+      skip_cache_cookie: comment_author|wordpress_[a-f0-9]+|wp-postpass|wordpress_no_cache|wordpress_logged_in
