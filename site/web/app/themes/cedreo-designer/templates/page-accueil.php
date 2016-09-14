@@ -18,7 +18,6 @@
         $image = get_sub_field('image');
         $title = get_sub_field('title');
         $url = $image['url'];
-        $title = $image['title'];
         $alt = $image['alt'];
         $caption = $image['caption'];
 
