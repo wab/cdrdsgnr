@@ -2,7 +2,7 @@
   "name": "roots/sage",
   "type": "wordpress-theme",
   "license": "MIT",
-  "description": "The best WordPress starter theme with a modern front-end development workflow. Based on HTML5 Boilerplate, gulp, Bower, and Bootstrap.",
+  "description": "WordPress starter theme with a modern development workflow",
   "homepage": "https://roots.io/sage/",
   "authors": [
     {
@@ -30,8 +30,7 @@
   },
   "require": {
     "php": ">=5.5.0",
-    "composer/installers": "~1.0",
-    "cocur/slugify": "^2.3"
+    "composer/installers": "~1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",

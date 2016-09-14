@@ -1,4 +1,6 @@
-<?php namespace Roots\Sage;
+<?php
+
+namespace Roots\Sage;
 
 use Roots\Sage\Assets\ManifestInterface;
 
@@ -21,8 +23,7 @@ class Asset
     public function __construct($file, ManifestInterface $manifest = null)
     {
         $this->manifest = $manifest;
-        $this->asset = basename($file);
-        $this->dir = dirname($file) != '.' ? dirname($file) : '';
+        $this->asset = $file;
     }
 
     public function __toString()
@@ -33,6 +34,6 @@ class Asset
     public function getUri()
     {
         $file = ($this->manifest ? $this->manifest->get($this->asset) : $this->asset);
-        return get_template_directory_uri() . self::$dist . '/' . $this->dir . '/' . $file;
+        return get_template_directory_uri() . self::$dist . "/$file";
     }
 }

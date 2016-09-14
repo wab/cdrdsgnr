@@ -1,11 +1,15 @@
+/* eslint-disable */
 /**
  * Load svg via ajax
  * base on https://github.com/mrsum/webpack-svgstore-plugin svgXHR
  */
+const path = require('path');
+const rootPath = '/app/themes/sage';
+
 export default class svgxhr {
-  constructor(options, pathsvg) {
+  constructor(options) {
     this.options = options;
-    this.pathsvg = pathsvg;
+    this.pathsvg = path.join(rootPath, 'dist/');
   }
   loadsvg() {
     var url = false;

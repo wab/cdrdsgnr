@@ -1,21 +1,16 @@
 // import external dependencies
 import 'jquery'
+
+// Import npm dependencies
 import 'foundation-sites/js/foundation.core';
 import 'foundation-sites/js/foundation.util.mediaQuery';
-import 'foundation-sites/js/foundation.responsiveToggle';
-import 'foundation-sites/js/foundation.util.keyboard.js';
-import 'foundation-sites/js/foundation.util.box.js';
-import 'foundation-sites/js/foundation.util.triggers.js';
-import 'foundation-sites/js/foundation.util.motion.js';
-import 'foundation-sites/js/foundation.reveal.js';
 
-import '../images/cedreo-designer.svg';
 
 // import local dependencies
 import Router from './util/router';
 import common from './routes/Common';
 import home from './routes/Home';
-import about_us from './routes/About';
+import aboutUs from './routes/About';
 
 // Use this variable to set up the common and page specific functions. If you
 // rename this variable, you will also need to rename the namespace below.
@@ -24,9 +19,9 @@ const routes = {
   common,
   // Home page
   home,
-  // About us page, note the change from about-us to about_us.
-  about_us
+  // About us page, note the change from about-us to aboutUs.
+  aboutUs,
 };
 
 // Load Events
-$(document).ready(() => new Router(routes).loadEvents());
+document.addEventListener('DOMContentLoaded', () => new Router(routes).loadEvents());
