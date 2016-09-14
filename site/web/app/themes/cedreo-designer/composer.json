@@ -34,7 +34,8 @@
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
-    "phpmd/phpmd": "^2.4.2"
+    "phpmd/phpmd": "^2.4.2",
+    "cocur/slugify": "^2.3"
   },
   "scripts": {
     "test": [

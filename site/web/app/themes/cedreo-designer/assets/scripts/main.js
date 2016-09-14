@@ -1,9 +1,15 @@
 // import external dependencies
-import 'jquery'
+import 'jquery';
 
 // Import npm dependencies
 import 'foundation-sites/js/foundation.core';
 import 'foundation-sites/js/foundation.util.mediaQuery';
+import 'foundation-sites/js/foundation.responsiveToggle';
+import 'foundation-sites/js/foundation.util.keyboard.js';
+import 'foundation-sites/js/foundation.util.box.js';
+import 'foundation-sites/js/foundation.util.triggers.js';
+import 'foundation-sites/js/foundation.util.motion.js';
+import 'foundation-sites/js/foundation.reveal.js';
 
 
 // import local dependencies

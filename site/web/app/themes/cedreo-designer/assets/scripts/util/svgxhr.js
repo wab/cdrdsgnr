@@ -4,7 +4,7 @@
  * base on https://github.com/mrsum/webpack-svgstore-plugin svgXHR
  */
 const path = require('path');
-const rootPath = '/app/themes/sage';
+const rootPath = '/app/themes/cedreo-designer';
 
 export default class svgxhr {
   constructor(options) {
