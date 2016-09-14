@@ -45,7 +45,7 @@
     <div class="cta">
       <a href="<?php echo get_permalink(7); ?>" class="button alert try"><svg class="icon-download"><use xlink:href="#icon-download"></use></svg> Essai gratuit</a>
       <span class="picto"><svg class="icon-timer"><use xlink:href="#icon-timer"></use></svg></span>
-      <a data-open="presentation-video" class="button">Présentation vidéo</a>
+      <button data-video="fewtMiz_BI4" data-title="présentation" class="button open-video">Présentation vidéo</button>
     </div>
 
   </header>
@@ -211,6 +211,6 @@
   </section>
 
   <div class="reveal" id="presentation-video" data-reveal>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/fewtMiz_BI4" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
   </div>
 <?php endwhile; ?>

@@ -1,3 +1,4 @@
+/* global ga */
 import 'owl.carousel/dist/owl.carousel';
 
 export default {
