@@ -17,13 +17,21 @@
         // vars
         $image = get_sub_field('image');
         $title = get_sub_field('title');
+        $url = $image['url'];
+        $title = $image['title'];
+        $alt = $image['alt'];
+        $caption = $image['caption'];
+
+        // thumbnail
+        $size = 'medium';
+        $thumb = $image['sizes'][ $size ];
 
         ?>
 
         <li class="step--item">
 
 
-            <p><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" /></p>
+            <p><img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" /></p>
             <p class="step--title"><?php echo $title; ?></p>
             <svg class="icon-step"><use xlink:href="#icon-step"></use></svg>
 
@@ -62,8 +70,15 @@
         if( $imagesdemo ): ?>
           <div class="owl-carousel no-bullet">
             <?php foreach( $imagesdemo as $image ): ?>
+
+                <?php
+                $alt = $image['alt'];
+                $size = 'medium';
+                $thumb = $image['sizes'][ $size ];
+                ?>
+
                 <div class="slides">
-                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
                     <p><?php echo $image['caption']; ?></p>
                 </div>
             <?php endforeach; ?>
@@ -89,12 +104,16 @@
         $title = get_sub_field('title');
         $text = get_sub_field('texte');
 
+        $alt = $image['alt'];
+        $size = 'medium';
+        $thumb = $image['sizes'][ $size ];
+
         ?>
 
         <li class="step--item">
 
 
-            <p class="text-center"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" /></p>
+            <p class="text-center"><img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" /></p>
             <p class="step--title"><?php echo $title; ?></p>
             <p><?php echo $text; ?></p>
             <svg class="icon-step"><use xlink:href="#icon-step"></use></svg>
@@ -120,8 +139,14 @@
         if( $helpmosaic ): ?>
           <div class="images-grid">
             <?php foreach( $helpmosaic as $image ): ?>
+
+                <?php
+                  $alt = $image['alt'];
+                  $size = 'medium';
+                  $thumb = $image['sizes'][ $size ];
+                ?>
                 <div class="images-grid--item">
-                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
                 </div>
             <?php endforeach; ?>
           </div>

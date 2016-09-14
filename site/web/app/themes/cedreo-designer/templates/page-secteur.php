@@ -37,7 +37,7 @@
           $caption = $image['caption'];
 
           // thumbnail
-          $size = 'large';
+          $size = 'medium';
           $thumb = $image['sizes'][ $size ];
 
           ?>
