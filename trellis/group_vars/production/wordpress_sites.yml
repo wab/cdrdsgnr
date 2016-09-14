@@ -8,7 +8,8 @@ wordpress_sites:
       - canonical: cedreo-designer.com
         redirects:
           - www.cedreo-designer.com
-          - cedreo-designer.fr
+      - canonical: cedreo-designer.fr
+        redirects:
           - www.cedreo-designer.fr
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:wab/cedreo-designer.git # replace with your Git repo URL
