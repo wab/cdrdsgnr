@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "046feba9cd5f3e08e1cf40cfeecb8d6a",
-    "content-hash": "7aa59579c07c91e66bcf4fa3d94fde91",
+    "hash": "a2b5be01e1364e0a764519ed0e0c240b",
+    "content-hash": "57fcc840276ad0857d191768b529d991",
     "packages": [
         {
             "name": "composer/installers",
@@ -459,16 +459,36 @@
             "homepage": "https://wordpress.org/plugins/autodescription/"
         },
         {
-            "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.0.2",
+            "name": "wpackagist-plugin/members",
+            "version": "1.1.2",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.0.2"
+                "url": "https://plugins.svn.wordpress.org/members/",
+                "reference": "tags/1.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.0.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/members.1.1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/members/"
+        },
+        {
+            "name": "wpackagist-plugin/ninja-forms",
+            "version": "3.0.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ninja-forms/",
+                "reference": "tags/3.0.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.0.5.zip",
                 "reference": null,
                 "shasum": null
             },
