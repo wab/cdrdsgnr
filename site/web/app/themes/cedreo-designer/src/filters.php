@@ -51,3 +51,17 @@ add_filter('template_include', function ($main) {
     }
     return ((new Template(new Wrapper($main)))->layout());
 }, 109);
+
+/**
+ * Default social images
+ */
+add_filter('the_seo_framework_og_image_args', function($args) {
+    $args['image'] = home_url('/app/uploads/cedreo-og.png');
+
+    return $args;
+});
+
+/**
+ * remove the SEO plugin credit/notice
+ */
+add_filter('the_seo_framework_indicator', '__return_false');

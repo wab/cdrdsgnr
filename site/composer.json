@@ -96,7 +96,9 @@
     "wpackagist-plugin/regenerate-thumbnails": "^2",
     "wpackagist-plugin/redirection": "^2.4",
     "wpackagist-plugin/akismet": "^3",
-    "wpackagist-plugin/members": "^1"
+    "wpackagist-plugin/members": "^1",
+    "wpackagist-plugin/google-sitemap-generator": "^4",
+    "wpackagist-plugin/wordpress-seo": "3.5"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
