@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e42931c390ce25f78d4e0d17fa4b79be",
-    "content-hash": "0a501c3bcdb5e9e3857f9be04ec0253a",
+    "hash": "3c5e898adb1d10e67058341508262266",
+    "content-hash": "234f2600c42510a23bd46cc6c749d0cf",
     "packages": [
         {
             "name": "composer/installers",
@@ -397,6 +397,26 @@
                 "environment"
             ],
             "time": "2016-09-01 10:05:43"
+        },
+        {
+            "name": "wpackagist-plugin/acf-content-analysis-for-yoast-seo",
+            "version": "1.2.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-content-analysis-for-yoast-seo/",
+                "reference": "tags/1.2.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-content-analysis-for-yoast-seo.1.2.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-content-analysis-for-yoast-seo/"
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
