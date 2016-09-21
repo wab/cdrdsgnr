@@ -79,7 +79,13 @@
   padding: 0.5em;
   color: inherit;
   background: $primary-color;
-  line-height: 1em;
+  line-height: 0;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  transition: all 200ms ease;
+
+  &:hover, &:focus {
+    color: $white;
+    background: darken($primary-color, 10%);
+  }
 }

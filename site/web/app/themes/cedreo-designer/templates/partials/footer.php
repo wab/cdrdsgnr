@@ -25,3 +25,5 @@
     </ul>
   </div>
 </footer>
+
+<?php get_template_part('partials/icons'); ?>

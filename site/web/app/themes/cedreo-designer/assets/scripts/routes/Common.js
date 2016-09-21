@@ -1,19 +1,8 @@
 import YouTubePlayer from 'youtube-player';
-import Svgxhr from '../util/svgxhr';
-
-const svg4everybody = require('svg4everybody/dist/svg4everybody');
-
-const __svg__ = { // eslint-disable-line no-underscore-dangle
-  path: '../../icons/*.svg',
-  name: 'svg/icons_[hash].svg',
-};
-// will overwrite to var __svg__ = { filename: "svg/1466687804854.icons.svg" };
 
 export default {
   init() {
     // JavaScript to be fired on all pages
-    svg4everybody();
-    new Svgxhr(__svg__).loadsvg();
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
@@ -28,7 +17,7 @@ export default {
     const player = YouTubePlayer('video-player'); // eslint-disable-line new-cap
     const revealVideo = $('#reveal-video');
 
-    function playVideo(e) {
+    $('.open-video').on('click', function playVideo(e) {
       e.preventDefault();
       const video = $(this).attr('data-video');
       const title = $(this).attr('data-title');
@@ -37,9 +26,7 @@ export default {
       player.loadVideoById(video);
       revealVideo.foundation('open');
       player.playVideo();
-    }
-
-    $('.open-video').on('click', playVideo);
+    });
 
     $(document).on('closed.zf.reveal', () => {
       player
