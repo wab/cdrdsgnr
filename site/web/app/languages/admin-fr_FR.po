@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-08-23 09:46:30+0000\n"
+"PO-Revision-Date: 2016-09-21 15:37:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -674,7 +674,7 @@ msgstr "Une erreur est survenue durant l’enregistrement de votre adresse de me
 #. translators: %s: new email
 #: wp-admin/user-edit.php:403
 msgid "There is a pending change of your email to %s."
-msgstr "Il y a une modification en cours de votre adresse de contact, en faveur de %s."
+msgstr "Il y a une modification en cours de votre adresse de messagerie, en faveur de %s."
 
 #. translators: %s: edit page url
 #: wp-admin/user-new.php:251
@@ -1705,7 +1705,7 @@ msgstr[1] "%s commentaires en attente"
 #: wp-admin/includes/class-wp-list-table.php:673
 #: wp-admin/includes/class-wp-list-table.php:686
 msgid "No comments"
-msgstr "Pas de commentaire"
+msgstr "Aucun commentaire"
 
 #: wp-admin/includes/ajax-actions.php:3181
 msgid "Image could not be processed."
@@ -2286,7 +2286,7 @@ msgstr ""
 "Vous avez récemment cliqué sur le lien « Supprimer le site » pour votre propre site, \n"
 "et avez complété le formulaire présent sur cette même page.\n"
 "\n"
-"Si vous êtes sûr(e) de vouloir supprimer votre site, cliquez sur le lien ci-dessous.\n"
+"Si vous confirmez la suppression de votre site, cliquez sur le lien ci-dessous.\n"
 "Aucune confirmation ne vous sera demandée par la suite, soyez donc totalement \n"
 "certain(e) de ce que vous faites :\n"
 "###URL_DELETE###\n"
@@ -2607,16 +2607,16 @@ msgstr "Activer l’éditeur plein-écran et la fonctionnalité d’écriture sa
 
 #: wp-admin/includes/dashboard.php:1127
 msgid "https://planet.wordpress.org/feed/"
-msgstr "http://feeds.feedburner.com/wordpress-fr/RaoY"
+msgstr "https://feeds.feedburner.com/wpfr"
 
 #: wp-admin/includes/dashboard.php:1118 wp-admin/index.php:77
 #: wp-admin/index.php:83
 msgid "https://planet.wordpress.org/"
-msgstr "http://www.wordpress-fr.net/planet/"
+msgstr "https://wpfr.net"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:578
 msgid "Untested with your version of WordPress"
-msgstr "Non-testé avec votre version de WordPress"
+msgstr "Non testé avec votre version de WordPress"
 
 #: wp-admin/custom-header.php:463
 msgid "You can now manage and live-preview Custom Header in the <a href=\"%1$s\">Customizer</a>."
@@ -2759,7 +2759,7 @@ msgstr "<strong>Incompatible</strong> avec votre version de WordPress"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:582
 msgid "<strong>Compatible</strong> with your version of WordPress"
-msgstr "<strong>Compatible</strong> avec votre version de WordPress"
+msgstr "<strong>Compatible</strong> avec votre WordPress"
 
 #: wp-admin/includes/plugin-install.php:597
 msgid "%d star"
@@ -2853,7 +2853,7 @@ msgstr "Afficher les détails"
 #: wp-admin/includes/class-wp-terms-list-table.php:185
 msgctxt "Number/count of items"
 msgid "Count"
-msgstr "Compte"
+msgstr "Total"
 
 #: wp-admin/includes/class-wp-theme-install-list-table.php:67
 msgctxt "themes"
@@ -2962,7 +2962,7 @@ msgstr "<strong>D&rsquo;un coup d’œil</strong> - Affiche un résumé du conte
 
 #: wp-admin/maint/repair.php:147
 msgid "https://wordpress.org/support/forum/how-to-and-troubleshooting"
-msgstr "http://www.wordpress-fr.net/support/forum-26-support-wordpress"
+msgstr "https://wpfr.net/support/forum/support-de-wordpress/"
 
 #: wp-admin/revision.php:78
 msgid "&larr; Return to editor"
@@ -3027,7 +3027,7 @@ msgstr "Merci de faire de <a href=\"%s\">WordPress</a> votre outil de création.
 #: wp-admin/upload.php:67 wp-admin/upload.php:208 wp-admin/user-edit.php:55
 #: wp-admin/user-new.php:207 wp-admin/users.php:69 wp-admin/widgets.php:75
 msgid "<a href=\"https://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
-msgstr "<a href=\"http://www.wordpress-fr.net/support/\" target=\"_blank\">Forums d&rsquo;entraide</a>"
+msgstr "<a href=\"https://wpfr.net/support/\" target=\"_blank\">Forums d&rsquo;entraide</a>"
 
 #: wp-admin/credits.php:42 wp-admin/credits.php:104
 msgid "https://make.wordpress.org/"
@@ -3457,7 +3457,7 @@ msgstr "Pour des questions de sécurité, il est important de garder votre site 
 
 #: wp-admin/includes/class-wp-automatic-updater.php:702
 msgid "If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help."
-msgstr "Si vous rencontrez des problèmes ou avez besoin d’assistance, les volontaires du forum d’entraide de WordPress-fr.net devraient pouvoir vous aider."
+msgstr "Si vous rencontrez des problèmes ou avez besoin d’assistance, les volontaires du forum d’entraide de wpfr.net devraient pouvoir vous aider."
 
 #: wp-admin/includes/class-wp-automatic-updater.php:717
 msgid "You also have some plugins or themes with updates available. Update them now:"
@@ -4554,7 +4554,7 @@ msgstr "Vous pouvez utiliser une image d&rsquo;en-tête personnalisée pour votr
 
 #: wp-admin/custom-header.php:826
 msgid "Skip Cropping, Publish Image as Is"
-msgstr "Pas de recadrage, utiliser l&rsquo;image telle quelle"
+msgstr "Aucun recadrage, utiliser l’image telle quelle"
 
 #: wp-admin/includes/meta-boxes.php:576
 msgid "https://codex.wordpress.org/Excerpt"
@@ -5239,7 +5239,7 @@ msgstr "<strong>Attention&nbsp;:</strong> il n&rsquo;est pas recommandé de modi
 
 #: wp-admin/user-new.php:310
 msgid "Enter the email address of an existing user on this network to invite them to this site. That person will be sent an email asking them to confirm the invite."
-msgstr "Saisissez l&rsquo;adresse de contact d&rsquo;un utilisateur existant sur votre réseau, afin de l&rsquo;inviter sur ce site. Cette personne recevra un message lui demandant de confirmer l&rsquo;invitation."
+msgstr "Saisissez l&rsquo;adresse de messagerie d&rsquo;un utilisateur existant sur votre réseau, afin de l&rsquo;inviter sur ce site. Cette personne recevra un message lui demandant de confirmer l&rsquo;invitation."
 
 #: wp-admin/credits.php:118
 msgid "Contributing Developers"
@@ -6302,7 +6302,7 @@ msgstr "Vous n&rsquo;avez qu&rsquo;un thème activé sur ce site actuellement. V
 
 #: wp-admin/user-edit.php:333
 msgid "Super admin privileges cannot be removed because this user has the network admin email."
-msgstr "Les privilèges de super-admin ne peuvent pas être enlevés, car cet utilisateur est celui avec l&rsquo;adresse de contact administratif du réseau."
+msgstr "Les privilèges de super-admin ne peuvent pas être enlevés, car cet utilisateur est celui avec l&rsquo;adresse de messagerie administrative du réseau."
 
 #: wp-admin/includes/class-wp-themes-list-table.php:107
 msgid "You only have one theme installed right now. Live a little! You can choose from over 1,000 free themes in the WordPress Theme Directory at any time: just click on the <a href=\"%s\">Install Themes</a> tab above."
@@ -6358,7 +6358,7 @@ msgstr "WordPress a été mis à jour&nbsp;! Avant de vous laisser continuer, no
 
 #: wp-admin/upgrade.php:75
 msgid "No Update Required"
-msgstr "Pas de mise à jour requise"
+msgstr "Aucune mise à jour requise"
 
 #: wp-admin/includes/class-plugin-upgrader.php:57
 msgid "Plugin updated successfully."
@@ -6397,7 +6397,7 @@ msgstr "Mettre à jour l&rsquo;extension"
 #: wp-admin/includes/class-plugin-upgrader.php:51
 #: wp-admin/includes/class-theme-upgrader.php:50
 msgid "Update package not available."
-msgstr "Pas d&rsquo;archive de mise à jour disponible."
+msgstr "Aucune archive de mise à jour disponible."
 
 #: wp-admin/export.php:191 wp-admin/export.php:233 wp-admin/export.php:265
 msgid "Date range:"
@@ -6558,7 +6558,7 @@ msgstr[1] "%s utilisateurs"
 
 #: wp-admin/includes/dashboard.php:1085
 msgid "https://wordpress.org/news/"
-msgstr "http://www.wordpress-fr.net/"
+msgstr "http://wpfr.net/"
 
 #: wp-admin/includes/dashboard.php:1094
 msgid "http://wordpress.org/news/feed/"
@@ -6625,7 +6625,7 @@ msgstr "Vous pouvez choisir ce qui est affiché en page d&rsquo;accueil de votre
 
 #: wp-admin/options-permalink.php:38
 msgid "The Optional fields let you customize the &#8220;category&#8221; and &#8220;tag&#8221; base names that will appear in archive URLs. For example, the page listing all posts in the &#8220;Uncategorized&#8221; category could be <code>/topics/uncategorized</code> instead of <code>/category/uncategorized</code>."
-msgstr "Les champs facultatifs, en bas de page, vous permettent de personnaliser les dénominations utilisées pour les chemins <code>/category/</code> et <code>/tag/</code> lors de l&rsquo;affichage des archives. Par exemple, la page listant tous les articles de la catégorie &laquo;&nbsp;Non classé&nbsp;&raquo; pourrait se lire comme <code>/sujet/non-classe/</code> plutôt que <code>/category/non-classe/</code>."
+msgstr "Les champs facultatifs, en bas de page, vous permettent de personnaliser les dénominations utilisées pour les chemins <code>/category/</code> et <code>/tag/</code> lors de l&rsquo;affichage des archives. Par exemple, la page listant tous les articles de la catégorie &laquo;&nbsp;Non classé&nbsp;&raquo; pourrait se lire comme <code>/sujet/non-classe/</code> plutôt que <code>/categorie/non-classe/</code>."
 
 #: wp-admin/options-permalink.php:31
 msgid "When you assign multiple categories or tags to a post, only one can show up in the permalink: the lowest numbered category. This applies if your custom structure includes <code>%category%</code> or <code>%tag%</code>."
@@ -7826,7 +7826,7 @@ msgstr "WordPress &raquo; Réparation de la base de données"
 
 #: wp-admin/maint/repair.php:147
 msgid "Some database problems could not be repaired. Please copy-and-paste the following list of errors to the <a href=\"%s\">WordPress support forums</a> to get additional assistance."
-msgstr "Certains problèmes de la base de données n&rsquo;ont pas pu être réparés. Veuillez copier/coller la liste d&rsquo;erreurs suivantes sur le <a href=\"%s\">forum de support de WordPress</a> pour recevoir plus d&rsquo;informations."
+msgstr "Certains problèmes de la base de données n&rsquo;ont pas pu être réparés. Veuillez copier-coller la liste d&rsquo;erreurs suivantes sur le <a href=\"%s\">forum de support de WordPress</a> pour recevoir plus d&rsquo;informations."
 
 #: wp-admin/maint/repair.php:164
 msgid "Repair Database"
@@ -8190,7 +8190,7 @@ msgstr "Organiser mes fichiers envoyés dans des dossiers mensuels et annuels"
 
 #: wp-admin/options-permalink.php:15 wp-admin/options-permalink.php:28
 msgid "Permalink Settings"
-msgstr "Options des permaliens"
+msgstr "Réglages des permaliens"
 
 #: wp-admin/options-permalink.php:135
 msgid "Permalink structure updated. Remove write access on web.config file now!"
@@ -8239,7 +8239,7 @@ msgstr "Si vous rendez le fichier <code>web.config</code> accessible en écritur
 
 #: wp-admin/options-permalink.php:250
 msgid "If you temporarily make your site&#8217;s root directory writable for us to generate the <code>web.config</code> file automatically, do not forget to revert the permissions after the file has been created."
-msgstr "Si vous rendez temporairement le dossier racine accessible en écriture afin que nous y générions directement le fichier <code>web.config</code>,n&rsquo;oubliez surtout pas de remettre les droits originaux en place une fois que les règles ont été enregistrées."
+msgstr "Si vous rendez temporairement le dossier racine accessible en écriture afin que nous y générions directement le fichier <code>web.config</code>, n&rsquo;oubliez surtout pas de remettre les droits originaux en place une fois que les règles ont été enregistrées."
 
 #: wp-admin/options-reading.php:15
 msgid "Reading Settings"
@@ -8303,7 +8303,7 @@ msgstr "Convertir les émoticônes, comme <code>:-)</code> et <code>:-P</code>, 
 
 #: wp-admin/options-writing.php:66
 msgid "WordPress should correct invalidly nested XHTML automatically"
-msgstr "WordPress doit automatiquement corriger les balises XHTML non valides"
+msgstr "WordPress doit automatiquement corriger l’imbrication XHTML erronée"
 
 #: wp-admin/options-writing.php:71
 msgid "Default Post Category"
@@ -8424,7 +8424,7 @@ msgstr "L&rsquo;extension %1$s a été <strong>désactivée</strong> suite à un
 
 #: wp-admin/plugins.php:431
 msgid "Plugin could not be activated because it triggered a <strong>fatal error</strong>."
-msgstr "L&rsquo;extension n&rsquo;a pu être activée, car elle a déclenché une <strong>erreur fatale</strong>."
+msgstr "L&rsquo;extension n&rsquo;a pas pu être activée, car elle a déclenché une <strong>erreur fatale</strong>."
 
 #: wp-admin/plugins.php:453
 msgid "Plugin could not be deleted due to an error: %s"
@@ -8538,7 +8538,7 @@ msgstr "Modèles"
 
 #: wp-admin/theme-editor.php:252
 msgid "Oops, no such file exists! Double check the name and try again, merci."
-msgstr "Oops, ce fichier n&rsquo;existe pas&nbsp;! Vérifiez son nom et réessayez, merci."
+msgstr "Aïe, ce fichier n&rsquo;existe pas&nbsp;! Veuillez bien vérifier son nom et réessayer."
 
 #: wp-admin/themes.php:171
 msgid "Theme deleted."
@@ -8590,7 +8590,7 @@ msgstr "Masquer les mises à jour cachées"
 
 #: wp-admin/update-core.php:258 wp-admin/update-core.php:268
 msgid "Compatibility with WordPress %1$s: 100%% (according to its author)"
-msgstr "Compatibilité avec WordPress %1$s&nbsp;: 100%% (selon l&rsquo;auteur)"
+msgstr "Compatibilité avec WordPress %1$s : 100 %% (selon l’auteur)"
 
 #: wp-admin/update-core.php:261 wp-admin/update-core.php:271
 msgid "Compatibility with WordPress %1$s: %2$d%% (%3$d \"works\" votes out of %4$d total)"
@@ -8801,7 +8801,7 @@ msgstr "Le nouvel utilisateur a été créé."
 
 #: wp-admin/users.php:449
 msgid "The current user&#8217;s role must have user editing capabilities."
-msgstr "L&rsquo;utilisateur courant doit avoir un niveau lui permettant de modifier les utilisateurs."
+msgstr "L&rsquo;utilisateur actuel doit avoir un rôle lui permettant de modifier les utilisateurs."
 
 #: wp-admin/users.php:450
 msgid "Other user roles have been changed."
@@ -9127,7 +9127,7 @@ msgstr "E-mail&nbsp;:"
 
 #: wp-admin/themes.php:166 wp-admin/themes.php:168
 msgid "Visit site"
-msgstr "aller sur le site"
+msgstr "Aller sur le site"
 
 #: wp-admin/edit-form-comment.php:53
 msgid "URL:"
@@ -9167,7 +9167,7 @@ msgstr "Adresse web"
 
 #: wp-admin/edit-link-form.php:105
 msgid "Example: <code>http://wordpress.org/</code> &#8212; don&#8217;t forget the <code>http://</code>"
-msgstr "Exemple&nbsp;: <code>http://www.wordpress-fr.net/</code> &#8212; Et n&rsquo;oubliez pas le <code>http://</code>&nbsp;!"
+msgstr "Exemple&nbsp;: <code>https://wpfr.net/</code> &#8212; Et n&rsquo;oubliez pas le <code>https://</code>&nbsp;!"
 
 #: wp-admin/edit-link-form.php:113
 msgid "This will be shown when someone hovers over the link in the blogroll, or optionally below the link."
@@ -9301,7 +9301,7 @@ msgstr "L&rsquo;extension ftp de PHP n&rsquo;est pas disponible"
 #: wp-admin/includes/class-wp-filesystem-ftpext.php:46
 #: wp-admin/includes/class-wp-filesystem-ftpsockets.php:45
 msgid "FTP hostname is required"
-msgstr "L&rsquo;hôte du FTP est obligatoire"
+msgstr "Le nom de l&rsquo;hôte FTP est obligatoire"
 
 #: wp-admin/includes/class-wp-filesystem-ftpext.php:52
 #: wp-admin/includes/class-wp-filesystem-ftpsockets.php:51
@@ -9561,7 +9561,7 @@ msgstr "Veuillez choisir un fichier"
 
 #: wp-admin/includes/file.php:386
 msgid "The uploaded file could not be moved to %s."
-msgstr "Le fichier n&rsquo; a pas pu être déplacé vers %s."
+msgstr "Le fichier n’a pas pu être déplacé vers %s."
 
 #: wp-admin/includes/dashboard.php:42
 msgid "Right Now"
@@ -9799,11 +9799,11 @@ msgstr "SSH2"
 
 #: wp-admin/includes/file.php:1183
 msgid "Connection Information"
-msgstr "Informations sur connexion"
+msgstr "Informations de connexion"
 
 #: wp-admin/includes/file.php:1205
 msgid "Hostname"
-msgstr "Nom de l&rsquo;H&ocirc;te&nbsp;:"
+msgstr "Nom de l’hôte :"
 
 #: wp-admin/includes/file.php:1242
 msgid "Authentication Keys"
@@ -9982,7 +9982,7 @@ msgstr "Adresse web du fichier"
 
 #: wp-admin/includes/media.php:1274 wp-admin/includes/media.php:2581
 msgid "Alt text for the image, e.g. &#8220;The Mona Lisa&#8221;"
-msgstr "Texte alternatif de l&rsquo;image, exemple&nbsp;: &laquo; La Joconde &raquo;"
+msgstr "Texte alternatif de l’image, par ex. : « La Joconde »"
 
 #: wp-admin/includes/media.php:1151
 msgid "Empty Title filled from filename."
@@ -10192,7 +10192,7 @@ msgid ""
 "  'Cancel' to stop, 'OK' to delete."
 msgstr ""
 "Vous êtes sur le point de supprimer le lien « %s ».\n"
-"  « Annuler » pour abandonner, « OK » pour le supprimer."
+"  « Annuler » pour abandonner, « OK » pour supprimer."
 
 #: wp-admin/includes/meta-boxes.php:989
 msgid "<code>_blank</code> &mdash; new window or tab."
@@ -10222,7 +10222,7 @@ msgstr "identité"
 
 #: wp-admin/includes/meta-boxes.php:1052
 msgid "another web address of mine"
-msgstr "Une autre de mes adresses Web"
+msgstr "une autre de mes adresses Web"
 
 #. translators: xfn: http://gmpg.org/xfn/
 #: wp-admin/includes/meta-boxes.php:1056 wp-admin/includes/meta-boxes.php:1057
@@ -10347,7 +10347,7 @@ msgstr "être aimé"
 
 #: wp-admin/includes/meta-boxes.php:1147
 msgid "If the link is to a person, you can specify your relationship with them using the above form. If you would like to learn more about the idea check out <a href=\"http://gmpg.org/xfn/\">XFN</a>."
-msgstr "Si le lien pointe sur une personne, vous pouvez préciser la relation que vous entretenez avec elle via le formulaire ci-dessus. Si vous souhaitez en apprendre plus sur ce système, consultez le <a href=\"http://gmpg.org/xfn/\">site de XFN</a>."
+msgstr "Si le lien pointe vers une personne, vous pouvez préciser la relation que vous entretenez avec elle via le formulaire ci-dessus. Si vous souhaitez en apprendre plus sur ce système, consultez le <a href=\"http://gmpg.org/xfn/\">site de XFN</a>."
 
 #: wp-admin/includes/meta-boxes.php:1162
 msgid "Image Address"
@@ -10368,7 +10368,7 @@ msgstr "Note"
 
 #: wp-admin/includes/meta-boxes.php:1183
 msgid "(Leave at 0 for no rating.)"
-msgstr "(laissez à 0 pour ne pas donner de note.)"
+msgstr "(Laissez à 0 pour ne pas donner de note.)"
 
 #: wp-admin/includes/plugin-install.php:218
 msgid "Popular tags"
