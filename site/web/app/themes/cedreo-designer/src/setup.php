@@ -47,11 +47,13 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('post-thumbnails');
 
+    add_image_size( 'gallery', 350, 350, true );
+
     /**
      * Enable post formats
      * @link http://codex.wordpress.org/Post_Formats
      */
-    add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);
+    // add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);
 
     /**
      * Enable HTML5 markup support

@@ -16,7 +16,6 @@
 
 }
 
-
 .soumenu, .children {
   @include menu-expand;
 }
@@ -33,4 +32,8 @@
 
 .current_page_item {
   @extend .active;
+}
+
+.gallery--items {
+  @extend .no-bullet;
 }
