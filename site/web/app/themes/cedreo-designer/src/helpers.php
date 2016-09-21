@@ -62,3 +62,27 @@ function title()
     }
     return get_the_title();
 }
+
+function list_child_pages() {
+
+    global $post;
+
+    $pageID = $post->ID;
+
+    $ancestors = get_post_ancestors($pageID);
+    if( empty($post->post_parent) ) {
+        $parent = $post->ID;
+    } else {
+        $parent = end($ancestors);
+    }
+    $children = wp_list_pages(array(
+        'child_of' => $parent,
+        'echo' => '0',
+        'title_li' => ''
+    ));
+
+    if ($children) {
+        return '<ul class="menu soumenu vertical">'.$children.'</ul>';
+    }
+
+}
