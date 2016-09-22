@@ -5,9 +5,8 @@
 wordpress_sites:
   cedreo-designer.com:
     site_hosts:
-      - canonical: cedreo-designer.dev
-        redirects:
-          - www.cedreo-designer.dev
+      - canonical: cedreo-designer.com.dev
+      - canonical: cedreo-designer.fr.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_user: admin
     admin_email: admin@cedreo-designer.com
