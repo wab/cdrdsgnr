@@ -61,7 +61,9 @@ add_filter('the_seo_framework_og_image_args', function($args) {
     return $args;
 });
 
-/**
- * remove the SEO plugin credit/notice
- */
+
+// Remove the SEO plugin credit/notice
 add_filter('the_seo_framework_indicator', '__return_false');
+
+// Remove toolset types front-end display meta box
+add_filter('types_information_table', '__return_false');
