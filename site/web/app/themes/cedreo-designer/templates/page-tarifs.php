@@ -9,68 +9,61 @@
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part('partials/page-header'); ?>
 
-  <div class="pricing-table--wrapper">
-    <div class="pricing-table--column">
-      <ul class="pricing-table no-bullet text-center">
-        <li class="title">&nbsp;</li>
-        <li class="price">Prix</li>
-        <li class="description">Nombre de projets</li>
-        <li class="description">Images d'essais <small>430 x 250 pixels</small></li>
-        <li class="description">Images format Web <small>640 x 360 pixels</small></li>
-        <li class="description">Images d'essais <small>430 x 250 pixels</small></li>
-        <li class="description">Images d'essais <small>430 x 250 pixels</small></li>
-      </ul>
-    </div>
-    <div class="pricing-table--column">
-      <ul class="pricing-table no-bullet text-center">
-        <li class="title">Free</li>
-        <li class="price">Gratuit</li>
-        <li>3 / an</li>
-        <li>1 / an</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li><a class="button large" href="#">Démarrer</a></li>
-      </ul>
-    </div>
-    <div class="pricing-table--column">
-      <ul class="pricing-table no-bullet text-center">
-        <li class="title">S</li>
-        <li class="price">290€ / an</li>
-        <li>36 / an</li>
-        <li>1 / an</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li><a class="button large" href="#">Démarrer</a></li>
-      </ul>
-    </div>
-    <div class="pricing-table--column">
-      <ul class="pricing-table no-bullet text-center">
-        <li class="title">M</li>
-        <li class="price">490€ / an</li>
-        <li>100 / an</li>
-        <li>1 / an</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li><a class="button large" href="#">Démarrer</a></li>
-      </ul>
-    </div>
-    <div class="pricing-table--column">
-      <ul class="pricing-table no-bullet text-center">
-        <li class="title">L</li>
-        <li class="price">990€ / an</li>
-        <li>250 / an</li>
-        <li>1 / an</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li><a class="button large" href="#">Démarrer</a></li>
-      </ul>
-    </div>
-  </div>
+  <div class="page-container section">
 
+  <?php if( have_rows('plans') ): ?>
+
+  <ul class="pricing-table--wrapper no-bullets">
+
+  <?php while( have_rows('plans') ): the_row();
+
+    // vars
+    $image = get_sub_field('image');
+    $content = get_sub_field('content');
+    $link = get_sub_field('link');
+
+    ?>
+
+    <li class="pricing-table--column">
+
+      <ul class="pricing-table no-bullet text-center">
+        <li class="title"><?php the_sub_field('name'); ?></li>
+        <li class="price"><?php the_sub_field('price'); ?></li>
+        <li><p class="description">Nombre de projets</p> <?php the_sub_field('number_project'); ?> / an</li>
+        <li><p class="description">Images d'essais <small>430 x 250 pixels</small></p> <?php the_sub_field('number_img_try'); ?> / an</li>
+        <li>
+        <?php if(get_sub_field('number_img_web')): ?>
+          <p class="description">Images format Web <small>640 x 360 pixels</small></p><?php the_sub_field('number_img_web'); ?> / an
+        <?php else: ?>
+          <p>-</p>
+        <?php endif; ?>
+        </li>
+        <li>
+        <?php if(get_sub_field('number_img_hd')): ?>
+          <p class="description">Images format HD <small>1280 x 720 pixels</small></p><?php the_sub_field('number_img_hd'); ?> / an
+        <?php else: ?>
+          <p>-</p>
+        <?php endif; ?>
+        </li>
+        <li>
+        <?php if(get_sub_field('number_img_4K')): ?>
+          <p class="description">Images format 4K <small>3840 x 2160 pixels</small></p><?php the_sub_field('number_img_4K'); ?> / an
+        <?php else: ?>
+          <p>-</p>
+        <?php endif; ?>
+        </li>
+        <li><a class="button large" href="#">Démarrer</a></li>
+      </ul>
+
+    </li>
+
+  <?php endwhile; ?>
+
+  </ul>
+
+<?php endif; ?>
+
+  </div>
 
 
 <?php endwhile; ?>

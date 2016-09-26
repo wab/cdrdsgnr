@@ -1,9 +1,8 @@
 .pricing-table--wrapper {
-  @include grid-row(15, null, 100%, true, 1rem) {
-    .pricing-table--column {
-      @include grid-column(3, 1rem);
-    }
-  }
+  @include flex-grid-row(null, 100%, null, true, 1rem) {}
+}
+.pricing-table--column {
+  @include flex-grid-column(null, 1rem);
 }
 
 .pricing-table {
