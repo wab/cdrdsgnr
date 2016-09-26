@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1f7cb241d65af565f79504933fcd4cba",
-    "content-hash": "9c30bb6e858bfdfbece9d4285cd9af9c",
+    "hash": "d2affd052306be54f50437cbebd37859",
+    "content-hash": "934e490d2ce02529cc4ef3b777ee885d",
     "packages": [
         {
             "name": "composer/installers",
@@ -637,6 +637,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/types/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-importer",
+            "version": "0.6.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-importer/",
+                "reference": "tags/0.6.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.6.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-importer/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
