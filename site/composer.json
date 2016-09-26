@@ -100,7 +100,8 @@
     "wpackagist-plugin/google-sitemap-generator": "^4",
     "wpackagist-plugin/wordpress-seo": "3.5",
     "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "^1",
-    "wpackagist-plugin/breadcrumb-navxt": "^5"
+    "wpackagist-plugin/breadcrumb-navxt": "^5",
+    "wpackagist-plugin/wordpress-importer": "^0.6"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
