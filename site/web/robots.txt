@@ -3,9 +3,7 @@ User-agent: *
 # Allowable
 Allow: /wp-content/uploads/
 # Directories
-Disallow: /wp-admin/
-Disallow: /wp-includes/
-Disallow: /wp-content/
+Disallow: /wp/
 Disallow: /app/plugins/
 Disallow: /author/
 Disallow: /category/
