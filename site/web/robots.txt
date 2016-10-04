@@ -1,0 +1,19 @@
+# Crawlers Setup
+User-agent: *
+# Allowable
+Allow: /wp-content/uploads/
+# Directories
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/
+Disallow: /app/plugins/
+Disallow: /author/
+Disallow: /category/
+# Files
+Disallow: /wp-login.php
+# Paths (clean URLs)
+Disallow: /comments
+Disallow: /contact
+Disallow: /demo
+# Paths (no clean URLs)
+Disallow: /*.php$
