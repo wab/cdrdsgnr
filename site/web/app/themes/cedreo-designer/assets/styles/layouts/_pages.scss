@@ -11,9 +11,19 @@
   justify-content: center;
 
   .home & {
-    justify-content: space-between;
+    background-image: url(../images/banner-home.jpg);
+    min-height: 50vh;
   }
 
+}
+
+.breadcrumbs {
+  background: $primary-color;
+  padding: .5rem;
+  color: $white;
+  a {
+    color: inherit;
+  }
 }
 
 .soumenu, .children {
