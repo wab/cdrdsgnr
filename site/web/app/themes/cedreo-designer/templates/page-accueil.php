@@ -137,7 +137,7 @@
     <div class="row column">
       <h2 class="section--title">Galerie</h2>
       <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et alias perspiciatis, dolore aperiam molestias aliquid repellat! Recusandae porro accusantium possimus soluta numquam, fugit! Et tempora, nam architecto quibusdam, unde molestiae!</p>
-      <ul class="row">
+      <ul class="row no-bullet">
         <li class="columns large-4">image</li>
         <li class="columns large-4">image</li>
         <li class="columns large-4">image</li>
