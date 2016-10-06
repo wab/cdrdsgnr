@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6987f4c4700bf2e2504fbd53733a47ff",
-    "content-hash": "c0d78c24f1fc6811c8a79115d0b03c22",
+    "hash": "985124655d06132cbd1aa4dbd77e96e5",
+    "content-hash": "b8a9af8d7b17c34810ee2f5aff422b84",
     "packages": [
         {
             "name": "composer/installers",
@@ -497,26 +497,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/breadcrumb-navxt/"
-        },
-        {
-            "name": "wpackagist-plugin/csv-importer",
-            "version": "0.3.8",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/csv-importer/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/csv-importer.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/csv-importer/"
         },
         {
             "name": "wpackagist-plugin/google-sitemap-generator",
