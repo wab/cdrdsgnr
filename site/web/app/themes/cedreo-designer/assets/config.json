@@ -13,7 +13,7 @@
     "src/**/*.php"
   ],
   "publicPath": "/app/themes/cedreo-designer",
-  "devUrl": "http://cedreo-designer.com.dev",
+  "devUrl": "http://cedreo-designer.fr.dev",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]"
 }
