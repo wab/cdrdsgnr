@@ -47,8 +47,8 @@
         <?php endif; ?>
       </div>
       <div class="columns large-6">
-        <div class="flex-video widescreen">
-          <div class="videoframe" id="video-player" data-id='<?php the_field('video_id'); ?>'>
+        <div class="video-wrapper flex-video widescreen" data-id="<?php the_field('video_id'); ?>">
+          <div class="videoframe" id="video-player">
             lecteur video
           </div>
         </div>

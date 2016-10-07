@@ -12,7 +12,8 @@ export default {
       items: 1,
       nav: false,
     });
-    const videoId = $('videoframe').attr('data-id');
+    const videoId = $('.video-wrapper').attr('data-id');
+    console.log(videoId);
     /* eslint-disable no-unused-vars, new-cap */
     const player = YouTubePlayer('video-player', {
       videoId,
