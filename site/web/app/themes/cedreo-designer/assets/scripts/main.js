@@ -13,6 +13,7 @@ import 'foundation-sites/js/foundation.util.triggers.js';
 import 'foundation-sites/js/foundation.util.motion.js';
 import 'foundation-sites/js/foundation.reveal.js';
 import 'foundation-sites/js/foundation.dropdownMenu.js';
+import 'foundation-sites/js/foundation.drilldown.js';
 
 
 // import local dependencies
