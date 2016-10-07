@@ -1,42 +1,68 @@
-body {
-  font-size: 1rem;
-}
-.wrap {
-  background: darken($white, 4%);
-}
 .section {
   padding: ($global-padding * 2) 0;
   position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    left: calc(50% - 15px);
+    top: 0;
+    @include background-triangle($light-gray);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+
+  &:nth-child(odd) {
+    background: $light-gray;
+    &:before {
+      @include background-triangle($body-background);
+    }
+  }
+
+  &:nth-child(2) {
+    &:before {
+      @include background-triangle($body-background);
+    }
+  }
 }
 
 .textcolor {
   color: $primary-color;
 }
 
-.button {
+.section--title {
+  color: map-get($foundation-palette, secondary);
   text-transform: uppercase;
-  font-weight: bold;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.images-grid {
-  @include grid-row;
-  @include grid-layout(2, '.images-grid--item');
+  span {
+    width: auto;
+    display: block;
+    padding: 1em;
+  }
 
-  .images-grid--item {
-    padding: $global-padding / 2;
+  &:before, &:after {
+    content: '';
+    display: block;
+    flex: 1;
+    height: 2px;
+    background: currentColor;
   }
 }
 
-.picto {
+.chevron {
+  content: '';
   display: inline-block;
-  text-align: center;
-  line-height: 0;
-  padding: 1rem;
-  background: darken($primary-color, 15%);
-  color: $white;
-  border-radius: 50%;
-  position: absolute;
-  top: -2rem;
-  left: calc(50% - 2rem);
-  font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border: solid 4px $light-gray;
+  border-top: none;
+  border-left: none;
+  transform: rotate(-45deg);
 }

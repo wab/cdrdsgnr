@@ -63,12 +63,13 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #00b7aa,
-  secondary: #777,
+  secondary: #2b4d7e,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc0015,
+  focus: #c80d77
 );
-$light-gray: #e6e6e6;
+$light-gray: #eaeef3;
 $medium-gray: #999;
 $dark-gray: #323a45;
 $black: darken($dark-gray, 15%);

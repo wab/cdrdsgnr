@@ -2,11 +2,6 @@
 
 // Import npm dependencies
 @import "~foundation-sites/scss/foundation";
-// @import '~owl.carousel/src/scss/owl.carousel';
-@import '~owl.carousel/src/scss/core';
-@import '~owl.carousel/src/scss/animate';
-@import '~owl.carousel/src/scss/autoheight';
-@import '~owl.carousel/src/scss/lazyload';
 
 @import "common/includes";
 @import "common/global";
@@ -22,7 +17,6 @@
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/accueil";
-@import "layouts/secteurs";
 @import "layouts/posts";
 @import "layouts/tinymce";
 

@@ -10,21 +10,30 @@
     <div class="wrapper">
       <h1><?php the_field('maintitle'); ?></h1>
       <?php if (get_field('cta_link')): ?>
-        <a href="<?php the_field('cta_link'); ?>" class="button large alert"><?php if (get_field('cta_intitule')) {the_field('cta_intitule');} else {echo 'Créer mon projet' ;} ?></a>
+        <a href="<?php the_field('cta_link'); ?>" class="button large focus"><?php if (get_field('cta_intitule')) {the_field('cta_intitule');} else {echo 'Créer mon projet' ;} ?></a>
       <?php endif; ?>
     </div>
   </header>
 
-  <div class="section">
+  <div class="section accesdirect">
     <div class="row column">
-      Accès directs
+      <nav class="no-bullet accesdirect--items">
+        <a class="accesdirect--button" href="#why">Pourquoi</a>
+        <span class="chevron"></span>
+        <a class="accesdirect--button" href="#f1"><?php the_field('f1_title'); ?></a>
+        <span class="chevron"></span>
+        <a class="accesdirect--button" href="#f2"><?php the_field('f2_title'); ?></a>
+        <span class="chevron"></span>
+        <a class="accesdirect--button" href="#f3"><?php the_field('f3_title'); ?></a>
+      </nav>
     </div>
   </div>
 
-  <div class="section">
+  <div class="section why">
+    <a name="why" id="why" class="anchor"></a>
     <div class="row">
       <div class="columns">
-        <h2 class="section--title">Pourquoi <?php bloginfo('title'); ?></h2>
+        <h2 class="section--title"><span>Pourquoi <?php bloginfo('title'); ?></span></h2>
       </div>
       <div class="columns large-6">
         <?php if( have_rows('arguments') ): ?>
@@ -38,17 +47,19 @@
         <?php endif; ?>
       </div>
       <div class="columns large-6">
-        <div class="videoframe" id="video-player" data-id='<?php the_field('video_id'); ?>'>
-          lecteur video
+        <div class="flex-video widescreen">
+          <div class="videoframe" id="video-player" data-id='<?php the_field('video_id'); ?>'>
+            lecteur video
+          </div>
         </div>
       </div>
-
     </div>
   </div>
 
   <div class="section">
+    <a name="why" id="why" class="anchor"></a>
     <div class="row column">
-      <h2 class="section--title">Pour les pros</h2>
+      <h2 class="section--title"><span>Pour les pros</span></h2>
       <ul class="row no-bullet">
         <li class="columns large-3">
           <h3>Bâtiment Neuf</h3>
@@ -102,33 +113,42 @@
     </div>
   </div>
 
-  <div class="section">
-    <div class="row">
-      <div class="columns large-6">image</div>
-      <div class="columns large-6">
-        <h2 class="section--title"><?php the_field('f1_title'); ?></h2>
-        <?php the_field('f1_contenu'); ?>
-        <a href="<?php the_field('f1_link'); ?>">Accéder</a>
+  <div class="section feature">
+    <a name="f1" id="f1" class="anchor"></a>
+    <div class="feature--wrapper">
+      <div class="feature--column">image</div>
+      <div class="feature--column">
+        <h2 class="section--title"><span><?php the_field('f1_title'); ?></span></h2>
+        <div class="text-justify">
+          <?php the_field('f1_contenu'); ?>
+        </div>
+        <p class="text-right"><a href="<?php the_field('f1_link'); ?>">Accéder</a></p>
       </div>
     </div>
   </div>
-  <div class="section">
-    <div class="row">
-      <div class="columns large-6">
-        <h2 class="section--title"><?php the_field('f2_title'); ?></h2>
-        <?php the_field('f2_contenu'); ?>
-        <a href="<?php the_field('f2_link'); ?>">Accéder</a>
+  <div class="section feature">
+    <a name="f2" id="f2" class="anchor"></a>
+    <div class="feature--wrapper">
+      <div class="feature--column"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/img-amenager.png" alt="Aménager"></div>
+      <div class="feature--column">
+        <h2 class="section--title"><span><?php the_field('f2_title'); ?></span></h2>
+        <div class="text-justify">
+          <?php the_field('f2_contenu'); ?>
+        </div>
+        <p class="text-right"><a href="<?php the_field('f2_link'); ?>">Accéder</a></p>
       </div>
-      <div class="columns large-6">image</div>
     </div>
   </div>
-  <div class="section">
-    <div class="row">
-      <div class="columns large-6">image</div>
-      <div class="columns large-6">
-        <h2 class="section--title"><?php the_field('f3_title'); ?></h2>
-        <?php the_field('f3_contenu'); ?>
-        <a href="<?php the_field('f3_link'); ?>">Accéder</a>
+  <div class="section feature">
+    <a name="f3" id="f3" class="anchor"></a>
+    <div class="feature--wrapper">
+      <div class="feature--column"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/img-valoriser.png" alt="Aménager"></div>
+      <div class="feature--column">
+        <h2 class="section--title"><span><?php the_field('f3_title'); ?></span></h2>
+        <div class="text-justify">
+          <?php the_field('f3_contenu'); ?>
+        </div>
+        <p class="text-right"><a href="<?php the_field('f3_link'); ?>">Accéder</a></p>
       </div>
     </div>
   </div>
