@@ -4,18 +4,34 @@
   display: flex;
   @include flex-align(spaced, middle);
   color: map-get($foundation-palette, secondary);
-}
-.accesdirect--item {
-  &:not(:last-child) {
-    position: relative;
-    padding-right: 2rem;
 
+  .chevron {
+    display: none;
+    @include breakpoint(medium) {
+      display: block;
+    }
   }
 }
+
 .accesdirect--button {
   color: inherit;
   text-transform: uppercase;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 200ms ease;
+
+  .picto {
+    fill: currentColor;
+    max-height: 3.5rem;
+    margin-bottom: .5rem;
+    transition: transform 200ms ease-in;
+  }
+
+  &:hover .picto {
+    transform: scale(1.1);
+  }
 }
 
 .why {
@@ -27,7 +43,10 @@
   @include flex-align(spaced, middle);
 }
 .feature--column {
-  @include flex-grid-column(6);
+  @include flex-grid-column(12);
+  @include breakpoint(medium) {
+    @include flex-grid-column(6);
+  }
 }
 
 .feature {
