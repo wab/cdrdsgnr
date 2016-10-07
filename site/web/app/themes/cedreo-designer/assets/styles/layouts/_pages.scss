@@ -3,16 +3,21 @@
   background-size: cover;
   text-align: center;
   color: $white;
-  @include clearfix();
-
-  min-height: 25vh;
+  min-height: 200px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  align-items: center;
 
   .home & {
     background-image: url(../images/banner-home.jpg);
-    min-height: 50vh;
+    min-height: 450px;
+  }
+
+  .maintitle {
+    text-transform: uppercase;
+    max-width: 600px;
+    font-size: 2rem;
   }
 
 }
