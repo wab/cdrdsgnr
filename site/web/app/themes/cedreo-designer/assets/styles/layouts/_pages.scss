@@ -31,6 +31,24 @@
   }
 }
 
+.page-wrapper {
+  @include grid-row();
+}
+.page-column {
+  @include grid-col;
+
+  @include breakpoint(medium) {
+    &.sidebar {
+      @include grid-col-size(4);
+    }
+    &.page-contenu {
+      @include grid-col-size(8);
+    }
+  }
+
+
+}
+
 .soumenu, .children {
   @include menu-expand;
 }

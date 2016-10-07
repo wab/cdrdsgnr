@@ -2,15 +2,13 @@
 
   <?php get_template_part('partials/page-header'); ?>
 
-  <div class="page-container section">
-    <div class="row">
-      <div class="columns medium-8">
+  <article class="page-wrapper">
+      <div class="page-column page-contenu">
         <?php get_template_part('partials/content-page'); ?>
       </div>
-      <div class="columns medium-4">
+      <aside class="page-column sidebar">
         <?= App\list_child_pages(); ?>
-      </div>
-    </div>
-  </div>
+      </aside>
+  </article>
 
 <?php endwhile; ?>
