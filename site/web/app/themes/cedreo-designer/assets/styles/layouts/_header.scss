@@ -1,4 +1,12 @@
 .mainheader {
+  background-color: $light-gray;
+  background-image:
+    linear-gradient(
+      to right,
+      $white, $light-gray
+    );
+}
+.mainheader--wrapper {
   @include flex-grid-row;
   justify-content: space-between;
 }
@@ -30,81 +38,72 @@
   position: relative;
 }
 
-.main--navigation > .menu > .menu-item > a {
+.main--navigation > .menu > .menu-item  {
 
-  font-size: .9rem;
-  padding: 1rem;
-  vertical-align: middle;
-  position: relative;
-  border-right: 1px solid rgba(0,0,0,0.2);
-  transition: background 0.3s;
-  color: $body-font-color;
-  text-align: center;
+  > a {
 
-  @include breakpoint(medium) {
-    height: $headerHeight;
-    display: table-cell;
-  }
-
-  &:before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 0px;
-    background: $primary-color;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transition: all 0.2s ease;
+    font-size: .9rem;
+    padding: 1rem;
+    vertical-align: middle;
+    position: relative;
+    border-right: 1px solid rgba(255,255,255,.9);
+    transition: background 0.3s;
     color: $body-font-color;
-  }
+    text-align: center;
 
-  &:hover, &:focus {
-    background-color: #fff;
-    &:before {
-      height: 0.5rem;
-    }
-  }
-
-  &.active {
-    background-color: #fff;
-
-    &:before {
-      height: 0.5rem;
+    @include breakpoint(medium) {
+      height: $headerHeight;
+      display: table-cell;
     }
 
-  }
-}
-
-.link-login {
-
-  .icon {
-    font-size: 1.2em;
-    display: block;
-    margin: auto;
-  }
-}
-
-.link-signin, .link-login {
-  a {
-    color: $white;
-    background: darken($primary-color, 10%);
-    border-right: 0;
-    line-height: 1.6;
-    &:hover {
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 0px;
+      background: $primary-color;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transition: all 0.2s ease;
       color: $body-font-color;
     }
+
+    &:hover, &:focus {
+      background-color: #fff;
+      &:before {
+        height: 0.5rem;
+      }
+    }
+
   }
 
-  .icon {
-    margin-top: -1em;
+  &.active > a {
+    background-color: #fff;
+
+    &:before {
+      height: 0.5rem;
+    }
+
   }
 
+  &.link-login {
+    .icon {
+      font-size: 1.2em;
+      display: block;
+      margin: auto;
+      margin-top: -1em;
+    }
+
+    > a {
+      color: $primary-color;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+  }
 }
 
-.link-login a {
-  background: $primary-color;
-}
+
 
 .sub-menu {
   @include menu-base;
