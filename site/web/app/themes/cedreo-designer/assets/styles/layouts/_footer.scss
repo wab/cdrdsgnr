@@ -1,5 +1,5 @@
 .mainfooter {
-  background: url(../images/footer-bg.png);
+  background-color: $dark-gray;
   background-size: cover;
   color: $white;
 }
@@ -7,8 +7,23 @@
 .ours {
   padding: $global-padding 0;
   background: $black;
-  p a {
+  a {
     color: inherit;
+    display: inline-block;
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: currentColor;
+      transition: width 200ms ease-out;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -20,18 +35,34 @@
     @include grid-column;
 
     @include breakpoint(medium) {
-      @include grid-column-size(4);
+      @include grid-column-size(3);
     }
+  }
+}
+
+.widget--title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  &:after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background: $primary-color;
+    margin: 1em 0;
   }
 }
 
 .nav-footer--item {
   position: relative;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
+
   [class^="icon"]{
     margin-right: .3em;
-    width: 2em;
-    height: 2em;
+    width: 1.6em;
+    height: 1.6em;
+    position: relative;
     top: .5em;
     color: $primary-color;
   }
@@ -72,7 +103,7 @@
 }
 .reseaux--item {
   display: inline-block;
-  margin: 0 0.2em;
+  margin: 0 0.1em;
 }
 .reseaux--link {
   display: inline-block;
@@ -81,7 +112,7 @@
   background: $primary-color;
   line-height: 0;
   border-radius: 50%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   transition: all 200ms ease;
 
   &:hover, &:focus {
