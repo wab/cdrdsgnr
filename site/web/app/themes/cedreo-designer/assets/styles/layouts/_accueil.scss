@@ -3,6 +3,7 @@
   margin-bottom: 0;
   display: flex;
   @include flex-align(spaced, middle);
+  flex-wrap: wrap;
   color: map-get($foundation-palette, secondary);
 
   .chevron {
@@ -14,6 +15,8 @@
 }
 
 .accesdirect--button {
+  max-width: 100px;
+  flex-basis: 100px;
   color: inherit;
   text-transform: uppercase;
   font-weight: bold;
