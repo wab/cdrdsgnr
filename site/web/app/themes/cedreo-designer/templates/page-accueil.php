@@ -174,16 +174,16 @@
     </div>
   </div>
 
-   <div class="section">
+   <div class="section home-galerie">
     <div class="row column">
-      <h2 class="section--title">Galerie</h2>
+      <h2 class="section--title"><span>Galerie</span></h2>
       <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et alias perspiciatis, dolore aperiam molestias aliquid repellat! Recusandae porro accusantium possimus soluta numquam, fugit! Et tempora, nam architecto quibusdam, unde molestiae!</p>
       <ul class="row no-bullet">
         <li class="columns large-4">image</li>
         <li class="columns large-4">image</li>
         <li class="columns large-4">image</li>
       </ul>
-      <p class="text-center"><a href="<?php echo get_post_type_archive_link( 'imgallery' ); ?>" class="button large hollow">Voir la galerie</a></p>
+      <p class="text-center"><a href="<?php echo get_post_type_archive_link( 'imgallery' ); ?>" class="button large hollow white">Voir la galerie</a></p>
     </div>
   </div>
 

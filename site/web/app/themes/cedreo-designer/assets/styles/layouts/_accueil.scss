@@ -63,3 +63,13 @@
     }
   }
 }
+
+.home-galerie {
+  background: url(../images/bg-gallery.jpg);
+  background-size: cover;
+  color: $white;
+
+  .section--title {
+    color: inherit;
+  }
+}
