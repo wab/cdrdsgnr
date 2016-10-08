@@ -1,7 +1,15 @@
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*="icon-"] {
   display: inline-block;
   width: 1em;
   height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.picto--title {
+  display: inline-block;
+  height: 1.4em;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
