@@ -8,8 +8,8 @@
 
   <?php get_template_part('partials/page-header'); ?>
 
-  <div class="page-container section">
-    <div class="row column">
+  <div class="page-wrapper">
+    <div class="page-column page-contenu">
 
         <div class="text-center">
           <?php get_template_part('partials/content-page'); ?>

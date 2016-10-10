@@ -9,11 +9,11 @@
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part('partials/page-header'); ?>
 
-  <div class="page-container section">
+  <div class="page-wrapper">
 
   <?php if( have_rows('plans') ): ?>
 
-  <ul class="pricing-table--wrapper no-bullets">
+  <ul class="pricing-table--wrapper no-bullet">
 
   <?php while( have_rows('plans') ): the_row();
 

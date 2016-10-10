@@ -33,6 +33,8 @@
 
 .page-wrapper {
   @include grid-row();
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .page-column {
   @include grid-col;
