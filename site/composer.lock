@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "985124655d06132cbd1aa4dbd77e96e5",
-    "content-hash": "b8a9af8d7b17c34810ee2f5aff422b84",
+    "hash": "2332d8b33eb8cbe86067cbc6dee8ea85",
+    "content-hash": "5e1ce78d3b9b3584090c8e5573011a0e",
     "packages": [
         {
             "name": "composer/installers",
@@ -540,15 +540,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.0.6",
+            "version": "3.0.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.0.6"
+                "reference": "tags/3.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.0.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.0.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -557,6 +557,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ninja-forms/"
+        },
+        {
+            "name": "wpackagist-plugin/pdf-embedder",
+            "version": "2.7.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/pdf-embedder/",
+                "reference": "tags/2.7.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/pdf-embedder.2.7.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/pdf-embedder/"
         },
         {
             "name": "wpackagist-plugin/polylang",

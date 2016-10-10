@@ -12,14 +12,15 @@
   <div class="page-wrapper">
     <div class="page-column page-contenu">
       <?php get_template_part('partials/content-page'); ?>
-      <?php if ( $the_query->have_posts() ) : ?>
+
+      <?php if ( $childpages->have_posts() ) : ?>
 
       <!-- pagination here -->
 
       <p class="lead">Sommaire :</p>
 
       <!-- the loop -->
-      <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+      <?php while ( $childpages->have_posts() ) : $childpages->the_post(); ?>
         <h2><?php the_title(); ?></h2>
         <?php the_exerpt(); ?>
         <a href="<?php the_permalink(); ?>">Lire la suite</a>
