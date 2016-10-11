@@ -48,13 +48,11 @@
 .menu-overlay {
   background-color: $primary-color;
   color: $white;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -69,15 +67,33 @@
     visibility: visible;
     transition-delay: 0.03s;
   }
+
+  .menu-item {
+    text-align: center;
+    width: 80%;
+    &:not(:last-child) {
+      &:after {
+        content: '';
+        display: block;
+        width: 20%;
+        margin: .1rem auto;
+        border-bottom: solid 1px rgba($white, 0.1);
+      }
+    }
+  }
+
+  a {
+    color: inherit;
+    font-weight: 600;
+    font-size: 1.4rem;
+    display: inline-block;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px $dark-gray;
+  }
 }
 
 .menu-overlay a {
-  color: inherit;
-  font-weight: 600;
-  font-size: 2rem;
-  padding: 2%;
-  display: inline-block;
-  text-transform: uppercase;
+
 }
 
 .menu-line {

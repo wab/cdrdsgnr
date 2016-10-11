@@ -26,7 +26,6 @@
       <?php
         do_action('get_footer');
         get_template_part('partials/footer');
-        get_template_part('partials/navigation-mobile');
         get_template_part('partials/icons');
         wp_footer();
       ?>
