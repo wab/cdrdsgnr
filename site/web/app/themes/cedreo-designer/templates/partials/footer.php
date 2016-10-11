@@ -60,8 +60,8 @@
     </div>
   </div>
   <div class="ours text-center">
-    <p><a href="#">Conditions d'utilisation</a> - <a href="#">Mentions légales</a> - &copy; copyright <?php echo date("Y") ?> <?php bloginfo('title') ?></p>
+    <div class="row column">
+      <a href="#">Conditions d'utilisation</a> - <a href="#">Mentions légales</a> - &copy; copyright <?php echo date("Y") ?> <?php bloginfo('title') ?>
+    </div>
   </div>
 </footer>
-
-<?php get_template_part('partials/icons'); ?>
