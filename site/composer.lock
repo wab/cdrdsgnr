@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2332d8b33eb8cbe86067cbc6dee8ea85",
-    "content-hash": "5e1ce78d3b9b3584090c8e5573011a0e",
+    "hash": "e7998fc519012156b0d418a12359b962",
+    "content-hash": "9fdc8c55bf96c0fd361144f31380543c",
     "packages": [
         {
             "name": "composer/installers",
@@ -499,6 +499,26 @@
             "homepage": "https://wordpress.org/plugins/breadcrumb-navxt/"
         },
         {
+            "name": "wpackagist-plugin/google-document-embedder",
+            "version": "2.6.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/google-document-embedder/",
+                "reference": "tags/2.6.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/google-document-embedder.2.6.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/google-document-embedder/"
+        },
+        {
             "name": "wpackagist-plugin/google-sitemap-generator",
             "version": "4.0.8",
             "source": {
@@ -557,26 +577,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ninja-forms/"
-        },
-        {
-            "name": "wpackagist-plugin/pdf-embedder",
-            "version": "2.7.5",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/pdf-embedder/",
-                "reference": "tags/2.7.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/pdf-embedder.2.7.5.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/pdf-embedder/"
         },
         {
             "name": "wpackagist-plugin/polylang",
