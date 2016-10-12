@@ -1,10 +1,12 @@
 .accesdirect--items {
   @extend .no-bullet;
+  max-width: $global-width;
+  margin: auto;
   margin-bottom: 0;
   display: flex;
   @include flex-align(spaced, middle);
   flex-wrap: wrap;
-  color: map-get($foundation-palette, secondary);
+  color: $secondary-color;
 
   .chevron {
     display: none;
@@ -37,8 +39,48 @@
   }
 }
 
+.pros--secteur {
+  text-align: center;
+
+  &:nth-child(2) {
+    color: map-get($foundation-palette, secondary-light);
+  }
+  &:nth-child(3) {
+    color: $primary-color;
+  }
+  &:nth-child(4) {
+    color: map-get($foundation-palette, primary-light);
+  }
+}
+
+.pros--title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pros--icon {
+  max-width: 150px;
+  margin: auto;
+  margin-bottom: .5rem;
+  .bg {
+    fill: currentColor;
+  }
+}
+
+.pros--items {
+  text-align: left;
+
+  .icon-check {
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    top: .4em;
+  }
+}
+
 .why {
-  color: map-get($foundation-palette, secondary);
+  color: $secondary-color;
 }
 
 .feature--wrapper {
