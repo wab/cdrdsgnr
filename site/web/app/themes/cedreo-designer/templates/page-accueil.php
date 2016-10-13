@@ -6,15 +6,6 @@
 
 <?php while (have_posts()) : the_post(); ?>
 
-  <header class="page-header text-center banner">
-    <div class="wrapper">
-      <h1 class="maintitle"><?php the_field('main-title'); ?></h1>
-      <?php if (get_field('cta_link')): ?>
-        <a href="<?php the_field('cta_link'); ?>" class="button large focus"><?php if (get_field('cta_intitule')) {the_field('cta_intitule');} else {echo 'Créer mon projet' ;} ?></a>
-      <?php endif; ?>
-    </div>
-  </header>
-
   <div class="section accesdirect">
     <nav class="no-bullet accesdirect--items">
       <a class="accesdirect--button" href="#why">

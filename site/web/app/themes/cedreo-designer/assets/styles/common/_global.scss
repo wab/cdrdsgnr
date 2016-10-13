@@ -44,6 +44,10 @@
   }
 }
 
+.sidebar-primary .container {
+  padding: $global-padding 0;
+}
+
 .textcolor {
   color: $primary-color;
 }

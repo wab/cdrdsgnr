@@ -13,6 +13,7 @@
         get_template_part('partials/header');
       ?>
 
+      <?php get_template_part('partials/page-header'); ?>
       <div class="container" role="document">
         <main class="main">
           <?php include App\template()->main(); ?>
