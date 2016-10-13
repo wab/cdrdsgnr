@@ -57,7 +57,7 @@
           <ul class="no-bullet why--items">
           <?php  while ( have_rows('arguments') ) : the_row(); ?>
 
-            <li class="why--item"><svg class="icon-<?php the_sub_field('picto'); ?>"><use xlink:href="#icon-<?php if(get_sub_field('picto')) {the_sub_field('picto');} else {echo 'chrono';} ?>"></use></svg><?php the_sub_field('text'); ?></li>
+            <li class="why--item"><svg class="icon-<?php the_sub_field('picto'); ?>"><use xlink:href="#icon-<?php the_sub_field('picto'); ?>"></use></svg><?php the_sub_field('text'); ?></li>
 
           <?php  endwhile; ?>
           </ul>

@@ -14,9 +14,15 @@ export default {
     const menu = new Foundation.DropdownMenu(menuelem);
     /* eslint-enable no-unused-vars */
 
+    function preventLink(event) {
+      event.preventDefault();
+    }
+
+    // prevent level menu item from linking
+    $('.navigation-desktop .is-dropdown-submenu-parent > a').on('click', preventLink);
+
     // navigation mobile
-    $('.menu-link').click((e) => {
-      e.preventDefault();
+    $('.menu-link').click(() => {
       $('.menu-wrapper').toggleClass('opened');
     });
 
@@ -24,7 +30,7 @@ export default {
     $('.link-signin a').prepend('<svg class="icon icon-key"><use xlink:href="#icon-key"></use></svg>');
 
     // Scroll animation speed
-    const speed = 400;
+    const speed = 200;
     // Cashing objects
     const $root = $('html, body');
     const $selector = $('a[href*="#"]:not([href="#"])');

@@ -1,4 +1,4 @@
-<nav class="hide-for-large menu-wrapper">
+<nav class="hide-for-large menu-wrapper navigation-mobile">
   <div class="menumobile">
     <span class="menu-circle"></span>
     <button class="menu-link">
