@@ -15,7 +15,6 @@ import 'foundation-sites/js/foundation.reveal.js';
 import 'foundation-sites/js/foundation.dropdownMenu.js';
 import 'foundation-sites/js/foundation.drilldown.js';
 
-
 // import local dependencies
 import Router from './util/router';
 import common from './routes/Common';
