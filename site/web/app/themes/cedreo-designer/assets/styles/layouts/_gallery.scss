@@ -3,8 +3,9 @@
 }
 
 .gallery--filter {
+  @include button(false, $body-font-color, darken($body-font-color, 10%), $white, hollow);
   &.is-checked {
-    @include button-style($primary-color, $primary-color, $white);
+    @include button(false, $primary-color, $primary-color, $white, solid);
   }
 }
 

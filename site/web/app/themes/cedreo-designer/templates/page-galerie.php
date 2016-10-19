@@ -23,10 +23,10 @@ $terms = get_terms( 'gallerytag', array(
 
         <?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
             <nav class="gallery--filters">
-                <button data-filter="*" class="gallery--filter button hollow is-checked">Tous</button>
+                <button data-filter="*" class="gallery--filter is-checked">Tous</button>
                 <?php foreach ( $terms as $term ) { ?>
-                <button data-filter=".gallerytag-<?php echo $term->slug ?>" class="gallery--filter button hollow"><?php echo $term->name ?></button>
-                    <?php } ?>
+                    <button data-filter=".gallerytag-<?php echo $term->slug ?>" class="gallery--filter"><?php echo $term->name ?></button>
+                <?php } ?>
             </nav>
         <?php endif; ?>
 
@@ -39,20 +39,18 @@ $terms = get_terms( 'gallerytag', array(
             <!-- pagination here -->
 
 
-            <ul class="gallery--items">
+            <div class="gallery--items alasuite">
 
-                <li class="grid-sizer"></li>
+                <div class="grid-sizer"></div>
 
-            <!-- the loop -->
-            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                <li <?php post_class('gallery--item'); ?>>
+                <!-- the loop -->
+                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                     <?php get_template_part('partials/excerpt-gallery'); ?>
-                </li>
-            <?php endwhile; ?>
-            <!-- end of the loop -->
+                <?php endwhile; ?>
+                <!-- end of the loop -->
 
             <!-- pagination here -->
-            </ul>
+            </div>
 
             <?php wp_reset_postdata(); ?>
 
@@ -60,6 +58,19 @@ $terms = get_terms( 'gallerytag', array(
             <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
         <?php endif; ?>
 
+
+            <p class="text-center">
+                <button class="load-more button large">Afficher plus</button>
+            </p>
+
+
     </div>
 
 <?php endwhile; ?>
+
+<div class="full reveal" id="fullImg" data-reveal>
+  <div class="inner"></div>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
