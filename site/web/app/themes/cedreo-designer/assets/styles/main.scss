@@ -2,6 +2,7 @@
 
 // Import npm dependencies
 @import "~foundation-sites/scss/foundation";
+@import "~lightgallery/src/sass/lightgallery";
 
 @import "common/includes";
 @import "common/global";
@@ -20,5 +21,6 @@
 @import "layouts/pages";
 @import "layouts/accueil";
 @import "layouts/posts";
+@import "layouts/gallery";
 @import "layouts/tinymce";
 

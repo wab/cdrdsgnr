@@ -4,7 +4,7 @@ import ScrollReveal from 'scrollreveal';
 export default {
   init() {
     // JavaScript to be fired on all pages
-    window.sr = ScrollReveal().reveal('.section');
+    window.sr = ScrollReveal().reveal('.scrollreveal');
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

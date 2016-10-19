@@ -1,0 +1,66 @@
+.gallery--filters {
+  @include button-group-expand('.gallery--filter');
+}
+
+.gallery--filter {
+  @include button(false, $body-font-color, darken($body-font-color, 10%), $white, hollow);
+  &.is-checked {
+    @include button(false, $primary-color, $primary-color, $white, solid);
+  }
+}
+
+.gallery--items {
+  margin: 1rem -.5rem;
+}
+
+.gallery--item, .grid-sizer {
+  width: grid-column(4);
+}
+.gallery--item {
+  padding: .5rem;
+}
+
+.gallery--item--wrapper {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+
+.gallery--item--thumb {
+  width: 100%;
+}
+
+.gallery--item--overlay {
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  padding: 1rem;
+  width: calc(100% - 1rem);
+  height: calc(100% - 1rem);
+  background: rgba(0,0,0,0.8);
+  color: $white;
+  opacity: 0;
+  visibilty: hidden;
+  transition: opacity 300ms ease;
+}
+.gallery--item--overlay--container {
+  @include absolute-center;
+}
+.gallery--item--wrapper:hover, .gallery--item--wrapper:focus {
+  .gallery--item--overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.gallery--terms {
+  @extend .no-bullet;
+}
+.gallery--term {
+  display: inline-block;
+  color: $primary-color;
+}
+
+.gallery--item--caption {
+  @include element-invisible;
+}
