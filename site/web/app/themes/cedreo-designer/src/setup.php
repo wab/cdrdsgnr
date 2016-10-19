@@ -47,7 +47,7 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('post-thumbnails');
 
-    add_image_size( 'gallery', 350, 350, true );
+    add_image_size( 'gallery', 350, 500);
 
     /**
      * Enable post formats

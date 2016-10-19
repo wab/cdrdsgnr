@@ -270,10 +270,10 @@ $button-opacity-disabled: 0.25;
 // 12. Button Group
 // ----------------
 
-$buttongroup-margin: 1rem;
-$buttongroup-spacing: 1px;
+$buttongroup-margin: 0;
+$buttongroup-spacing: .5rem;
 $buttongroup-child-selector: '.button';
-$buttongroup-expand-max: 6;
+$buttongroup-expand-max: 8;
 
 // 13. Callout
 // -----------

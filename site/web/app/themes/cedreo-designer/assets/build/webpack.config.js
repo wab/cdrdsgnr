@@ -6,7 +6,6 @@ const CleanPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const imageminMozjpeg = require('imagemin-mozjpeg');
-const SvgStore = require('webpack-svgstore-plugin');
 
 const mergeWithConcat = require('./util/mergeWithConcat');
 const addHotMiddleware = require('./util/addHotMiddleware');
@@ -120,6 +119,12 @@ const webpackConfig = {
   externals: {
     jquery: 'jQuery',
   },
+  resolve: {
+    alias: {
+      masonry: 'masonry-layout',
+      isotope: 'isotope-layout',
+    },
+  },
   plugins: [
     new CleanPlugin([config.paths.dist], config.paths.root),
     new ImageminPlugin({
@@ -143,7 +148,6 @@ const webpackConfig = {
       })],
       disable: (config.enabled.watcher),
     }),
-    new SvgStore(),
     new ExtractTextPlugin({
       filename: `styles/${assetsFilenames}.css`,
       allChunks: true,
