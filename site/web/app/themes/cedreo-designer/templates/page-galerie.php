@@ -9,7 +9,7 @@ $args = array(
 );
 
 $terms = get_terms( 'gallerytag', array(
-    'hide_empty' => 0
+    'hide_empty' => true
 ));
 ?>
 <?php while (have_posts()) : the_post(); ?>
@@ -39,7 +39,7 @@ $terms = get_terms( 'gallerytag', array(
             <!-- pagination here -->
 
 
-            <div class="gallery--items alasuite">
+            <div class="gallery--items" id="gallery">
 
                 <div class="grid-sizer"></div>
 
@@ -60,17 +60,10 @@ $terms = get_terms( 'gallerytag', array(
 
 
             <p class="text-center">
-                <button class="load-more button large">Afficher plus</button>
+                <button class="load-more button secondary large hollow">Voir la suite</button>
             </p>
 
 
     </div>
 
 <?php endwhile; ?>
-
-<div class="full reveal" id="fullImg" data-reveal>
-  <div class="inner"></div>
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>

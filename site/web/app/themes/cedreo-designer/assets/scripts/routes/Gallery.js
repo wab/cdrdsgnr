@@ -1,6 +1,7 @@
 /* global ga, ajaxurl */
 const Isotope = require('isotope-layout');
 const imagesLoaded = require('imagesloaded');
+const lightGallery = require('lightgallery');
 
 // init Isotope
 const grid = document.querySelector('.gallery--items');
@@ -23,7 +24,12 @@ export default {
 
     imagesLoaded(grid).on('progress', () => {
       // layout Isotope after each image loads
-      iso.layout();
+      iso.shuffle();
+    });
+
+    $('.gallery--items').lightGallery({
+      selector: '.gallery--item--overlay',
+      cssEasing: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
     });
 
     // bind filter button click
@@ -53,23 +59,17 @@ export default {
       radioButtonGroup(buttonGroup);
     }
 
-    $('.gallery--item--button').on('click', function g() {
-      const imageId = $(this).attr('data-id');
-      $.post(ajaxurl, { action: 'imgLoad', imageId }, (response) => {
-        $('.inner').replaceWith(response);
-        $('#fullImg').foundation('open');
-      });
-    });
-
     let paged = 2;
     $('body').on('click', '.load-more', () => {
       $.post(ajaxurl, { action: 'load_more', paged },
         (response) => {
           paged += 1;
-          const elements = response.split('[/]').slice(0, -1);
-          const obj = $.makeArray(elements);
+          console.log(response);
+          const tempelement = document.createElement('div');
+          tempelement.insertAdjacentHTML('beforeend', response);
+          const elements = tempelement.querySelectorAll('.gallery--item');
           console.log(elements);
-          iso.insert(obj);
+          iso.insert(elements);
         }
       );
     });

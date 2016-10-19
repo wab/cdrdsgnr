@@ -1,5 +1,5 @@
 <footer class="mainfooter">
-  <div class="widget--area">
+  <div class="widget--area scrollreveal">
     <div class="widget">
       <h3 class="widget--title"><?php bloginfo('title'); ?></h3>
       <nav class="nav-footer">
