@@ -2,7 +2,6 @@
 
 // Import npm dependencies
 @import "~foundation-sites/scss/foundation";
-@import "~lightgallery/src/sass/lightgallery";
 
 @import "common/includes";
 @import "common/global";
@@ -14,6 +13,7 @@
 @import "components/navigation-mobile";
 @import "components/icons";
 @import "components/princing";
+@import "components/lightgallery";
 @import "components/wp-classes";
 @import "layouts/header";
 @import "layouts/sidebar";
