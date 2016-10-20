@@ -1,15 +1,22 @@
-// Search form
-.search-form {
-
+.ninja-forms-all-fields-wrap {
+  @include grid-row;
 }
-.search-form label {
-  font-weight: normal;
 
-}
-.search-form .search-field {
+.field-wrap {
+  @include grid-column;
 
+  label {
+    text-transform: uppercase;
+  }
 }
-.search-form .search-submit {
-  @extend .button;
-  @extend .secondary;
+
+.text-wrap {
+  @include grid-col-size(6);
+}
+
+.submit-wrap {
+  text-align: center;
+  input[type="submit"] {
+    @extend .button;
+  }
 }
