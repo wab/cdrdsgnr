@@ -12,7 +12,7 @@
 
   <?php if( have_rows('individual') ): ?>
 
-    <div class="columns large-6">
+    <div class="columns large-6 individual">
 
       <h2 class="section--title"><span><?php echo __('Spécial particulier', 'cedreo'); ?></span></h2>
 
@@ -116,7 +116,7 @@
 
   <?php if( have_rows('pro_monthly') ): ?>
 
-    <div class="columns large-6">
+    <div class="columns large-6 pro">
 
       <h2 class="section--title"><span><?php echo __('Professionnels mensuels', 'cedreo'); ?></span></h2>
 
@@ -220,7 +220,7 @@
 
   <?php if( have_rows('pro_annually') ): ?>
 
-    <div class="columns">
+    <div class="columns pro2">
 
       <h2 class="section--title"><span><?php echo __('Professionnels annuels', 'cedreo'); ?></span></h2>
 
@@ -326,13 +326,13 @@
 
   <?php if( have_rows('packs') ): ?>
 
-    <div class="columns">
+    <div class="columns packs">
 
       <h2 class="section--title"><span><?php echo __('Nos Packs', 'cedreo'); ?></span></h2>
 
       <ul class="pricing-table--wrapper no-bullet">
 
-      <?php while( have_rows('pro_annually') ): the_row();
+      <?php while( have_rows('packs') ): the_row();
 
         // vars
         $name = get_sub_field('name');
@@ -358,6 +358,39 @@
   <?php endif; ?>
 
   </div>
+
+  <section class="section faq">
+    <?php if( have_rows('faq') ): ?>
+
+    <div class="row">
+
+    <div class="colums large-8 large-centered">
+      <h2 class="section--title"><span><?php echo __('FAQs', 'cedreo'); ?></span></h2>
+
+      <ul class="faq--items">
+
+      <?php while( have_rows('faq') ): the_row();
+
+        // vars
+        $q = get_sub_field('question');
+        $a = get_sub_field('answer');
+
+        ?>
+
+        <li class="faq--item">
+          <h3 class="faq--question"><?php echo $q; ?></h3>
+          <div class="faq--answer"><?php echo $a; ?></div>
+        </li>
+
+      <?php endwhile; ?>
+
+      </ul>
+    </div>
+
+    </div>
+
+  <?php endif; ?>
+  </section>
 
 
 <?php endwhile; ?>

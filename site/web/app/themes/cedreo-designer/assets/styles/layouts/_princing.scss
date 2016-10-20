@@ -13,11 +13,18 @@
   @include flex-grid-column(null, 1rem);
 }
 
-$color-1: $primary-color;
-$color-2: map-get($foundation-palette, primary-dark);
+$color-1: darken($primary-color, 10%);
+$color-2: darken($primary-color, 20%);
 $color-3: $secondary-color;
-$color-4: map-get($foundation-palette, secondary-dark);
+$color-4: darken($secondary-color, 10%);
 
+.section--title {
+  .individual &, .pro & {
+    &:before, &:after {
+      visibility: hidden;
+    }
+  }
+}
 
 .pricing-table {
   border: none;
@@ -35,19 +42,7 @@ $color-4: map-get($foundation-palette, secondary-dark);
     font-weight: 600;
     margin-bottom: .5rem;
     text-transform: uppercase;
-    .color-1 & {
-      background-color: $color-1;
-    }
-    .color-2 & {
-      background-color: $color-2;
-    }
-    .color-3 & {
-      background-color: $color-3;
-    }
-    .color-4 & {
-      background-color: $color-4;
-    }
-
+    background: $primary-color;
   }
 
 
@@ -55,35 +50,11 @@ $color-4: map-get($foundation-palette, secondary-dark);
     color: $white;
     font-size: 2rem;
     font-weight: 600;
-    .color-1 & {
-      background-color: $color-1;
-    }
-    .color-2 & {
-      background-color: $color-2;
-    }
-    .color-3 & {
-      background-color: $color-3;
-    }
-    .color-4 & {
-      background-color: $color-4;
-    }
   }
 
   .projects-number {
     font-size: 1.2em;
     font-weight: 600;
-    .color-1 & {
-      color: $color-1;
-    }
-    .color-2 & {
-      color: $color-2;
-    }
-    .color-3 & {
-      color: $color-3;
-    }
-    .color-4 & {
-      color: $color-4;
-    }
   }
 
   .subtitle {
@@ -124,9 +95,136 @@ $color-4: map-get($foundation-palette, secondary-dark);
   }
 
 }
-$elements: 4;
-@for $i from 1 to $elements {
- .pricing-table--column:nth-child(#{$i}) {
-    @extend .color-#{$i};
+
+.title {
+  .pricing-table--column:nth-child(1) & {
+    background-color: $color-1;
+    .pro & {
+      background-color: $color-3;
+    }
+    .packs & {
+      background-color: transparent;
+      color: $color-1;
+    }
   }
+  .pricing-table--column:nth-child(2) & {
+    background-color: $color-2;
+    .pro & {
+      background-color: $color-4;
+    }
+    .packs & {
+      background-color: transparent;
+      color: $color-2;
+    }
+  }
+  .pricing-table--column:nth-child(3) & {
+    background-color: $color-3;
+    .packs & {
+      background-color: transparent;
+      color: $color-3;
+    }
+  }
+  .pricing-table--column:nth-child(4) & {
+    background-color: $color-4;
+    .packs & {
+      background-color: transparent;
+      color: $color-4;
+    }
+  }
+}
+.price {
+  .pricing-table--column:nth-child(1) & {
+    background-color: lighten($color-1, 20%);
+    .pro & {
+      background-color: lighten($color-3, 20%);
+    }
+
+  }
+  .pricing-table--column:nth-child(2) & {
+    background-color: lighten($color-2, 20%);
+    .pro & {
+      background-color: lighten($color-4, 20%);
+    }
+
+  }
+  .pricing-table--column:nth-child(3) & {
+    background-color: lighten($color-3, 20%);
+
+  }
+  .pricing-table--column:nth-child(4) & {
+    background-color: lighten($color-4, 20%);
+
+  }
+}
+.projects-number {
+  .pricing-table--column:nth-child(1) & {
+    color: $color-1;
+    .pro & {
+      color: $color-3;
+    }
+
+  }
+  .pricing-table--column:nth-child(2) & {
+    color: $color-2;
+    .pro & {
+      color: $color-4;
+    }
+
+  }
+  .pricing-table--column:nth-child(3) & {
+    color: $color-3;
+
+  }
+  .pricing-table--column:nth-child(4) & {
+    color: $color-4;
+
+  }
+}
+.link a {
+  .pricing-table--column:nth-child(1) & {
+    background-color: $color-1;
+    .pro & {
+      background-color: $color-3;
+    }
+  }
+  .pricing-table--column:nth-child(2) & {
+    background-color: $color-2;
+    .pro & {
+      background-color: $color-4;
+    }
+  }
+  .pricing-table--column:nth-child(3) & {
+    background-color: $color-3;
+  }
+  .pricing-table--column:nth-child(4) & {
+    background-color: $color-4;
+  }
+
+  &:hover, &:focus {
+    .pricing-table--column:nth-child(1) & {
+      background-color: darken($color-1, 10%);
+      .pro & {
+        background-color: darken($color-3, 10%);
+      }
+    }
+    .pricing-table--column:nth-child(2) & {
+      background-color: darken($color-2, 10%);
+      .pro & {
+        background-color: darken($color-4, 10%);
+      }
+    }
+    .pricing-table--column:nth-child(3) & {
+      background-color: darken($color-3, 10%);
+    }
+    .pricing-table--column:nth-child(4) & {
+      background-color: darken($color-4, 10%);
+    }
+  }
+}
+.faq--items {
+  @extend .no-bullet;
+}
+.faq--question {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
