@@ -1,0 +1,10 @@
+.breadcrumbs {
+  background: $primary-color;
+  padding: .5rem;
+  color: $white;
+  text-transform: uppercase;
+  font-size: .8rem;
+  a {
+    color: inherit;
+  }
+}

@@ -1,0 +1,132 @@
+.infoprice {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
+.pricing-table--wrapper {
+  @include flex-grid-row(null, 100%, null, true, 1rem) {}
+}
+.pricing-table--column {
+  @include flex-grid-column(null, 1rem);
+}
+
+$color-1: $primary-color;
+$color-2: map-get($foundation-palette, primary-dark);
+$color-3: $secondary-color;
+$color-4: map-get($foundation-palette, secondary-dark);
+
+
+.pricing-table {
+  border: none;
+
+  li {
+    border: none;
+    background: $white;
+    padding: 0.875rem 1.125rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .title {
+    color: $white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    .color-1 & {
+      background-color: $color-1;
+    }
+    .color-2 & {
+      background-color: $color-2;
+    }
+    .color-3 & {
+      background-color: $color-3;
+    }
+    .color-4 & {
+      background-color: $color-4;
+    }
+
+  }
+
+
+  .price {
+    color: $white;
+    font-size: 2rem;
+    font-weight: 600;
+    .color-1 & {
+      background-color: $color-1;
+    }
+    .color-2 & {
+      background-color: $color-2;
+    }
+    .color-3 & {
+      background-color: $color-3;
+    }
+    .color-4 & {
+      background-color: $color-4;
+    }
+  }
+
+  .projects-number {
+    font-size: 1.2em;
+    font-weight: 600;
+    .color-1 & {
+      color: $color-1;
+    }
+    .color-2 & {
+      color: $color-2;
+    }
+    .color-3 & {
+      color: $color-3;
+    }
+    .color-4 & {
+      color: $color-4;
+    }
+  }
+
+  .subtitle {
+    background: lighten($medium-gray, 10%);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .item {
+    font-size: .9rem;
+  }
+
+  .link {
+    padding: 0;
+    margin-top: .5rem;
+    a {
+      @extend .button;
+      @extend .large;
+      display: block;
+      color: $white;
+      .color-1 & {
+        background-color: $color-1;
+      }
+      .color-2 & {
+        background-color: $color-2;
+      }
+      .color-3 & {
+        background-color: $color-3;
+      }
+      .color-4 & {
+        background-color: $color-4;
+      }
+    }
+  }
+
+  .button {
+    margin: 0;
+  }
+
+}
+$elements: 4;
+@for $i from 1 to $elements {
+ .pricing-table--column:nth-child(#{$i}) {
+    @extend .color-#{$i};
+  }
+}

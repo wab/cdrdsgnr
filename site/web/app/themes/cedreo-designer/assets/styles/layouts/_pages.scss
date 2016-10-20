@@ -22,15 +22,6 @@
 
 }
 
-.breadcrumbs {
-  background: $primary-color;
-  padding: .5rem;
-  color: $white;
-  a {
-    color: inherit;
-  }
-}
-
 .page-wrapper {
   @include grid-row();
   padding-top: 2rem;
