@@ -1,5 +1,4 @@
 /* global ga */
-import 'owl.carousel/dist/owl.carousel';
 import YouTubePlayer from 'youtube-player';
 
 export default {
