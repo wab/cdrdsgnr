@@ -560,15 +560,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.0.7",
+            "version": "3.0.11",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.0.7"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.0.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -580,15 +580,15 @@
         },
         {
             "name": "wpackagist-plugin/polylang",
-            "version": "2.0.5",
+            "version": "2.0.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/polylang/",
-                "reference": "tags/2.0.5"
+                "reference": "tags/2.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/polylang.2.0.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.2.0.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -680,15 +680,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.6.1",
+            "version": "3.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.6.1"
+                "reference": "tags/3.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.6.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
