@@ -1,10 +1,16 @@
-/* global Foundation */
+/* global google, Foundation, sr */
 import ScrollReveal from 'scrollreveal';
+
+window.sr = ScrollReveal();
 
 export default {
   init() {
     // JavaScript to be fired on all pages
-    window.sr = ScrollReveal().reveal('.scrollreveal');
+
+    // Add class to <html> if ScrollReveal is supported
+    if (sr.isSupported()) {
+      document.documentElement.classList.add('sr');
+    }
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
@@ -19,6 +25,16 @@ export default {
     function preventLink(event) {
       event.preventDefault();
     }
+
+    // animation scroll reveal
+
+    sr.reveal('.scrollreveal', {
+      afterReveal: (domEl) => {
+        domEl.classList.add('animated');
+      },
+    });
+
+    sr.reveal('.page-contenu > *');
 
     // prevent level menu item from linking
     $('.navigation-desktop .is-dropdown-submenu-parent > a').on('click', preventLink);

@@ -1,6 +1,14 @@
+/* Ensure elements load hidden before ScrollReveal runs */
+.sr .scrollreveal, .sr .page-contenu > * { visibility: hidden; }
+
 .section {
   padding: ($global-padding * 2) 0;
   position: relative;
+  z-index: 1;
+  background-color: $white;
+
+  &:not(:first-child) {
+
 
   &:before {
     content: '';
@@ -13,6 +21,7 @@
     @include background-triangle($light-gray);
     background-repeat: no-repeat;
     background-position: top center;
+    z-index: 2;
   }
 
 
@@ -33,7 +42,7 @@
       bottom: 0;
       background-image: url(../images/bg.svg);
       background-size: cover;
-      z-index: -1;
+      z-index: 0;
       opacity: .1;
     }
   }
@@ -43,6 +52,8 @@
       @include background-triangle($body-background);
     }
   }
+
+}
 }
 
 .sidebar-primary .container {

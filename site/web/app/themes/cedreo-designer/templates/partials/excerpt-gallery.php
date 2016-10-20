@@ -1,4 +1,5 @@
-<?php $image = get_field('image');
+<?php
+$image = get_field('image');
 $terms = wp_get_object_terms( $post->ID,  'gallerytag' );
 ?>
 

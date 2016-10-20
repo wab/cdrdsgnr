@@ -1,3 +1,11 @@
+.main {
+  background-color: $light-gray;
+  background-image:
+    linear-gradient(
+      to right,
+      $white, $light-gray
+    );
+}
 .banner {
   background: url(../images/banner-bg.jpg) center;
   background-size: cover;

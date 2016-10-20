@@ -43,7 +43,7 @@
     <div class="row">
 
       <div class="columns">
-        <h2 class="section--title"><span>Pourquoi <?php bloginfo('title'); ?></span></h2>
+        <h2 class="section--title scrollreveal"><span>Pourquoi <?php bloginfo('title'); ?></span></h2>
       </div>
 
       <div class="columns large-6">
@@ -51,7 +51,7 @@
           <ul class="no-bullet why--items">
           <?php  while ( have_rows('arguments') ) : the_row(); ?>
 
-            <li class="why--item"><svg class="icon-<?php the_sub_field('picto'); ?>"><use xlink:href="#icon-<?php the_sub_field('picto'); ?>"></use></svg><?php the_sub_field('text'); ?></li>
+            <li class="why--item scrollreveal"><svg class="icon-<?php the_sub_field('picto'); ?>"><use xlink:href="#icon-<?php the_sub_field('picto'); ?>"></use></svg><?php the_sub_field('text'); ?></li>
 
           <?php  endwhile; ?>
           </ul>
@@ -59,7 +59,7 @@
       </div>
 
       <div class="columns large-6">
-        <div class="video-wrapper flex-video widescreen" data-id="<?php the_field('video_id'); ?>">
+        <div class="video-wrapper flex-video widescreen scrollreveal" data-id="<?php the_field('video_id'); ?>">
           <div class="videoframe" id="video-player">
             lecteur video
           </div>
@@ -71,9 +71,9 @@
   <div class="section">
     <a name="pros" id="pros" class="anchor"></a>
     <div class="row column">
-      <h2 class="section--title"><span>Pour les pros</span></h2>
-      <ul class="row no-bullet pros--secteurs">
-        <li class="columns large-3 medium-6 pros--secteur">
+      <h2 class="section--title scrollreveal"><span>Pour les pros</span></h2>
+      <ul class="row no-bullet pros--secteur scrollreveals">
+        <li class="columns large-3 medium-6 pros--secteur scrollreveal">
           <svg viewBox="0 0 100 100" class="pros--icon">
             <circle class="bg" opacity=".2" cx="50" cy="50" r="50"/>
             <circle class="bg" opacity=".6" cx="50" cy="50" r="44"/>
@@ -98,7 +98,7 @@
           </ul>
           <?php endif; ?>
         </li>
-        <li class="columns large-3 medium-6 pros--secteur">
+        <li class="columns large-3 medium-6 pros--secteur scrollreveal">
           <svg class="pros--icon" viewBox="0 0 100 100">
             <circle class="bg" opacity=".2" cx="50" cy="50" r="50"/>
             <circle class="bg" opacity=".6" cx="50" cy="50" r="44"/>
@@ -125,7 +125,7 @@
           </ul>
           <?php endif; ?>
         </li>
-        <li class="columns large-3 medium-6 pros--secteur">
+        <li class="columns large-3 medium-6 pros--secteur scrollreveal">
           <svg class="pros--icon" viewBox="0 0 100 100">
             <circle class="bg" opacity=".2" cx="50" cy="50" r="50"/>
             <circle class="bg" opacity=".6" cx="50" cy="50" r="44"/>
@@ -150,7 +150,7 @@
           </ul>
           <?php endif; ?>
         </li>
-        <li class="columns large-3 medium-6 pros--secteur">
+        <li class="columns large-3 medium-6 pros--secteur scrollreveal">
           <svg class="pros--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
             <circle class="bg" opacity=".2" cx="50" cy="50" r="50"/>
             <circle class="bg" opacity=".6" cx="50" cy="50" r="44"/>
@@ -186,7 +186,7 @@
             <path d="M52.6 2.6c-3.5-3.5-9.2-3.5-12.7 0L3.8 38.7v.1s0 .1-.1.1c-.1.1-.1.2-.1.2v.1L0 54v.2c0 .1 0 .2.1.3v.1c0 .1.1.2.2.3.1.1.2.2.3.2.1 0 .2.1.4.1h.2l14.9-3.5h.2c.1 0 .1-.1.2-.1l.1-.1 36.1-36.1c3.4-3.5 3.4-9.3-.1-12.8M51.2 4c2.5 2.5 2.7 6.4.7 9.1l-9.8-9.8c2.7-2 6.6-1.7 9.1.7m-4.9 14.9L36.4 9l1.4-1.4 9.9 9.9-1.4 1.4zM5 50.3c-.4-.4-1-.4-1.4 0l-.8.7 2.6-10.7 4.4-.5-.6 5.1v.5c0 .1.1.1.1.2l.1.1c0 .1.1.1.2.1l.1.1c.1 0 .1 0 .2.1h.3l5.1-.6-.5 4.4-10.6 2.7.8-.8c.4-.4.4-1 0-1.4m12.5-5.5l22.4-22.4c.4-.4.4-1 0-1.4s-1-.4-1.4 0L16.1 43.4l-4.8.5.5-4.8 22.4-22.4c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0L10.4 37.7l-3.2.4 27.7-27.7 9.9 9.9L17.2 48l.3-3.2zm31.6-28.7l-9.9-9.9 1.4-1.4 9.9 9.9-1.4 1.4z"/></svg>
           <span><?php the_field('f1_title'); ?></span>
         </h2>
-        <div class="text-justify">
+        <div class="text-justify scrollreveal">
           <?php the_field('f1_contenu'); ?>
         </div>
         <p class="text-right"><a href="<?php the_field('f1_link'); ?>">Accéder</a></p>
@@ -204,7 +204,7 @@
           <path d="M59.9 24.3l-2-7.8c-.2-.8-.8-1.3-1.6-1.4L52 12.4V5.2C52 2.4 49.6 0 46.8 0H34.3C32.5 0 31 .9 30 2.2 29 .9 27.5 0 25.8 0H13.3C10.4 0 8 2.4 8 5.3v7.2l-4.4 2.6c-.8.1-1.4.7-1.6 1.4l-2 7.8c-.1.5-.1 1 0 1.4l2 7.8c.3.9 1.1 1.5 2 1.5h2v4h2.4l4-4h35.2l4 4H54v-4h2c.9 0 1.7-.6 1.9-1.5l2-7.8c.1-.5.1-.9 0-1.4m-5.8-7.8l-1.6 6.3-1.1-1.4-1.2-1.5.3-1.1 1.2-4.1 2.6 1.6c-.1-.1-.2 0-.2.2M11.5 21h37l2.4 3H9.1l2.4-3zM34.3 2h12.5C48.5 2 50 3.5 50 5.3v7.6L48.2 19H31V5.3C31 3.4 32.5 2 34.3 2M10 5.3C10 3.5 11.5 2 13.3 2h12.5C27.5 2 29 3.4 29 5.2V19H11.8L10 12.9V5.3zm-1.6 9.2l1.5 5.2-2.4 3-1.6-6.3c0-.1-.1-.3-.1-.4l2.6-1.5zM4 33l-2-7.8v-.4L4 17l2 7.8V33H4zm4 3.6V35h1.6L8 36.6zm6.4-3.6H8v-7h44v7H14.4zM52 36.6L50.4 35H52v1.6zm6-11.4L56 33h-2v-8.2l2-7.8 2 7.8v.4"/></svg>
           <span><?php the_field('f2_title'); ?></span>
         </h2>
-        <div class="text-justify">
+        <div class="text-justify scrollreveal">
           <?php the_field('f2_contenu'); ?>
         </div>
         <p class="text-right"><a href="<?php the_field('f2_link'); ?>">Accéder</a></p>
@@ -222,7 +222,7 @@
             <path d="M59 53V14H47v39h-3V22H32v31h-3V30H17v23h-3V39H2v14H1c-.6 0-1 .4-1 1s.4 1 1 1h58c.6 0 1-.4 1-1s-.4-1-1-1M4 41h8v12H4V41zm15-9h8v21h-8V32zm15-8h8v29h-8V24zm15-8h8v37h-8V16zM8 25.3c.2 0 .3 0 .5-.1L44.8 4.3l-2.3 5c-.2.5 0 1.1.5 1.3.1.1.3.1.4.1.4 0 .7-.2.9-.6l3.6-7.8v-1l-.1-.1s0-.1-.1-.1l-.1-.1-.1-.1s-.1 0-.1-.1H47L38.5 0c-.6-.1-1 .3-1.1.9-.1.5.3 1 .9 1.1l5.5.5-36.3 21c-.5.3-.6.9-.4 1.4.2.3.6.4.9.4"/></svg>
           <span><?php the_field('f3_title'); ?></span>
         </h2>
-        <div class="text-justify">
+        <div class="text-justify scrollreveal">
           <?php the_field('f3_contenu'); ?>
         </div>
         <p class="text-right"><a href="<?php the_field('f3_link'); ?>">Accéder</a></p>
@@ -232,14 +232,49 @@
 
    <section class="section home-galerie">
     <div class="row column">
-      <h2 class="section--title"><span>Galerie</span></h2>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et alias perspiciatis, dolore aperiam molestias aliquid repellat! Recusandae porro accusantium possimus soluta numquam, fugit! Et tempora, nam architecto quibusdam, unde molestiae!</p>
-      <ul class="row no-bullet">
-        <li class="columns large-4">image</li>
-        <li class="columns large-4">image</li>
-        <li class="columns large-4">image</li>
-      </ul>
-      <p class="text-center"><a href="<?php echo get_post_type_archive_link( 'imgallery' ); ?>" class="button large hollow white">Voir la galerie</a></p>
+      <h2 class="section--title scrollreveal"><span>Galerie</span></h2>
+      <?php
+      // the query
+      $pageGallery = new WP_Query( array('page_id' => 9 ) ); ?>
+
+      <?php if ( $pageGallery->have_posts() ) : ?>
+
+        <!-- pagination here -->
+
+        <!-- the loop -->
+        <?php while ( $pageGallery->have_posts() ) : $pageGallery->the_post(); ?>
+          <div class="text-center"><?php the_excerpt(); ?></div>
+        <?php endwhile; ?>
+        <!-- end of the loop -->
+
+        <!-- pagination here -->
+
+        <?php wp_reset_postdata(); ?>
+      <?php endif; ?>
+
+      <?php
+      // the query
+      $gallery = new WP_Query( array('post_type' => 'imgallery', 'posts_per_page' => 3 ) ); ?>
+
+      <?php if ( $gallery->have_posts() ) : ?>
+
+        <!-- pagination here -->
+        <ul class="row no-bullet">
+
+        <!-- the loop -->
+        <?php while ( $gallery->have_posts() ) : $gallery->the_post(); ?>
+          <?php $image = get_field('image'); ?>
+          <li class="columns large-4"><img class="gallery--item--thumb" src="<?php echo $image['sizes']['gallery']; ?>" alt="<?php echo $image['alt']; ?>" /></li>
+        <?php endwhile; ?>
+        <!-- end of the loop -->
+
+        <!-- pagination here -->
+        </ul>
+
+        <?php wp_reset_postdata(); ?>
+      <?php endif; ?>
+
+      <p class="text-center"><a href="<?php the_permalink( 9 ); ?>" class="button large hollow white">Voir la galerie</a></p>
     </div>
   </section>
 

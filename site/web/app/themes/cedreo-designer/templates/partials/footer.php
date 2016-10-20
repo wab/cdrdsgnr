@@ -1,8 +1,8 @@
 <footer class="mainfooter">
-  <div class="widget--area scrollreveal">
+  <div class="widget--area">
     <div class="widget">
       <h3 class="widget--title"><?php bloginfo('title'); ?></h3>
-      <nav class="nav-footer">
+      <nav class="nav-footer scrollreveal">
         <ul class="no-bullet nav-footer--menu">
           <li class="nav-footer--item"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg> <a class="nav-footer--link" href="<?php bloginfo('url'); ?>/qui-sommes-nous">Qui sommes-nous ?</a></li>
           <li class="nav-footer--item"><svg class="icon icon-tutos"><use xlink:href="#icon-tutos"></use></svg> <a class="nav-footer--link" href="<?php bloginfo('url'); ?>/tutoriels">Tutoriels</a></li>
@@ -17,7 +17,7 @@
       <h3 class="widget--title">Derniers Articles</h3>
       <?php
       // the query
-      $lastposts = new WP_Query( array('post_type' => 'post', 'posts_per_page' => '3') ); ?>
+      $lastposts = new WP_Query( array('post_type' => 'post', 'posts_per_page' => '2') ); ?>
 
       <?php if ( $lastposts->have_posts() ) : ?>
 
@@ -27,9 +27,10 @@
 
         <!-- the loop -->
         <?php while ( $lastposts->have_posts() ) : $lastposts->the_post(); ?>
-          <li>
+          <li class="scrollreveal">
             <strong class="textcolor"><?php the_date(); ?></strong>
-            <?php the_excerpt(); ?>
+            <h4 class="post--title"><?php the_title(); ?></h4>
+            <?= App\easy_excerpt(20); ?>
           </li>
         <?php endwhile; ?>
         <!-- end of the loop -->
@@ -50,7 +51,7 @@
 
     <div class="widget">
       <h3 class="widget--title">Suivez-nous sur</h3>
-      <ul class="reseaux--list no-bullet">
+      <ul class="reseaux--list no-bullet scrollreveal">
         <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-twitter"></use></svg></a></li>
         <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-facebook"></use></svg></a></li>
         <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-google-plus"></use></svg></a></li>
@@ -61,7 +62,9 @@
   </div>
   <div class="ours text-center">
     <div class="row column">
-      <a href="#">Conditions d'utilisation</a> - <a href="#">Mentions légales</a> - &copy; copyright <?php echo date("Y") ?> <?php bloginfo('title') ?>
+      <div class="scrollreveal">
+        <a href="<?php the_permalink( 382 ); ?>">Conditions d'utilisation</a> - <a href="<?php the_permalink( 385 ); ?>">Mentions légales</a> - &copy; copyright <?php echo date("Y") ?> <?php bloginfo('title') ?>
+      </div>
     </div>
   </div>
 </footer>
