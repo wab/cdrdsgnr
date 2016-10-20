@@ -1,6 +1,15 @@
 /* Ensure elements load hidden before ScrollReveal runs */
 .sr .scrollreveal, .sr .page-contenu > * { visibility: hidden; }
 
+.wrap {
+  background-color: $light-gray;
+  background-image:
+    linear-gradient(
+      to right,
+      $white, $light-gray
+    );
+}
+
 .section {
   padding: ($global-padding * 2) 0;
   position: relative;
@@ -9,51 +18,50 @@
 
   &:not(:first-child) {
 
-
-  &:before {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 24px;
-    position: absolute;
-    left: calc(50% - 15px);
-    top: 0;
-    @include background-triangle($light-gray);
-    background-repeat: no-repeat;
-    background-position: top center;
-    z-index: 2;
-  }
-
-
-  &:nth-child(even) {
-
-    background-color: rgba($light-gray, 0.9);
-
     &:before {
-      @include background-triangle($body-background);
-    }
-
-    &:after {
       content: '';
+      display: block;
+      width: 30px;
+      height: 24px;
       position: absolute;
-      left: 0;
+      left: calc(50% - 15px);
       top: 0;
-      right: 0;
-      bottom: 0;
-      background-image: url(../images/bg.svg);
-      background-size: cover;
-      z-index: 0;
-      opacity: .1;
+      @include background-triangle($light-gray);
+      background-repeat: no-repeat;
+      background-position: top center;
+      z-index: 2;
     }
-  }
 
-  &:nth-child(2) {
-    &:before {
-      @include background-triangle($body-background);
+
+    &:nth-child(even) {
+
+      background-color: rgba($light-gray, 0.9);
+
+      &:before {
+        @include background-triangle($body-background);
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../images/bg.svg);
+        background-size: cover;
+        z-index: 0;
+        opacity: .1;
+      }
     }
-  }
 
-}
+    &:nth-child(2) {
+      &:before {
+        @include background-triangle($body-background);
+      }
+    }
+
+  }
 }
 
 .sidebar-primary .container {
