@@ -7,13 +7,7 @@ const lightGallery = require('lightgallery');
 const grid = document.querySelector('.gallery--items');
 const filtersElem = document.querySelector('.gallery--filters');
 
-const iso = new Isotope(grid, {
-  itemSelector: '.gallery--item',
-  percentPosition: true,
-  masonry: {
-    columnWidth: '.grid-sizer',
-  },
-});
+let iso = {};
 
 export default {
   init() {
@@ -24,7 +18,13 @@ export default {
 
     imagesLoaded(grid).on('progress', () => {
       // layout Isotope after each image loads
-      iso.shuffle();
+      iso = new Isotope(grid, {
+        itemSelector: '.gallery--item',
+        percentPosition: true,
+        masonry: {
+          columnWidth: '.grid-sizer',
+        },
+      });
     });
 
     $('.gallery--items').lightGallery({

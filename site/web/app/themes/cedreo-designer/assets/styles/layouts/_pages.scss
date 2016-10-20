@@ -75,3 +75,7 @@
 .contact--phone {
   color: map-get($foundation-palette, primary-dark);
 }
+
+#map {
+  height: 500px;
+}

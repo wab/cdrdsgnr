@@ -58,13 +58,59 @@
   </div>
   <section class="section">
     <div class="page-wrapper">
-      <h2 class="section--title"><span>Contactez-nous</span></h2>
-      <?php the_content(); ?>
+      <h2 class="section--title scrollreveal"><span>Contactez-nous</span></h2>
+      <div class="scrollreveal">
+        <?php the_content(); ?>
+      </div>
     </div>
   </section>
-  <div class="map">
-    <p>map</p>
-  </div>
 
+  <div id="map"></div>
 
 <?php endwhile; ?>
+
+<script type="text/javascript">
+  /* global google */
+  function initMap() {
+    const styles = [
+      {
+        stylers: [
+          { saturation: -50 },
+        ],
+      },
+      {
+        featureType: 'road',
+        elementType: 'geometry',
+        stylers: [
+          { lightness: 0 },
+        ],
+      },
+      {
+        featureType: 'road',
+        elementType: 'labels',
+        stylers: [
+          { visibility: 'on' },
+        ],
+      },
+    ];
+
+    const myLatLng = { lat: 47.2394772, lng: -1.6609276 };
+
+    const map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: myLatLng,
+      styles,
+      scrollwheel: false,
+    });
+
+    const icon = '<?php echo get_template_directory_uri(); ?>/dist/images/marker.png';
+
+    const marker = new google.maps.Marker({
+      position: myLatLng,
+      map,
+      title: 'Cedreo Interactive',
+      icon,
+      animation: google.maps.Animation.DROP,
+    });
+  }
+</script>

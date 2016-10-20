@@ -67,3 +67,29 @@ add_filter('the_seo_framework_indicator', '__return_false');
 
 // Remove toolset types front-end display meta box
 add_filter('types_information_table', '__return_false');
+
+// Defer
+add_filter('script_loader_tag', function($tag, $handle) {
+    // add script handles to the array below
+   $scripts_to_defer = array('gmaps');
+
+   foreach($scripts_to_defer as $defer_script) {
+      if ($defer_script === $handle) {
+         return str_replace(' src', ' defer="defer" src', $tag);
+      }
+   }
+   return $tag;
+}, 10, 2);
+
+// Async
+add_filter('script_loader_tag', function($tag, $handle) {
+    // add script handles to the array below
+   $scripts_to_async = array('gmaps');
+
+   foreach($scripts_to_async as $async_script) {
+      if ($async_script === $handle) {
+         return str_replace(' src', ' async="async" src', $tag);
+      }
+   }
+   return $tag;
+}, 10, 2);
