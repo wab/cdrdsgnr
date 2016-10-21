@@ -11,20 +11,15 @@ export default {
     if (sr.isSupported()) {
       document.documentElement.classList.add('sr');
     }
+
+    // navigation mobile
+    $('.menu-link').click(() => {
+      $('.menu-wrapper').toggleClass('opened');
+    });
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
     $(document).foundation();
-
-    // navigation  desktop
-    const menuelem = $('.main--navigation--menu');
-    /* eslint-disable no-unused-vars */
-    const menu = new Foundation.DropdownMenu(menuelem);
-    /* eslint-enable no-unused-vars */
-
-    function preventLink(event) {
-      event.preventDefault();
-    }
 
     // animation scroll reveal
 
@@ -34,18 +29,12 @@ export default {
       },
     });
 
-    sr.reveal('.page-contenu > *');
-
-    // prevent level menu item from linking
-    $('.navigation-desktop .is-dropdown-submenu-parent > a').on('click', preventLink);
-
-    // navigation mobile
-    $('.menu-link').click(() => {
-      $('.menu-wrapper').toggleClass('opened');
-    });
+    if (document.body.contains(document.querySelector('.page-contenu'))) {
+      sr.reveal('.page-contenu > *');
+    }
 
     // Menu nav icons inject
-    $('.link-signin a').prepend('<svg class="icon icon-key"><use xlink:href="#icon-key"></use></svg>');
+    $('.link-login a').prepend('<svg class="icon icon-key"><use xlink:href="#icon-key"></use></svg>');
 
     // Scroll animation speed
     const speed = 200;

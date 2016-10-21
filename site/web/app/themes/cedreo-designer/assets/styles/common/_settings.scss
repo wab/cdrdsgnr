@@ -67,6 +67,7 @@ $foundation-palette: (
   primary-light: #58cbb7,
   primary-dark: #2585a1,
   secondary-light: #1c739b,
+  secondary-dark: #1e3658,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc0015,
@@ -312,7 +313,7 @@ $drilldown-background: $white;
 // ------------
 
 $dropdown-padding: 1rem;
-$dropdown-border: 1px solid $medium-gray;
+$dropdown-border: none;
 $dropdown-font-size: 1rem;
 $dropdown-width: 300px;
 $dropdown-radius: $global-radius;

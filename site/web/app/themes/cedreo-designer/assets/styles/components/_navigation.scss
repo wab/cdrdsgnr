@@ -27,7 +27,7 @@
         display: block;
         width: 100%;
         height: 0px;
-        background: $primary-color;
+        background: $dark-gray;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -69,21 +69,76 @@
     }
   }
 }
+.menu .dropdown-pane {
+  background: $dark-gray;
+  color: $white;
+  box-shadow: 1px 1px 1px rgba($dark-gray, .4);
 
-.sub-menu {
-  @include menu-base;
-  @include menu-direction(vertical);
-  z-index: 20;
-  background: rgba(0,0,0, 0.9);
+  transition: transform 200ms ease-in-out;
 
-  a {
-    color: $white;
+  &#menu-features {
+  width: $dropdown-width + 120px;
+    .submenu {
+      padding-left: 110px;
+      > .menu-item:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
   }
 }
+.submenu, .sub-menu {
+  @extend .no-bullet;
+  margin-bottom: 0;
 
-.first-sub {
   a {
-    color: $primary-color;
-    text-transform: uppercase;
+    color: inherit;
+    transition: color 100ms ease;
+    &:hover, &:focus {
+      outline: none;
+      color: map-get($foundation-palette, secondary);
+    }
+  }
+}
+.submenu {
+  > .menu-item {
+    &:before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: -110px;
+      @include vertical-center;
+      z-index: 50;
+      background: url(../images/pictos-features.svg) no-repeat;
+      background-size: 100%;
+      background-position: 0 0;
+    }
+    > a {
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      color: $primary-color;
+      font-weight: 600;
+
+      &:hover, &:focus {
+        color: map-get($foundation-palette, secondary);
+    }
+    }
+  }
+
+  .amenager {
+    &:before {
+      background-position: 0 -100px;
+    }
+  }
+  .decorer {
+    &:before {
+      background-position: 0 -300px;
+    }
+  }
+  .valoriser {
+    &:before {
+      background-position: 0 -200px;
+    }
   }
 }
