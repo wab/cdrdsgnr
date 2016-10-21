@@ -95,7 +95,7 @@
     transition: color 100ms ease;
     &:hover, &:focus {
       outline: none;
-      color: map-get($foundation-palette, secondary);
+      color: map-get($foundation-palette, primary-dark);
     }
   }
 }
@@ -121,7 +121,7 @@
       font-weight: 600;
 
       &:hover, &:focus {
-        color: map-get($foundation-palette, secondary);
+        color: map-get($foundation-palette, primary-dark);
     }
     }
   }
