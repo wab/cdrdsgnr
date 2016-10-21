@@ -12,8 +12,7 @@ import 'foundation-sites/js/foundation.util.nest.js';
 import 'foundation-sites/js/foundation.util.triggers.js';
 import 'foundation-sites/js/foundation.util.motion.js';
 import 'foundation-sites/js/foundation.reveal.js';
-import 'foundation-sites/js/foundation.dropdownMenu.js';
-import 'foundation-sites/js/foundation.drilldown.js';
+import 'foundation-sites/js/foundation.dropdown.js';
 
 // import local dependencies
 import Router from './util/router';
