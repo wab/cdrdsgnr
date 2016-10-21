@@ -141,6 +141,7 @@ const webpackConfig = {
       svgo: {
         removeUnknownsAndDefaults: false,
         cleanupIDs: false,
+        removeUselessDefs: false,
       },
       jpegtran: null,
       plugins: [imageminMozjpeg({

@@ -46,6 +46,12 @@ add_action('after_setup_theme', function () {
     register_nav_menus([
         'primary_navigation' => __('Primary Navigation', 'sage')
     ]);
+    register_nav_menus([
+        'features_navigation' => __('Features Navigation', 'sage')
+    ]);
+    register_nav_menus([
+        'users_navigation' => __('Users Navigation', 'sage')
+    ]);
 
     /**
      * Enable post thumbnails

@@ -1,17 +1,23 @@
 <nav class="main--navigation navigation-desktop show-for-large">
     <ul id="menu-navigation-principale" class="main--navigation--menu show-for-large horizontal menu">
+      <?php if (has_nav_menu('features_navigation')) : ?>
       <li class="menu-item menu-item-has-children menu-fonctionnalites">
-        <a href="#" data-toggle="menu-features">Fonctionnalités</a>
-        <div class="dropdown-pane" id="menu-features" data-dropdown data-auto-focus="true" data-hover="true" data-hover-pane="true">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eveniet culpa exercitationem voluptas incidunt consectetur minus, aliquid perspiciatis beatae cum aut, molestias id laudantium, deleniti nam quidem velit delectus cumque?
+        <a href="#" data-toggle="menu-features"><?php echo __('Features', 'sage') ?></a>
+        <div class="dropdown-pane" id="menu-features" data-dropdown data-animate="slide-in-down slide-out-up" data-v-offset="0" data-auto-focus="false" data-hover="true" data-hover-pane="true">
+          <?php wp_nav_menu(['theme_location' => 'features_navigation', 'menu_class' => 'submenu', 'depth' => 2]); ?>
         </div>
       </li>
-      <li class="menu-item menu-item-has-children menu-pour-qui">
-        <a href="#" data-toggle="menu-users">Pour qui</a>
-        <div class="dropdown-pane" id="menu-users" data-dropdown data-auto-focus="true" data-hover="true" data-hover-pane="true">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eveniet culpa exercitationem voluptas incidunt consectetur minus, aliquid perspiciatis beatae cum aut, molestias id laudantium, deleniti nam quidem velit delectus cumque?
+      <?php endif; ?>
+
+      <?php if (has_nav_menu('users_navigation')) : ?>
+      <li class="menu-item menu-item-has-children menu-fonctionnalites">
+        <a href="#" data-toggle="menu-users"><?php echo __('Users', 'sage') ?></a>
+        <div class="dropdown-pane" id="menu-users" data-dropdown data-animate="slide-in-down slide-out-up" data-v-offset="0" data-auto-focus="false" data-hover="true" data-hover-pane="true">
+          <?php wp_nav_menu(['theme_location' => 'users_navigation', 'menu_class' => 'sub-menu', 'depth' => 2]); ?>
         </div>
       </li>
+      <?php endif; ?>
+
       <li class="menu-item menu-galerie"><a href="<?php echo get_permalink(9); ?>"><?php echo get_the_title(9); ?></a></li>
       <li class="menu-item menu-tarifs"><a href="<?php echo get_permalink(15); ?>"><?php echo get_the_title(15); ?></a></li>
       <li class="menu-item menu-support"><a href="http://help.cedreo-designer.com"><?php echo __('Support', 'cedreo') ?></a></li>
