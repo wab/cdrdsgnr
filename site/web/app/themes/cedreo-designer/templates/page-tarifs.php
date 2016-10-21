@@ -22,6 +22,7 @@
 
         // vars
         $name = get_sub_field('name');
+        $link = get_sub_field('link');
         $price = get_sub_field('price');
         $number_project = get_sub_field('number_project');
         $visual_1 = get_sub_field('visual_1');
@@ -102,7 +103,7 @@
             <li class="item">
               <?php if( $features && in_array('a2', $features) ) { echo __('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo'); } else { echo '- <br/> &nbsp;'; }; ?>
             </li>
-            <li class="link"><a href="http://app.cedreo-designer.com/fr/register/"><?php echo __('Démarrer', 'cedreo'); ?></a></li>
+            <li class="link"><a href="<?php echo $link; ?>"><?php echo __('Démarrer', 'cedreo'); ?></a></li>
           </ul>
 
         </li>
@@ -126,6 +127,7 @@
 
         // vars
         $name = get_sub_field('name');
+        $link = get_sub_field('link');
         $price = get_sub_field('price');
         $number_project = get_sub_field('number_project');
         $visual_1 = get_sub_field('visual_1');
@@ -206,7 +208,7 @@
             <li class="item">
               <?php if( $features && in_array('a2', $features) ) { echo __('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo'); } else { echo '- <br/> &nbsp;'; } ?>
             </li>
-            <li class="link"><a href="http://app.cedreo-designer.com/fr/register/"><?php echo __('Démarrer', 'cedreo'); ?></a></li>
+            <li class="link"><a href="<?php echo $link; ?>"><?php echo __('Démarrer', 'cedreo'); ?></a></li>
           </ul>
 
         </li>
@@ -232,6 +234,7 @@
 
         // vars
         $name = get_sub_field('name');
+        $link = get_sub_field('link');
         $price = get_sub_field('price');
         $number_project = get_sub_field('number_project');
         $visual_1 = get_sub_field('visual_1');
@@ -312,7 +315,7 @@
             <li class="item">
               <?php if( $features && in_array('a2', $features) ) { echo __('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo'); } else { echo '- <br/> &nbsp;'; } ?>
             </li>
-            <li class="link"><a href="http://app.cedreo-designer.com/fr/register/"><?php echo __('Démarrer', 'cedreo'); ?></a></li>
+            <li class="link"><a href="<?php echo $link; ?>"><?php echo __('Démarrer', 'cedreo'); ?></a></li>
           </ul>
 
         </li>
@@ -336,6 +339,7 @@
 
         // vars
         $name = get_sub_field('name');
+        $link = get_sub_field('link');
         $price = get_sub_field('price');
 
         ?>
@@ -345,7 +349,7 @@
           <ul class="pricing-table no-bullet text-center">
             <li class="title"><?php echo $name; ?></li>
             <li class="price"><?php echo $price . __('&euro; HT', 'cedreo'); ?></li>
-            <li class="link"><a href="http://app.cedreo-designer.com/fr/register/"><?php echo __('Choisissez', 'cedreo'); ?></a></li>
+            <li class="link"><a href="<?php echo $link; ?>"><?php echo __('Choisissez', 'cedreo'); ?></a></li>
           </ul>
 
         </li>
