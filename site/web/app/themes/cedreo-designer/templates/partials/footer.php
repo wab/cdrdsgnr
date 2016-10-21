@@ -52,11 +52,11 @@
     <div class="widget">
       <h3 class="widget--title">Suivez-nous sur</h3>
       <ul class="reseaux--list no-bullet scrollreveal">
-        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-twitter"></use></svg></a></li>
-        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-facebook"></use></svg></a></li>
-        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-google-plus"></use></svg></a></li>
-        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-youtube-play"></use></svg></a></li>
-        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon icon-download"><use xlink:href="#icon-pinterest"></use></svg></a></li>
+        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>
+        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg></a></li>
+        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon-youtube-play"><use xlink:href="#icon-youtube-play"></use></svg></a></li>
+        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg></a></li>
       </ul>
     </div>
   </div>
