@@ -52,11 +52,11 @@
     <div class="widget">
       <h3 class="widget--title">Suivez-nous sur</h3>
       <ul class="reseaux--list no-bullet scrollreveal">
-        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
-        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>
-        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg></a></li>
-        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon-youtube-play"><use xlink:href="#icon-youtube-play"></use></svg></a></li>
-        <li class="reseaux--item"><a class="reseaux--link" href="#"><svg class="icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg></a></li>
+        <li class="reseaux--item"><button class="reseaux--link" onclick="window.location.href='https://twitter.com/mysketcher'"><svg class="icon-twitter"><use xlink:href="#icon-twitter"></use></svg></button></li>
+        <li class="reseaux--item"><button class="reseaux--link" onclick="window.location.href='https://www.facebook.com/My-Sketcher-1548463242070456'"><svg class="icon-facebook"><use xlink:href="#icon-facebook"></use></svg></button></li>
+        <li class="reseaux--item"><button class="reseaux--link" onclick="window.location.href='https://plus.google.com/118015676047486854511'"><svg class="icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg></button></li>
+        <li class="reseaux--item"><button class="reseaux--link" onclick="window.location.href='https://www.youtube.com/user/MrMySketcher'"><svg class="icon-youtube-play"><use xlink:href="#icon-youtube-play"></use></svg></button></li>
+        <li class="reseaux--item"><button class="reseaux--link" onclick="window.location.href='https://fr.pinterest.com/mysketcher/'"><svg class="icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg></button></li>
       </ul>
     </div>
   </div>

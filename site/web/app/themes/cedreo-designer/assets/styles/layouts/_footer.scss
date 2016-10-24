@@ -126,4 +126,8 @@
     color: $white;
     background: darken($primary-color, 10%);
   }
+
+  [class^="icon-"], [class*="icon-"] {
+    width: 1em;
+  }
 }
