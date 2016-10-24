@@ -1,0 +1,6 @@
+.page-numbers {
+  @include pagination-container;
+  .current {
+    @include pagination-item-current;
+  }
+}

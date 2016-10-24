@@ -50,7 +50,8 @@ $sage_includes = [
     'src/setup.php',
     'src/filters.php',
     'src/admin.php',
-    'src/ajax.php'
+    'src/ajax.php',
+    'src/extras.php'
 ];
 array_walk($sage_includes, function ($file) {
     if (!locate_template($file, true, true)) {
