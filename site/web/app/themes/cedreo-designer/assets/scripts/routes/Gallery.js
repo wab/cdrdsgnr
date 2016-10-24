@@ -1,7 +1,10 @@
 /* global ga, ajaxurl */
-const Isotope = require('isotope-layout');
-const imagesLoaded = require('imagesloaded');
-const lightGallery = require('lightgallery');
+import imagesLoaded from 'imagesloaded';
+import Isotope from 'isotope-layout';
+import lightGallery from 'lightgallery';
+import 'lg-fullscreen';
+import 'lg-share';
+
 
 // init Isotope
 const grid = document.querySelector('.gallery--items');
@@ -30,6 +33,7 @@ export default {
     $('.gallery--items').lightGallery({
       selector: '.gallery--item--overlay',
       cssEasing: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
+      share: true,
     });
 
     // bind filter button click

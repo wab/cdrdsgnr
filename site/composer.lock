@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e7998fc519012156b0d418a12359b962",
-    "content-hash": "9fdc8c55bf96c0fd361144f31380543c",
+    "hash": "d552abbfed67c6b99cb6dfa93f49477f",
+    "content-hash": "5bc2b04e37ee41f3f54e1616c88f6448",
     "packages": [
         {
             "name": "composer/installers",
@@ -700,15 +700,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-migrate-db",
-            "version": "0.8",
+            "version": "0.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-migrate-db/",
-                "reference": "tags/0.8"
+                "reference": "tags/0.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-migrate-db.0.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-migrate-db.0.9.zip",
                 "reference": null,
                 "shasum": null
             },

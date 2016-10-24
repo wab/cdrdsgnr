@@ -3,6 +3,7 @@
 // paths
 $lg-path-fonts: '../fonts';
 $lg-path-images: '../images/lg';
+$backdrop-opacity: .99;
 
 @import "~lightgallery/src/sass/lg-mixins";
 @import "~lightgallery/src/sass/lg-fonts";
@@ -12,7 +13,7 @@ $lg-path-images: '../images/lg';
 // @import "~lightgallery/src/sass/lg-autoplay";
 // @import "~lightgallery/src/sass/lg-zoom";
 @import "~lightgallery/src/sass/lg-pager";
-// @import "~lightgallery/src/sass/lg-fullscreen";
+@import "~lightgallery/src/sass/lg-fullscreen";
 @import "~lightgallery/src/sass/lg-share";
 
 // Clearfix
