@@ -16,6 +16,11 @@
   z-index: 1;
   background-color: $white;
 
+  > div {
+    position: relative;
+    z-index: 1;
+  }
+
   &:not(:first-child) {
 
     &:before {
