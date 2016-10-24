@@ -58,7 +58,7 @@
   </div>
   <section class="section">
     <div class="page-wrapper">
-      <h2 class="section--title scrollreveal"><span>Contactez-nous</span></h2>
+      <h2 class="section--title scrollreveal"><span><?php echo __('Contactez-nous', 'cedreo-designer'); ?></span></h2>
       <div class="scrollreveal">
         <?php the_content(); ?>
       </div>

@@ -17,7 +17,7 @@ $terms = get_terms( 'gallerytag', array(
   <div class="page-wrapper">
 
         <div class="text-center">
-            <h2 class="section--title"><span>Idées &amp; styles déco</span></h2>
+            <h2 class="section--title"><span><?php echo __('Idées &amp; styles déco', 'cedreo-designer'); ?></span></h2>
             <?php get_template_part('partials/content-page'); ?>
         </div>
 
@@ -60,7 +60,7 @@ $terms = get_terms( 'gallerytag', array(
 
 
             <p class="text-center">
-                <button class="load-more button secondary large hollow">Voir la suite</button>
+                <button class="load-more button secondary large hollow"><?php echo __('Voir la suite', 'cerdeo-designer'); ?></button>
             </p>
 
 
