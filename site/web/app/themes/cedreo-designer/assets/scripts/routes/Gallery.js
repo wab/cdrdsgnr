@@ -33,6 +33,7 @@ export default {
     $('.gallery--items').lightGallery({
       selector: '.gallery--item--overlay',
       cssEasing: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
+      subHtmlSelectorRelative: true,
       share: true,
     });
 
