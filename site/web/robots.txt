@@ -1,17 +1,31 @@
 # Crawlers Setup
 User-agent: *
+User-agent: Googlebot-Image
+Disallow:
 # Allowable
 Allow: /wp-content/uploads/
 # Directories
-Disallow: /wp/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/
 Disallow: /app/plugins/
 Disallow: /author/
 Disallow: /category/
+Disallow: /cgi-bin
+Disallow: /comments/
+Disallow: */trackback
+Disallow: /*/feed
+Disallow: /*/comments
 # Files
 Disallow: /wp-login.php
+Disallow: /*.gz
+Disallow: /*.cgi
 # Paths (clean URLs)
-Disallow: /comments
 Disallow: /contact
 Disallow: /demo
 # Paths (no clean URLs)
 Disallow: /*.php$
+Disallow: /*.inc$
+#Sitemaps
+Sitemap: https://cedreo-designer.com/sitemap_index.xml
+Sitemap: https://cedreo-designer.fr/sitemap_index.xml
