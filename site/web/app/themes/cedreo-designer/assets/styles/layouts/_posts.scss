@@ -1,6 +1,27 @@
-.page-numbers {
-  @include pagination-container;
-  .current {
-    @include pagination-item-current;
+.excerpt {
+  padding: $global-padding;
+  margin-bottom: $global-margin;
+  background: $white;
+  border: 1px solid rgba($secondary-color, .2);
+
+  .entry-summary {
+
+    a {
+      font-weight: bold;
+    }
   }
+
+}
+.entry-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  .single-post & {
+    font-size: 1.6rem;
+  }
+}
+.entry--header {
+  padding-bottom: $global-margin / 2;
+  margin-bottom: $global-margin / 2;
+  border-bottom: 1px solid rgba($secondary-color, .5);
 }
