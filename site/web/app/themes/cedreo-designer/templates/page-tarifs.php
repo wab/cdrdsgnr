@@ -8,7 +8,7 @@
 
 <?php while (have_posts()) : the_post(); ?>
 
-  <div class="page-wrapper">
+  <div class="page-wrapper small-collapse">
 
   <?php if( have_rows('individual') ): ?>
 
@@ -66,14 +66,14 @@
                 else { echo $visual_print . '&nbsp;' . __('Visuels print', 'cedreo-designer'); }
               ?>
             </li>
-            <li class="item">
+            <!-- <li class="item">
               <?php
                 if($virtual_visits == 0) { echo '-'; }
                 elseif ($virtual_visits == -1) { echo __('Visite virtuelle illimitée', 'cedreo-designer'); }
                 elseif ($virtual_visits == -2) { echo __('Visite virtuelle en option', 'cedreo-designer'); }
-                else { echo $virtual_visits . '&nbsp;' . __('Visuels de travail', 'cedreo-designer'); }
+                else { echo $virtual_visits . '&nbsp;' . __('Visites virtuelles', 'cedreo-designer'); }
               ?>
-            </li>
+            </li> -->
             <li class="subtitle"><?php echo __('Support', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php if( $support && in_array('Tutoriels', $support) ) { echo __('Accès aux tutoriels', 'cedreo-designer'); } else { echo '-'; } ?>
@@ -171,14 +171,14 @@
                 else { echo $visual_print . '&nbsp;' . __('Visuels print / mois', 'cedreo-designer'); }
               ?>
             </li>
-            <li class="item">
+            <!-- <li class="item">
               <?php
                 if($virtual_visits == 0) { echo '-'; }
                 elseif ($virtual_visits == -1) { echo __('Visites virtuelles illimitées', 'cedreo-designer'); }
                 elseif ($virtual_visits == -2) { echo __('Visites virtuelles en option', 'cedreo-designer'); }
                 else { echo $virtual_visits . '&nbsp;' . __('Visites virtuelles / mois', 'cedreo-designer'); }
               ?>
-            </li>
+            </li> -->
             <li class="subtitle"><?php echo __('Support', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php if( $support && in_array('Tutoriels', $support) ) { echo __('Accès aux tutoriels', 'cedreo-designer'); } else { echo '-'; } ?>
@@ -250,16 +250,16 @@
 
           <ul class="pricing-table no-bullet text-center">
             <li class="title"><?php echo $name; ?></li>
-            <li class="price"><?php echo $price . __('&euro; HT', 'cedreo-designer'); ?></li>
+            <li class="price"><?php echo $price . __('&euro; HT / an', 'cedreo-designer'); ?></li>
             <li class="projects-number">
-            <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projets', 'cedreo-designer'); } else { echo __('Projets illimités', 'cedreo-designer'); } ?></li>
+            <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projets / an', 'cedreo-designer'); } else { echo __('Projets illimités', 'cedreo-designer'); } ?></li>
             <li class="subtitle"><?php echo __('Visuels', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php
                 if($visual_1 == 0) { echo '-'; }
                 elseif ($visual_1 == -1) { echo __('Visuels de travail illimités', 'cedreo-designer'); }
                 elseif ($visual_1 == -2) { echo __('Visuels de travail en option', 'cedreo-designer'); }
-                else { echo $visual_1 . '&nbsp;' . __('Visuels de travail', 'cedreo-designer'); }
+                else { echo $visual_1 . '&nbsp;' . __('Visuels de travail / an', 'cedreo-designer'); }
               ?>
             </li>
             <li class="item">
@@ -267,7 +267,7 @@
                 if($visual_hd == 0) { echo '-'; }
                 elseif ($visual_hd == -1) { echo __('Visuels HD illimités', 'cedreo-designer'); }
                 elseif ($visual_hd == -2) { echo __('Visuels HD en option', 'cedreo-designer'); }
-                else { echo $visual_hd . '&nbsp;' . __('Visuels HD', 'cedreo-designer'); }
+                else { echo $visual_hd . '&nbsp;' . __('Visuels HD / an', 'cedreo-designer'); }
               ?>
             </li>
             <li class="item">
@@ -275,17 +275,17 @@
                 if($visual_print == 0) { echo '-'; }
                 elseif ($visual_print == -1) { echo __('Visuels print illimités', 'cedreo-designer'); }
                 elseif ($visual_print == -2) { echo __('Visuels print en option', 'cedreo-designer'); }
-                else { echo $visual_print . '&nbsp;' . __('Visuels print', 'cedreo-designer'); }
+                else { echo $visual_print . '&nbsp;' . __('Visuels print / an', 'cedreo-designer'); }
               ?>
             </li>
-            <li class="item">
+            <!-- <li class="item">
               <?php
                 if($virtual_visits == 0) { echo '-'; }
                 elseif ($virtual_visits == -1) { echo __('Visite virtuelle illimitée', 'cedreo-designer'); }
                 elseif ($virtual_visits == -2) { echo __('Visite virtuelle en option', 'cedreo-designer'); }
-                else { echo $virtual_visits . '&nbsp;' . __('Visuels de travail', 'cedreo-designer'); }
+                else { echo $virtual_visits . '&nbsp;' . __('Visites virtuelles / an ', 'cedreo-designer'); }
               ?>
-            </li>
+            </li> -->
             <li class="subtitle"><?php echo __('Support', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php if( $support && in_array('Tutoriels', $support) ) { echo __('Accès aux tutoriels', 'cedreo-designer'); } else { echo '-'; } ?>
@@ -368,7 +368,7 @@
 
     <div class="row">
 
-    <div class="colums large-8 large-centered">
+    <div class="columns large-8 large-centered">
       <h2 class="section--title"><span><?php echo __('FAQs', 'cedreo-designer'); ?></span></h2>
 
       <ul class="faq--items">
