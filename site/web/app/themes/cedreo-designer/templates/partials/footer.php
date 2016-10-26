@@ -1,7 +1,7 @@
 <footer class="mainfooter">
   <div class="widget--area">
     <div class="widget">
-      <h3 class="widget--title"><?php bloginfo('title'); ?></h3>
+      <p class="widget--title"><?php bloginfo('title'); ?></p>
       <nav class="nav-footer scrollreveal">
         <ul class="no-bullet nav-footer--menu">
           <li class="nav-footer--item"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg> <a class="nav-footer--link" href="<?php bloginfo('url'); ?>/qui-sommes-nous">Qui sommes-nous ?</a></li>
@@ -14,7 +14,7 @@
     </div>
 
     <div class="widget">
-      <h3 class="widget--title">Derniers Articles</h3>
+      <p class="widget--title">Derniers Articles</p>
       <?php
       // the query
       $lastposts = new WP_Query( array('post_type' => 'post', 'posts_per_page' => '2') ); ?>
@@ -46,11 +46,11 @@
 
     </div>
     <div class="widget">
-      <h3 class="widget--title">Derniers Tweets</h3>
+      <p class="widget--title">Derniers Tweets</p>
     </div>
 
     <div class="widget">
-      <h3 class="widget--title">Suivez-nous sur</h3>
+      <p class="widget--title">Suivez-nous sur</p>
       <ul class="reseaux--list no-bullet scrollreveal">
         <li class="reseaux--item"><button class="reseaux--link" onclick="window.location.href='https://twitter.com/mysketcher'"><svg class="icon-twitter"><use xlink:href="#icon-twitter"></use></svg></button></li>
         <li class="reseaux--item"><button class="reseaux--link" onclick="window.location.href='https://www.facebook.com/My-Sketcher-1548463242070456'"><svg class="icon-facebook"><use xlink:href="#icon-facebook"></use></svg></button></li>
