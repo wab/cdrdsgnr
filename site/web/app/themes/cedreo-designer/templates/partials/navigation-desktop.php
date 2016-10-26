@@ -22,7 +22,21 @@
       <li class="menu-item menu-tarifs"><a href="<?php echo get_permalink(15); ?>"><?php echo get_the_title(15); ?></a></li>
       <li class="menu-item menu-support"><a href="http://help.cedreo-designer.com"><?php echo __('Support', 'cedreo') ?></a></li>
       <li class="menu-item menu-blog"><a href="<?php echo get_permalink(17); ?>"><?php echo get_the_title(17); ?></a></li>
-      <li class="link-login menu-item menu-connexion"><a href="http://app.cedreo-designer.com/fr/login"><?php echo __('Connexion', 'cedreo') ?></a></li>
+      <li class="menu-item menu-login">
+        <a data-toggle="menu-login"><?php echo __('Mon Compte', 'cedreo') ?></a>
+        <div class="dropdown-pane bottom" id="menu-login" data-dropdown data-hover="true" data-hover-pane="true" data-v-offset="0">
+          <ul class="sub-menu">
+            <li class="menu-item">
+              <svg class="icon-power"><use xlink:href="#icon-power"></use></svg>
+              <a href="http://app.cedreo-designer.com/fr/login">Se connecter</a>
+            </li>
+            <li class="menu-item">
+              <svg class="icon-key"><use xlink:href="#icon-key"></use></svg>
+              <a href="http://app.cedreo-designer.com/fr/register">S'inscrire</a>
+            </li>
+          </ul>
+        </div>
+      </li>
       <?php pll_the_languages(array('show_flags'=>1,'show_names'=>0, 'hide_current'=> 1));?>
     </ul>
 </nav>
