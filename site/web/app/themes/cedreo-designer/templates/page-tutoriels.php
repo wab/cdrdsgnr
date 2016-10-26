@@ -26,7 +26,7 @@ $slugify = new Slugify();
               $title = get_sub_field('title');
               $pdf = get_sub_field('pdf');
               $slugtitle = $slugify->slugify($title);
-              $shortcode = '[gview file="'. $pdf . '" title="'. $title .'"]';
+              $shortcode = '[gview file="'. $pdf . '" title="'. $title .'" save="1" cache="1"]';
             ?>
             <section class="tutoriel--container" id="<?php echo $slugtitle; ?>" data-magellan-target="<?php echo $slugtitle; ?>">
               <h2 class="tutoriel--title"><?php echo $title; ?></h2>
