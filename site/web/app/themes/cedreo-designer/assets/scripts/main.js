@@ -12,9 +12,11 @@ import 'foundation-sites/js/foundation.util.triggers';
 import 'foundation-sites/js/foundation.util.motion';
 import 'foundation-sites/js/foundation.util.timerAndImageLoader';
 import 'foundation-sites/js/foundation.responsiveToggle';
-import 'foundation-sites/js/foundation.interchange';
 import 'foundation-sites/js/foundation.dropdown';
 import 'foundation-sites/js/foundation.reveal';
+import 'foundation-sites/js/foundation.sticky';
+import 'foundation-sites/js/foundation.accordionMenu';
+import 'foundation-sites/js/foundation.magellan';
 
 // import local dependencies
 import Router from './util/router';

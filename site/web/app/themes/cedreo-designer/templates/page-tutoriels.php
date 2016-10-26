@@ -10,15 +10,15 @@ $slugify = new Slugify();
 
 <?php while (have_posts()) : the_post(); ?>
 
-  <div class="page-wrapper">
-    <div class="columns large-8">
+  <div class="page-wrapper" >
+    <div class="page-column page-contenu" id="page-contenu">
       <?php get_template_part('partials/content-page'); ?>
       <?php
 
         // check if the repeater field has rows of data
         if( have_rows('tutoriels') ): ?>
 
-        <section class="tutoriel--container">
+
          <?php while ( have_rows('tutoriels') ) : the_row(); ?>
 
            <?php
@@ -28,19 +28,19 @@ $slugify = new Slugify();
               $slugtitle = $slugify->slugify($title);
               $shortcode = '[gview file="'. $pdf . '" title="'. $title .'"]';
             ?>
-            <a name="<?php echo $slugtitle; ?>" id="<?php echo $slugtitle; ?>"></a>
-            <h2 class="tutoriel--title"><?php echo $title; ?></h2>
-            <div class="tutoriel--contenu">
-              <?php echo do_shortcode($shortcode); ?>
-            </div>
-
+            <section class="tutoriel--container" id="<?php echo $slugtitle; ?>" data-magellan-target="<?php echo $slugtitle; ?>">
+              <h2 class="tutoriel--title"><?php echo $title; ?></h2>
+              <div class="tutoriel--contenu">
+                <?php echo do_shortcode($shortcode); ?>
+              </div>
+            </section>
           <?php endwhile; ?>
-        </section>
+
       <?php endif; ?>
 
     </div>
-    <div class="columns large-4">
-      <nav class="tutoriels--navigation">
+    <div class="page-column sidebar" data-sticky-container>
+      <nav class="tutoriels--navigation sticky" data-sticky data-anchor="page-contenu">
         <h2>Liste des tutoriaux</h2>
         <?php
 
@@ -51,7 +51,7 @@ $slugify = new Slugify();
 
         ?>
 
-        <ul class="tutoriel--navigation--list">
+        <ul class="tutoriel--navigation--list menu vertical" data-magellan>
          <?php while ( have_rows('tutoriels') ) : the_row(); ?>
 
             <?php

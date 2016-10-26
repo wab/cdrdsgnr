@@ -42,6 +42,12 @@
 
 }
 
+.soumenu > .page_item > a {
+  text-transform: uppercase;
+  color: inherit;
+  font-weight: bold;
+}
+
 .soumenu, .children {
   @include menu-expand;
 }
@@ -52,12 +58,20 @@
 
 }
 
-.children {
-  @include menu-nested($global-padding);
+.soumenu .current_page_item {
+  @extend .active;
+}
+.soumenu {
+  .current_page_ancestor > a, .current_page_item a {
+    color: map-get($foundation-palette, primary-dark);
+  }
 }
 
-.current_page_item {
-  @extend .active;
+.tutoriel--navigation--list {
+  .active {
+    background: $primary-color;
+    color: $white;
+  }
 }
 
 .contact--address {

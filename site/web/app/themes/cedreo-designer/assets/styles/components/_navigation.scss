@@ -54,15 +54,16 @@
     }
 
     &.link-login {
-      .icon {
-        font-size: 1.2em;
-        display: block;
-        margin: auto;
-        margin-top: -1em;
-      }
 
       > a {
-        color: $primary-color;
+          > [class^="icon-"], > [class*="icon-"] {
+          font-size: 1.2em;
+          display: block;
+          margin: auto;
+          margin-top: -1em;
+        }
+
+        color: $secondary-color;
         font-weight: bold;
         line-height: 1.6;
       }

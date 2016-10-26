@@ -82,7 +82,7 @@ function list_child_pages() {
     ));
 
     if ($children) {
-        return '<ul class="menu soumenu vertical">'.$children.'</ul>';
+        return '<h2>' . get_the_title($parent) . '</h2><ul class="menu soumenu vertical" data-accordion-menu>'.$children.'</ul>';
     }
 
 }

@@ -77,6 +77,11 @@
   color: $primary-color;
 }
 
+.page--title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .section--title {
   color: map-get($foundation-palette, secondary);
   text-transform: uppercase;

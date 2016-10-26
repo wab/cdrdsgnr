@@ -16,6 +16,10 @@ export default {
     $('.menu-link').click(() => {
       $('.menu-wrapper').toggleClass('opened');
     });
+
+    // Add Class active to current page item
+    const activeParent = $('.dropdown-pane > ul > .active').parents('.menu-parent');
+    activeParent.addClass('active');
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
@@ -30,11 +34,8 @@ export default {
     });
 
     if (document.body.contains(document.querySelector('.page-contenu'))) {
-      sr.reveal('.page-contenu > *');
+      sr.reveal('.hentry > *');
     }
-
-    // Menu nav icons inject
-    $('.link-login a').prepend('<svg class="icon icon-key"><use xlink:href="#icon-key"></use></svg>');
 
     // Scroll animation speed
     const speed = 200;
