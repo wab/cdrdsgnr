@@ -26,15 +26,14 @@ export default {
     $(document).foundation();
 
     // animation scroll reveal
-
     sr.reveal('.scrollreveal', {
       afterReveal: (domEl) => {
         domEl.classList.add('animated');
       },
     });
 
-    if (document.body.contains(document.querySelector('.page-contenu'))) {
-      sr.reveal('.hentry > *');
+    if (document.body.contains(document.querySelector('.page-contenu .hentry'))) {
+      sr.reveal('.page-contenu .hentry > *');
     }
 
     // Scroll animation speed

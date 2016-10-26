@@ -1,5 +1,5 @@
 /* Ensure elements load hidden before ScrollReveal runs */
-.sr .scrollreveal, .sr .hentry > * { visibility: hidden; }
+.sr .scrollreveal, .sr .page-contenu .hentry > * { visibility: hidden; }
 
 .wrap {
   background-color: $light-gray;
