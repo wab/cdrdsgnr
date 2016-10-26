@@ -118,6 +118,7 @@
       outline: none;
       color: map-get($foundation-palette, primary-dark);
     }
+
   }
 }
 .submenu {
@@ -143,7 +144,12 @@
 
       &:hover, &:focus {
         color: map-get($foundation-palette, primary-dark);
+      }
     }
+
+    &.active > a {
+      color: map-get($foundation-palette, primary-dark);
+      background: transparent;
     }
   }
 
@@ -162,4 +168,9 @@
       background-position: 0 -200px;
     }
   }
+}
+
+.sub-menu > .active > a {
+  color: map-get($foundation-palette, primary-dark);
+  background: transparent;
 }

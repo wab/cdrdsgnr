@@ -18,7 +18,7 @@
       <!-- the loop -->
       <?php while ( $childpages->have_posts() ) : $childpages->the_post(); ?>
         <h2><?php the_title(); ?></h2>
-        <?php the_excerpt(); ?>
+        <a href="<?php the_permalink(); ?>">&rarr; Lire</a>
         <hr>
       <?php endwhile; ?>
       <!-- end of the loop -->
