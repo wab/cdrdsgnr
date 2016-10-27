@@ -32,7 +32,6 @@
 
   &.sidebar {
     @include hide-for(medium);
-    @include grid-col-size(4);
   }
 
   @include breakpoint(large) {
