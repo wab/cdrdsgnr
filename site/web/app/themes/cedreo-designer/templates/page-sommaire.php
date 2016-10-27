@@ -10,7 +10,7 @@
   <div class="page-wrapper">
     <div class="page-column page-contenu">
       <?php get_template_part('partials/content-page'); ?>
-      <?php $childpages = new WP_Query( array('post_parent' => $post->ID, 'post_type' => 'page') ); ?>
+      <?php $childpages = new WP_Query( array('post_parent' => $post->ID, 'post_type' => 'page', 'orderby' => 'menu_order', 'order' => 'ASC') ); ?>
       <?php if ( $childpages->have_posts() ) : ?>
 
       <!-- pagination here -->
