@@ -90,7 +90,7 @@
             <li class="item">
               <?php if( $support && in_array('Chat', $support) ) { echo __('Support personnalisé par chat', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
-            <li class="subtitle"><?php echo __('Fonctionnalités', 'cedreo-designer'); ?></li>
+            <!-- <li class="subtitle"><?php echo __('Fonctionnalités', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php if( $features && in_array('plan', $features) ) { echo __('Plan 2D avancé', 'cedreo-designer'); } else { echo __('Plan 2D standard', 'cedreo-designer'); } ?>
             </li>
@@ -102,7 +102,7 @@
             </li>
             <li class="item">
               <?php if( $features && in_array('a2', $features) ) { echo __('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; }; ?>
-            </li>
+            </li> -->
             <li class="link"><a href="<?php echo $link; ?>"><?php echo __('Démarrer', 'cedreo-designer'); ?></a></li>
           </ul>
 
@@ -195,7 +195,7 @@
             <li class="item">
               <?php if( $support && in_array('Chat', $support) ) { echo __('Support personnalisé par chat', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
-            <li class="subtitle"><?php echo __('Fonctionnalités', 'cedreo-designer'); ?></li>
+            <!-- <li class="subtitle"><?php echo __('Fonctionnalités', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php if( $features && in_array('plan', $features) ) { echo __('Plan 2D avancé', 'cedreo-designer'); } else { echo __('Plan 2D standard', 'cedreo-designer'); } ?>
             </li>
@@ -208,7 +208,7 @@
             <li class="item">
               <?php if( $features && in_array('a2', $features) ) { echo __('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; } ?>
             </li>
-            <li class="link"><a href="<?php echo $link; ?>"><?php echo __('Démarrer', 'cedreo-designer'); ?></a></li>
+            <li class="link"><a href="<?php echo $link; ?>"><?php echo __('Démarrer', 'cedreo-designer'); ?></a></li> -->
           </ul>
 
         </li>
@@ -302,7 +302,7 @@
             <li class="item">
               <?php if( $support && in_array('Chat', $support) ) { echo __('Support personnalisé par chat', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
-            <li class="subtitle"><?php echo __('Fonctionnalités', 'cedreo-designer'); ?></li>
+            <!-- <li class="subtitle"><?php echo __('Fonctionnalités', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php if( $features && in_array('plan', $features) ) { echo __('Plan 2D avancé', 'cedreo-designer'); } else { echo __('Plan 2D standard', 'cedreo-designer'); } ?>
             </li>
@@ -314,7 +314,7 @@
             </li>
             <li class="item">
               <?php if( $features && in_array('a2', $features) ) { echo __('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; } ?>
-            </li>
+            </li> -->
             <li class="link"><a href="<?php echo $link; ?>"><?php echo __('Démarrer', 'cedreo-designer'); ?></a></li>
           </ul>
 
