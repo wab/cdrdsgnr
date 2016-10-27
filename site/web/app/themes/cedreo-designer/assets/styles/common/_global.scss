@@ -1,6 +1,25 @@
 /* Ensure elements load hidden before ScrollReveal runs */
 .sr .scrollreveal, .sr .page-contenu .hentry > * { visibility: hidden; }
 
+.type-page a {
+  font-weight: 600;
+  display: inline-block;
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: $light-gray;
+    transition: all 300ms ease;
+  }
+
+  &:hover, &:focus {
+    &:after {
+      background-color: $primary-color;
+    }
+  }
+}
+
 .wrap {
   background-color: $light-gray;
   background-image:

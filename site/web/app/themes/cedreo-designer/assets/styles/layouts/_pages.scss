@@ -30,16 +30,14 @@
 .page-column {
   @include grid-col;
 
-  @include breakpoint(medium) {
-    &.sidebar {
-      @include grid-col-size(4);
-    }
-    &.page-contenu {
-      @include grid-col-size(8);
-    }
+  &.sidebar {
+    @include hide-for(medium);
+    @include grid-col-size(4);
   }
 
-
+  @include breakpoint(large) {
+    @include grid-col-size(8);
+  }
 }
 
 .soumenu > .page_item > a {

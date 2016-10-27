@@ -70,19 +70,22 @@ function list_child_pages() {
     $pageID = $post->ID;
 
     $ancestors = get_post_ancestors($pageID);
+    $parent = wp_get_post_parent_id($pageID);
+
     if( empty($post->post_parent) ) {
         $parent = $post->ID;
     } else {
         $parent = end($ancestors);
     }
     $children = wp_list_pages(array(
-        'child_of' => $parent,
+        'child_of' => $pageID,
         'echo' => '0',
-        'title_li' => ''
+        'title_li' => '',
+        'orderby' => 'menu_order'
     ));
 
     if ($children) {
-        return '<h2>' . get_the_title($parent) . '</h2><ul class="menu soumenu vertical" data-accordion-menu>'.$children.'</ul>';
+        return '<p><strong> Plus de détails ?</strong></p><ul class="menu vertical">'.$children.'</ul>';
     }
 
 }
