@@ -177,42 +177,42 @@
 
   .amenager {
     &:before {
-      background-position: 0 -10%;
+      background-position: 0 -100px;
     }
   }
   .decorer {
     &:before {
-      background-position: 0 -20%;
+      background-position: 0 -200px;
     }
   }
   .valoriser {
     &:before {
-      background-position: 0 -30%;
+      background-position: 0 -300px;
     }
   }
   .architecte {
     &:before {
-      background-position: 0 -40%;
+      background-position: 0 -240px;
     }
   }
   .batiment {
     &:before {
-      background-position: 0 -50%;
+      background-position: 0 -300px;
     }
   }
   .promoteur {
     &:before {
-      background-position: 0 -60%;
+      background-position: 0 -360px;
     }
   }
   .agent {
     &:before {
-      background-position: 0 -70%;
+      background-position: 0 -420px;
     }
   }
   .paysagiste {
     &:before {
-      background-position: 0 -80%;
+      background-position: 0 -480px;
     }
   }
 }
