@@ -93,3 +93,11 @@ add_filter('script_loader_tag', function($tag, $handle) {
    }
    return $tag;
 }, 10, 2);
+
+// breadcrumb
+add_filter('bcn_breadcrumb_title', function($title, $type, $id) {
+  if ($type[0] === 'home') {
+    $title = get_the_title(get_option('page_on_front'));
+  }
+  return $title;
+}, 42, 3);
