@@ -77,9 +77,10 @@
     top: .5em;
     color: $primary-color;
   }
-}
-.nav-footer--link {
-  color: inherit;
+
+  a {
+    color: inherit;
+  }
 }
 
 .widget_recent_entries {

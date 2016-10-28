@@ -4,17 +4,17 @@
       <p class="widget--title"><?php bloginfo('title'); ?></p>
       <nav class="nav-footer scrollreveal">
         <ul class="no-bullet nav-footer--menu">
-          <li class="nav-footer--item"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg> <a class="nav-footer--link" href="<?php bloginfo('url'); ?>/qui-sommes-nous">Qui sommes-nous ?</a></li>
-          <li class="nav-footer--item"><svg class="icon icon-tutos"><use xlink:href="#icon-tutos"></use></svg> <a class="nav-footer--link" href="<?php bloginfo('url'); ?>/tutoriels">Tutoriels</a></li>
-          <li class="nav-footer--item"><svg class="icon icon-users"><use xlink:href="#icon-users"></use></svg> <a class="nav-footer--link" href="">Forum</a></li>
-          <li class="nav-footer--item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg> <a class="nav-footer--link" href="<?php bloginfo('url'); ?>/partenaires">Devenez partenaires</a></li>
-          <li class="nav-footer--item"><svg class="icon icon-envelop"><use xlink:href="#icon-envelop"></use></svg> <a class="nav-footer--link" href="<?php bloginfo('url'); ?>/contact">Contact</a></li>
+          <li class="nav-footer--item"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg><?php icl_link_to_element(262);  ?></li>
+          <li class="nav-footer--item"><svg class="icon icon-tutos"><use xlink:href="#icon-tutos"></use></svg> <?php icl_link_to_element(11);  ?></li>
+          <li class="nav-footer--item"><svg class="icon icon-users"><use xlink:href="#icon-users"></use></svg><?php icl_link_to_element(1024);  ?></li>
+          <li class="nav-footer--item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg><?php icl_link_to_element(35);  ?></li>
+          <li class="nav-footer--item"><svg class="icon icon-envelop"><use xlink:href="#icon-envelop"></use></svg><?php icl_link_to_element(37);  ?></li>
         </ul>
       </nav>
     </div>
 
     <div class="widget">
-      <p class="widget--title">Derniers Articles</p>
+      <p class="widget--title"><?php _e('Recent posts', 'cedreo-designer'); ?></p>
       <?php
       // the query
       $lastposts = new WP_Query( array('post_type' => 'post', 'posts_per_page' => '2') ); ?>
@@ -47,11 +47,11 @@
 
     </div>
     <div class="widget">
-      <p class="widget--title">Derniers Tweets</p>
+      <p class="widget--title"><?php _e('Recent tweets', 'cedreo-designer'); ?></p>
     </div>
 
     <div class="widget">
-      <p class="widget--title">Suivez-nous sur</p>
+      <p class="widget--title"><?php _e('Follow us', 'cedreo-designer'); ?></p>
       <ul class="reseaux--list no-bullet scrollreveal">
         <li class="reseaux--item"><button class="reseaux--link" onclick="window.location.href='https://twitter.com/mysketcher'"><svg class="icon-twitter"><use xlink:href="#icon-twitter"></use></svg></button></li>
         <li class="reseaux--item"><button class="reseaux--link" onclick="window.location.href='https://www.facebook.com/My-Sketcher-1548463242070456'"><svg class="icon-facebook"><use xlink:href="#icon-facebook"></use></svg></button></li>
@@ -64,7 +64,7 @@
   <div class="ours text-center">
     <div class="row column">
       <div class="scrollreveal">
-        <a href="<?php the_permalink( 382 ); ?>">Conditions d'utilisation</a> - <a href="<?php the_permalink( 385 ); ?>">Mentions légales</a> - &copy; copyright <?php echo date("Y") ?> <?php bloginfo('title') ?>
+       <?php icl_link_to_element(382);  ?> - <?php icl_link_to_element(385);  ?> - &copy; copyright <?php echo date("Y") ?> <?php bloginfo('title') ?>
       </div>
     </div>
   </div>

@@ -14,7 +14,7 @@
 
     <div class="columns large-6 individual">
 
-      <h2 class="section--title"><span><?php echo __('Spécial particulier', 'cedreo-designer'); ?></span></h2>
+      <h2 class="section--title"><span><?php _e('Homeowner special', 'cedreo-designer'); ?></span></h2>
 
       <ul class="pricing-table--wrapper no-bullet">
 
@@ -40,70 +40,70 @@
             <li class="title"><?php echo $name; ?></li>
             <li class="price"><?php echo $price . __('&euro; HT', 'cedreo-designer'); ?></li>
             <li class="projects-number">
-            <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projets', 'cedreo-designer'); } else { echo __('Projets illimités', 'cedreo-designer'); } ?></li>
-            <li class="subtitle"><?php echo __('Visuels', 'cedreo-designer'); ?></li>
+            <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projects', 'cedreo-designer'); } else { _e('Unlimited projects', 'cedreo-designer'); } ?></li>
+            <li class="subtitle"><?php _e('Renderings', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php
                 if($visual_1 == 0) { echo '-'; }
-                elseif ($visual_1 == -1) { echo __('Visuels de travail illimités', 'cedreo-designer'); }
-                elseif ($visual_1 == -2) { echo __('Visuels de travail en option', 'cedreo-designer'); }
-                else { echo $visual_1 . '&nbsp;' . __('Visuels de travail', 'cedreo-designer'); }
+                elseif ($visual_1 == -1) { _e('Unlimited test renderings', 'cedreo-designer'); }
+                elseif ($visual_1 == -2) { _e('Optionnal test renderings', 'cedreo-designer'); }
+                else { echo $visual_1 . '&nbsp;' . __('Test renderings', 'cedreo-designer'); }
               ?>
             </li>
             <li class="item">
               <?php
                 if($visual_hd == 0) { echo '-'; }
-                elseif ($visual_hd == -1) { echo __('Visuels HD illimités', 'cedreo-designer'); }
-                elseif ($visual_hd == -2) { echo __('Visuels HD en option', 'cedreo-designer'); }
-                else { echo $visual_hd . '&nbsp;' . __('Visuels HD', 'cedreo-designer'); }
+                elseif ($visual_hd == -1) { _e('Unlimited HD renderings', 'cedreo-designer'); }
+                elseif ($visual_hd == -2) { _e('Optionnal HD renderings', 'cedreo-designer'); }
+                else { echo $visual_hd . '&nbsp;' . __('HD renderings', 'cedreo-designer'); }
               ?>
             </li>
             <li class="item">
               <?php
                 if($visual_print == 0) { echo '-'; }
-                elseif ($visual_print == -1) { echo __('Visuels print illimités', 'cedreo-designer'); }
-                elseif ($visual_print == -2) { echo __('Visuels print en option', 'cedreo-designer'); }
-                else { echo $visual_print . '&nbsp;' . __('Visuels print', 'cedreo-designer'); }
+                elseif ($visual_print == -1) { _e('Unlimited print renderings', 'cedreo-designer'); }
+                elseif ($visual_print == -2) { _e('Optionnal print renderings', 'cedreo-designer'); }
+                else { echo $visual_print . '&nbsp;' . __('print renderings', 'cedreo-designer'); }
               ?>
             </li>
             <!-- <li class="item">
               <?php
                 if($virtual_visits == 0) { echo '-'; }
-                elseif ($virtual_visits == -1) { echo __('Visite virtuelle illimitée', 'cedreo-designer'); }
-                elseif ($virtual_visits == -2) { echo __('Visite virtuelle en option', 'cedreo-designer'); }
-                else { echo $virtual_visits . '&nbsp;' . __('Visites virtuelles', 'cedreo-designer'); }
+                elseif ($virtual_visits == -1) { _e('Unlimited virtual visits', 'cedreo-designer'); }
+                elseif ($virtual_visits == -2) { _e('Optionnal virtual visits', 'cedreo-designer'); }
+                else { echo $virtual_visits . '&nbsp;' . __('Virtual visits', 'cedreo-designer'); }
               ?>
             </li> -->
-            <li class="subtitle"><?php echo __('Support', 'cedreo-designer'); ?></li>
+            <li class="subtitle"><?php _e('Support', 'cedreo-designer'); ?></li>
             <li class="item">
-              <?php if( $support && in_array('Tutoriels', $support) ) { echo __('Accès aux tutoriels', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('Tutoriels', $support) ) { _e('Tutorials', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('Forums', $support) ) { echo __('Accès aux Forums', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('Forums', $support) ) { _e('Forums', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('KBase', $support) ) { echo __('Accès à la Knoweldge Base', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('KBase', $support) ) { _e('Knowledge Base', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('Mail', $support) ) { echo __('Support personnalisé par mail', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('Mail', $support) ) { _e('E-mail', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('Chat', $support) ) { echo __('Support personnalisé par chat', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('Chat', $support) ) { _e('Instant messaging', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
-            <!-- <li class="subtitle"><?php echo __('Fonctionnalités', 'cedreo-designer'); ?></li>
+            <!-- <li class="subtitle"><?php _e('Features', 'cedreo-designer'); ?></li>
             <li class="item">
-              <?php if( $features && in_array('plan', $features) ) { echo __('Plan 2D avancé', 'cedreo-designer'); } else { echo __('Plan 2D standard', 'cedreo-designer'); } ?>
-            </li>
-            <li class="item">
-              <?php if( $features && in_array('extend', $features) ) { echo __('Accès à la bibliothèque de <br/> revêtements étendue', 'cedreo-designer'); } else { echo __('Accès à la bibliothèque de <br/> revêtements free', 'cedreo-designer'); } ?>
+              <?php if( $features && in_array('plan', $features) ) { _e('Plan 2D avancé', 'cedreo-designer'); } else { _e('Plan 2D standard', 'cedreo-designer'); } ?>
             </li>
             <li class="item">
-              <?php if( $features && in_array('a1', $features) ) { echo __('Accès aux packs <br/> d\'aménagement intérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; }; ?>
+              <?php if( $features && in_array('extend', $features) ) { _e('Accès à la bibliothèque de <br/> revêtements étendue', 'cedreo-designer'); } else { _e('Accès à la bibliothèque de <br/> revêtements free', 'cedreo-designer'); } ?>
             </li>
             <li class="item">
-              <?php if( $features && in_array('a2', $features) ) { echo __('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; }; ?>
+              <?php if( $features && in_array('a1', $features) ) { _e('Accès aux packs <br/> d\'aménagement intérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; }; ?>
+            </li>
+            <li class="item">
+              <?php if( $features && in_array('a2', $features) ) { _e('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; }; ?>
             </li> -->
-            <li class="link"><a href="<?php echo $link; ?>"><?php echo __('Démarrer', 'cedreo-designer'); ?></a></li>
+            <li class="link"><a href="<?php echo $link; ?>"><?php _e('Start', 'cedreo-designer'); ?></a></li>
           </ul>
 
         </li>
@@ -119,7 +119,7 @@
 
     <div class="columns large-6 pro">
 
-      <h2 class="section--title"><span><?php echo __('Professionnels mensuels', 'cedreo-designer'); ?></span></h2>
+      <h2 class="section--title"><span><?php _e('Businnes monthly', 'cedreo-designer'); ?></span></h2>
 
       <ul class="pricing-table--wrapper no-bullet">
 
@@ -143,72 +143,72 @@
 
           <ul class="pricing-table no-bullet text-center">
             <li class="title"><?php echo $name; ?></li>
-            <li class="price"><?php echo $price . __('&euro; HT / mois', 'cedreo-designer'); ?></li>
+            <li class="price"><?php echo $price . __('&euro; HT', 'cedreo-designer') . ' / '. __('month', 'cedreo-designer'); ?></li>
             <li class="projects-number">
-            <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projets / mois', 'cedreo-designer'); } else { echo __('Projets illimités', 'cedreo-designer'); } ?></li>
-            <li class="subtitle"><?php echo __('Visuels', 'cedreo-designer'); ?></li>
+            <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projects', 'cedreo-designer') . ' / '. __('month', 'cedreo-designer'); } else { _e('unlimited projects', 'cedreo-designer'); } ?></li>
+            <li class="subtitle"><?php _e('Visuels', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php
                 if($visual_1 == 0) { echo '-'; }
-                elseif ($visual_1 == -1) { echo __('Visuels de travail illimités', 'cedreo-designer'); }
-                elseif ($visual_1 == -2) { echo __('Visuels de travail en option', 'cedreo-designer'); }
-                else { echo $visual_1 . '&nbsp;' . __('Visuels de travail / mois', 'cedreo-designer'); }
+                elseif ($visual_1 == -1) { _e('Unlimited test renderings', 'cedreo-designer'); }
+                elseif ($visual_1 == -2) { _e('Optionnal test renderings', 'cedreo-designer'); }
+                else { echo $visual_1 . '&nbsp;' . __('Test renderings', 'cedreo-designer') . ' / '. __('month', 'cedreo-designer'); }
               ?>
             </li>
             <li class="item">
               <?php
                 if($visual_hd == 0) { echo '-'; }
-                elseif ($visual_hd == -1) { echo __('Visuels HD illimités', 'cedreo-designer'); }
-                elseif ($visual_hd == -2) { echo __('Visuels HD en option', 'cedreo-designer'); }
-                else { echo $visual_hd . '&nbsp;' . __('Visuels HD / mois', 'cedreo-designer'); }
+                elseif ($visual_hd == -1) { _e('HD renderings unlimited', 'cedreo-designer'); }
+                elseif ($visual_hd == -2) { _e('HD renderings optionnal', 'cedreo-designer'); }
+                else { echo $visual_hd . '&nbsp;' . __('HD renderings', 'cedreo-designer') . ' / '. __('month', 'cedreo-designer'); }
               ?>
             </li>
             <li class="item">
               <?php
                 if($visual_print == 0) { echo '-'; }
-                elseif ($visual_print == -1) { echo __('Visuels print illimités', 'cedreo-designer'); }
-                elseif ($visual_print == -2) { echo __('Visuels print en option', 'cedreo-designer'); }
-                else { echo $visual_print . '&nbsp;' . __('Visuels print / mois', 'cedreo-designer'); }
+                elseif ($visual_print == -1) { _e('Unlimited print renderings', 'cedreo-designer'); }
+                elseif ($visual_print == -2) { _e('Optionnal print renderings', 'cedreo-designer'); }
+                else { echo $visual_print . '&nbsp;' . __('print renderings') . ' / ' . __('month', 'cedreo-designer'); }
               ?>
             </li>
             <!-- <li class="item">
               <?php
                 if($virtual_visits == 0) { echo '-'; }
-                elseif ($virtual_visits == -1) { echo __('Visites virtuelles illimitées', 'cedreo-designer'); }
-                elseif ($virtual_visits == -2) { echo __('Visites virtuelles en option', 'cedreo-designer'); }
-                else { echo $virtual_visits . '&nbsp;' . __('Visites virtuelles / mois', 'cedreo-designer'); }
+                elseif ($virtual_visits == -1) { _e('Unlimited virtual visits', 'cedreo-designer'); }
+                elseif ($virtual_visits == -2) { _e('Optionnal virtual visits', 'cedreo-designer'); }
+                else { echo $virtual_visits . '&nbsp;' . __('Virtual visits', 'cedreo-designer') . ' / '. __('month', 'cedreo-designer'); }
               ?>
             </li> -->
-            <li class="subtitle"><?php echo __('Support', 'cedreo-designer'); ?></li>
+            <li class="subtitle"><?php _e('Support', 'cedreo-designer'); ?></li>
             <li class="item">
-              <?php if( $support && in_array('Tutoriels', $support) ) { echo __('Accès aux tutoriels', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('Tutoriels', $support) ) { _e('Tutorials', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('Forums', $support) ) { echo __('Accès aux Forums', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('Forums', $support) ) { _e('Forums', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('KBase', $support) ) { echo __('Accès à la Knoweldge Base', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('KBase', $support) ) { _e('Knowledge Base', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('Mail', $support) ) { echo __('Support personnalisé par mail', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('Mail', $support) ) { _e('E-mail', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('Chat', $support) ) { echo __('Support personnalisé par chat', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('Chat', $support) ) { _e('Instant messaging', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
-            <!-- <li class="subtitle"><?php echo __('Fonctionnalités', 'cedreo-designer'); ?></li>
+            <!-- <li class="subtitle"><?php _e('Features', 'cedreo-designer'); ?></li>
             <li class="item">
-              <?php if( $features && in_array('plan', $features) ) { echo __('Plan 2D avancé', 'cedreo-designer'); } else { echo __('Plan 2D standard', 'cedreo-designer'); } ?>
-            </li>
-            <li class="item">
-              <?php if( $features && in_array('extend', $features) ) { echo __('Accès à la bibliothèque de <br/> revêtements étendue', 'cedreo-designer'); } else { echo __('Accès à la bibliothèque de <br/> revêtements free', 'cedreo-designer'); } ?>
+              <?php if( $features && in_array('plan', $features) ) { _e('Plan 2D avancé', 'cedreo-designer'); } else { _e('Plan 2D standard', 'cedreo-designer'); } ?>
             </li>
             <li class="item">
-              <?php if( $features && in_array('a1', $features) ) { echo __('Accès aux packs <br/> d\'aménagement intérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; } ?>
+              <?php if( $features && in_array('extend', $features) ) { _e('Accès à la bibliothèque de <br/> revêtements étendue', 'cedreo-designer'); } else { _e('Accès à la bibliothèque de <br/> revêtements free', 'cedreo-designer'); } ?>
             </li>
             <li class="item">
-              <?php if( $features && in_array('a2', $features) ) { echo __('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; } ?>
+              <?php if( $features && in_array('a1', $features) ) { _e('Accès aux packs <br/> d\'aménagement intérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; } ?>
             </li>
-            <li class="link"><a href="<?php echo $link; ?>"><?php echo __('Démarrer', 'cedreo-designer'); ?></a></li> -->
+            <li class="item">
+              <?php if( $features && in_array('a2', $features) ) { _e('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; } ?>
+            </li>
+            <li class="link"><a href="<?php echo $link; ?>"><?php _e('Start', 'cedreo-designer'); ?></a></li> -->
           </ul>
 
         </li>
@@ -224,9 +224,9 @@
 
     <div class="columns pro2">
 
-      <h2 class="section--title"><span><?php echo __('Professionnels annuels', 'cedreo-designer'); ?></span></h2>
+      <h2 class="section--title"><span><?php _e('Businnes Annually', 'cedreo-designer'); ?></span></h2>
 
-      <p class="infoprice">Économisez 20% sur l'année</p>
+      <p class="infoprice"><?php _e('Save 20% - 2 months free', 'cedreo-designer'); ?></p>
 
       <ul class="pricing-table--wrapper no-bullet">
 
@@ -250,72 +250,72 @@
 
           <ul class="pricing-table no-bullet text-center">
             <li class="title"><?php echo $name; ?></li>
-            <li class="price"><?php echo $price . __('&euro; HT / an', 'cedreo-designer'); ?></li>
+            <li class="price"><?php echo $price . __('&euro; HT', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); ?></li>
             <li class="projects-number">
-            <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projets / an', 'cedreo-designer'); } else { echo __('Projets illimités', 'cedreo-designer'); } ?></li>
-            <li class="subtitle"><?php echo __('Visuels', 'cedreo-designer'); ?></li>
+            <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projects', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); } else { _e('unlimited projects', 'cedreo-designer'); } ?></li>
+            <li class="subtitle"><?php _e('Visuels', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php
                 if($visual_1 == 0) { echo '-'; }
-                elseif ($visual_1 == -1) { echo __('Visuels de travail illimités', 'cedreo-designer'); }
-                elseif ($visual_1 == -2) { echo __('Visuels de travail en option', 'cedreo-designer'); }
-                else { echo $visual_1 . '&nbsp;' . __('Visuels de travail / an', 'cedreo-designer'); }
+                elseif ($visual_1 == -1) { _e('Unlimited test renderings', 'cedreo-designer'); }
+                elseif ($visual_1 == -2) { _e('Optionnal test renderings', 'cedreo-designer'); }
+                else { echo $visual_1 . '&nbsp;' . __('Test renderings', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); }
               ?>
             </li>
             <li class="item">
               <?php
                 if($visual_hd == 0) { echo '-'; }
-                elseif ($visual_hd == -1) { echo __('Visuels HD illimités', 'cedreo-designer'); }
-                elseif ($visual_hd == -2) { echo __('Visuels HD en option', 'cedreo-designer'); }
-                else { echo $visual_hd . '&nbsp;' . __('Visuels HD / an', 'cedreo-designer'); }
+                elseif ($visual_hd == -1) { _e('HD renderings unlimited', 'cedreo-designer'); }
+                elseif ($visual_hd == -2) { _e('HD renderings optionnal', 'cedreo-designer'); }
+                else { echo $visual_hd . '&nbsp;' . __('HD renderings', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); }
               ?>
             </li>
             <li class="item">
               <?php
                 if($visual_print == 0) { echo '-'; }
-                elseif ($visual_print == -1) { echo __('Visuels print illimités', 'cedreo-designer'); }
-                elseif ($visual_print == -2) { echo __('Visuels print en option', 'cedreo-designer'); }
-                else { echo $visual_print . '&nbsp;' . __('Visuels print / an', 'cedreo-designer'); }
+                elseif ($visual_print == -1) { _e('Unlimited print renderings', 'cedreo-designer'); }
+                elseif ($visual_print == -2) { _e('Optionnal print renderings', 'cedreo-designer'); }
+                else { echo $visual_print . '&nbsp;' . __('print renderings', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); }
               ?>
             </li>
             <!-- <li class="item">
               <?php
                 if($virtual_visits == 0) { echo '-'; }
-                elseif ($virtual_visits == -1) { echo __('Visite virtuelle illimitée', 'cedreo-designer'); }
-                elseif ($virtual_visits == -2) { echo __('Visite virtuelle en option', 'cedreo-designer'); }
-                else { echo $virtual_visits . '&nbsp;' . __('Visites virtuelles / an ', 'cedreo-designer'); }
+                elseif ($virtual_visits == -1) { _e('Unlimited virtual visits', 'cedreo-designer'); }
+                elseif ($virtual_visits == -2) { _e('Optionnal virtual visits', 'cedreo-designer'); }
+                else { echo $virtual_visits . '&nbsp;' . __('Virtual visits', 'cedreo-designer'). ' / '. __('year ', 'cedreo-designer'); }
               ?>
             </li> -->
-            <li class="subtitle"><?php echo __('Support', 'cedreo-designer'); ?></li>
+            <li class="subtitle"><?php _e('Support', 'cedreo-designer'); ?></li>
             <li class="item">
-              <?php if( $support && in_array('Tutoriels', $support) ) { echo __('Accès aux tutoriels', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('Tutoriels', $support) ) { _e('Tutorials', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('Forums', $support) ) { echo __('Accès aux Forums', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('Forums', $support) ) { _e('Forums', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('KBase', $support) ) { echo __('Accès à la Knoweldge Base', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('KBase', $support) ) { _e('Knowledge Base', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('Mail', $support) ) { echo __('Support personnalisé par mail', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('Mail', $support) ) { _e('E-mail', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('Chat', $support) ) { echo __('Support personnalisé par chat', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('Chat', $support) ) { _e('Instant messaging', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
-            <!-- <li class="subtitle"><?php echo __('Fonctionnalités', 'cedreo-designer'); ?></li>
+            <!-- <li class="subtitle"><?php _e('Features', 'cedreo-designer'); ?></li>
             <li class="item">
-              <?php if( $features && in_array('plan', $features) ) { echo __('Plan 2D avancé', 'cedreo-designer'); } else { echo __('Plan 2D standard', 'cedreo-designer'); } ?>
-            </li>
-            <li class="item">
-              <?php if( $features && in_array('extend', $features) ) { echo __('Accès à la bibliothèque de <br/> revêtements étendue', 'cedreo-designer'); } else { echo __('Accès à la bibliothèque de <br/> revêtements free', 'cedreo-designer'); } ?>
+              <?php if( $features && in_array('plan', $features) ) { _e('Plan 2D avancé', 'cedreo-designer'); } else { _e('Plan 2D standard', 'cedreo-designer'); } ?>
             </li>
             <li class="item">
-              <?php if( $features && in_array('a1', $features) ) { echo __('Accès aux packs <br/> d\'aménagement intérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; } ?>
+              <?php if( $features && in_array('extend', $features) ) { _e('Accès à la bibliothèque de <br/> revêtements étendue', 'cedreo-designer'); } else { _e('Accès à la bibliothèque de <br/> revêtements free', 'cedreo-designer'); } ?>
             </li>
             <li class="item">
-              <?php if( $features && in_array('a2', $features) ) { echo __('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; } ?>
+              <?php if( $features && in_array('a1', $features) ) { _e('Accès aux packs <br/> d\'aménagement intérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; } ?>
+            </li>
+            <li class="item">
+              <?php if( $features && in_array('a2', $features) ) { _e('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; } ?>
             </li> -->
-            <li class="link"><a href="<?php echo $link; ?>"><?php echo __('Démarrer', 'cedreo-designer'); ?></a></li>
+            <li class="link"><a href="<?php echo $link; ?>"><?php _e('Start', 'cedreo-designer'); ?></a></li>
           </ul>
 
         </li>
@@ -331,7 +331,7 @@
 
     <div class="columns packs">
 
-      <h2 class="section--title"><span><?php echo __('Nos Packs', 'cedreo-designer'); ?></span></h2>
+      <h2 class="section--title"><span><?php _e('Packages', 'cedreo-designer'); ?></span></h2>
 
       <ul class="pricing-table--wrapper no-bullet">
 
@@ -349,7 +349,7 @@
           <ul class="pricing-table no-bullet text-center">
             <li class="title"><?php echo $name; ?></li>
             <li class="price"><?php echo $price . __('&euro; HT', 'cedreo-designer'); ?></li>
-            <li class="link"><a href="<?php echo $link; ?>"><?php echo __('Choisissez', 'cedreo-designer'); ?></a></li>
+            <li class="link"><a href="<?php echo $link; ?>"><?php _e('Choose', 'cedreo-designer'); ?></a></li>
           </ul>
 
         </li>
@@ -369,7 +369,7 @@
     <div class="row">
 
     <div class="columns large-8 large-centered">
-      <h2 class="section--title"><span><?php echo __('FAQs', 'cedreo-designer'); ?></span></h2>
+      <h2 class="section--title"><span><?php _e('FAQs', 'cedreo-designer'); ?></span></h2>
 
       <ul class="faq--items">
 

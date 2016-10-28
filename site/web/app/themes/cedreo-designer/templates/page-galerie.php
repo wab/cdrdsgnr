@@ -17,13 +17,15 @@ $terms = get_terms( 'gallerytag', array(
   <div class="page-wrapper">
 
         <div class="text-center">
-            <h2 class="section--title"><span><?php echo __('Idées &amp; styles déco', 'cedreo-designer'); ?></span></h2>
+        <?php if(get_field('subtitle')):  ?>
+            <h2 class="section--title"><span><?php the_field('subtitle'); ?></span></h2>
+        <?php endif; ?>
             <?php get_template_part('partials/content-page'); ?>
         </div>
 
         <?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
             <nav class="gallery--filters">
-                <button data-filter="*" class="gallery--filter is-checked">Tous</button>
+                <button data-filter="*" class="gallery--filter is-checked"><?php _e('all', 'cedreo-designer'); ?></button>
                 <?php foreach ( $terms as $term ) { ?>
                     <button data-filter=".gallerytag-<?php echo $term->slug ?>" class="gallery--filter"><?php echo $term->name ?></button>
                 <?php } ?>
@@ -60,7 +62,7 @@ $terms = get_terms( 'gallerytag', array(
 
 
             <p class="text-center">
-                <button class="load-more button secondary large hollow"><?php echo __('Voir la suite', 'cerdeo-designer'); ?></button>
+                <button class="load-more button secondary large hollow"><?php _e('see more', 'cerdeo-designer'); ?></button>
             </p>
 
 
