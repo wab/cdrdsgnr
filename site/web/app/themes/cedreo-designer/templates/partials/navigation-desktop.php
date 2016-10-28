@@ -13,7 +13,7 @@
       <li class="menu-item menu-parent menu-users">
         <a href="#" data-toggle="menu-users"><?php echo __('Pour qui ?', 'cedreo-designer') ?></a>
         <div class="dropdown-pane" id="menu-users" data-dropdown data-animate="slide-in-down slide-out-up" data-v-offset="0" data-auto-focus="false" data-hover="true" data-hover-pane="true">
-          <?php wp_nav_menu(['theme_location' => 'users_navigation', 'menu_class' => 'sub-menu', 'depth' => 2]); ?>
+          <?php wp_nav_menu(['theme_location' => 'users_navigation', 'menu_class' => 'submenu', 'depth' => 2]); ?>
         </div>
       </li>
       <?php endif; ?>

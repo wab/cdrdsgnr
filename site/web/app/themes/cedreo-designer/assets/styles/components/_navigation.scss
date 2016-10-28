@@ -27,7 +27,7 @@
         display: block;
         width: 100%;
         height: 0px;
-        background: $dark-gray;
+        background: $primary-color;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -78,12 +78,29 @@
 
   transition: transform 200ms ease-in-out;
 
-  &#menu-features {
+  &#menu-features,  {
   width: $dropdown-width + 120px;
     .submenu {
       padding-left: 110px;
       > .menu-item:not(:last-child) {
         margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &#menu-users,  {
+  width: $dropdown-width + 70px;
+    .submenu {
+      padding-left: 60px;
+      > .menu-item:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      a {
+        color: $white;
+
+        &:hover, &:focus {
+          color: $primary-color;
+        }
       }
     }
   }
@@ -114,10 +131,12 @@
 
   a {
     color: inherit;
-    transition: color 100ms ease;
+    transition: color 300ms ease;
+    display: block;
     &:hover, &:focus {
       outline: none;
-      color: map-get($foundation-palette, primary-dark);
+      color: $primary-color;
+      text-decoration: underline;
     }
 
   }
@@ -133,19 +152,21 @@
       left: -110px;
       @include vertical-center;
       z-index: 50;
-      background: url(../images/pictos-features.svg) no-repeat;
+      background: url(../images/pictos-menu.svg) no-repeat;
       background-size: 100%;
       background-position: 0 0;
+
+      #menu-users & {
+        width: 60px;
+        height: 60px;
+        left: -65px;
+      }
     }
     > a {
       text-transform: uppercase;
       font-size: 1.1rem;
       color: $primary-color;
       font-weight: 600;
-
-      &:hover, &:focus {
-        color: map-get($foundation-palette, primary-dark);
-      }
     }
 
     &.active > a {
@@ -161,12 +182,37 @@
   }
   .decorer {
     &:before {
-      background-position: 0 -300px;
+      background-position: 0 -200px;
     }
   }
   .valoriser {
     &:before {
-      background-position: 0 -200px;
+      background-position: 0 -300px;
+    }
+  }
+  .architecte {
+    &:before {
+      background-position: 0 -400px;
+    }
+  }
+  .batiment {
+    &:before {
+      background-position: 0 -500px;
+    }
+  }
+  .promoteur {
+    &:before {
+      background-position: 0 -600px;
+    }
+  }
+  .agent {
+    &:before {
+      background-position: 0 -700px;
+    }
+  }
+  .paysagiste {
+    &:before {
+      background-position: 0 -700px;
     }
   }
 }

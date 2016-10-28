@@ -82,7 +82,7 @@
               <?php if( $support && in_array('Forums', $support) ) { echo __('Accès aux Forums', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('Kbase', $support) ) { echo __('Accès à la Knoweldge Base', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('KBase', $support) ) { echo __('Accès à la Knoweldge Base', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
               <?php if( $support && in_array('Mail', $support) ) { echo __('Support personnalisé par mail', 'cedreo-designer'); } else { echo '-'; } ?>
@@ -187,7 +187,7 @@
               <?php if( $support && in_array('Forums', $support) ) { echo __('Accès aux Forums', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('Kbase', $support) ) { echo __('Accès à la Knoweldge Base', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('KBase', $support) ) { echo __('Accès à la Knoweldge Base', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
               <?php if( $support && in_array('Mail', $support) ) { echo __('Support personnalisé par mail', 'cedreo-designer'); } else { echo '-'; } ?>
@@ -294,7 +294,7 @@
               <?php if( $support && in_array('Forums', $support) ) { echo __('Accès aux Forums', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
-              <?php if( $support && in_array('Kbase', $support) ) { echo __('Accès à la Knoweldge Base', 'cedreo-designer'); } else { echo '-'; } ?>
+              <?php if( $support && in_array('KBase', $support) ) { echo __('Accès à la Knoweldge Base', 'cedreo-designer'); } else { echo '-'; } ?>
             </li>
             <li class="item">
               <?php if( $support && in_array('Mail', $support) ) { echo __('Support personnalisé par mail', 'cedreo-designer'); } else { echo '-'; } ?>
