@@ -53,6 +53,8 @@
 .pros--secteur {
   text-align: center;
 
+  color: map-get($foundation-palette, secondary);
+
   &:nth-child(2) {
     color: map-get($foundation-palette, secondary-light);
   }
@@ -106,6 +108,7 @@
 }
 
 .feature {
+
   .section--title {
     &:before {
       display: none;

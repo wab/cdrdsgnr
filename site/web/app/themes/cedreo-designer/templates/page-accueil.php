@@ -174,7 +174,7 @@
     </div>
   </div>
 
-  <div class="section feature">
+  <div class="section feature draw">
     <a name="f1" id="f1" class="anchor"></a>
     <div class="feature--wrapper">
       <div class="feature--column"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/img-dessiner.png" alt="<?php echo __('Dessiner', 'cedreo-designer'); ?>"></div>
