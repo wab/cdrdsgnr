@@ -1,0 +1,429 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cedreo Designer\n"
+"POT-Creation-Date: 2016-10-28 23:35+0200\n"
+"PO-Revision-Date: 2016-10-28 23:53+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: functions.php:58
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr ""
+
+#: src/filters.php:42
+msgid "Continued"
+msgstr "Suite"
+
+#: src/helpers.php:52
+msgid "Latest Posts"
+msgstr "Derniers Articles"
+
+#: src/helpers.php:58
+#, php-format
+msgid "Search Results for %s"
+msgstr "Résultats de recherche pour %s"
+
+#: src/helpers.php:61
+msgid "Not Found"
+msgstr "Non trouvé"
+
+#: src/setup.php:47
+msgid "Primary Navigation"
+msgstr "Navigation primaire"
+
+#: src/setup.php:50
+msgid "Features Navigation"
+msgstr "Navigation fonctionnalités"
+
+#: src/setup.php:53
+msgid "Users Navigation"
+msgstr "Navigation utilisateurs"
+
+#: src/setup.php:96
+msgid "Primary"
+msgstr "Primaire"
+
+#: src/setup.php:100
+msgid "Footer"
+msgstr "Pied de page"
+
+#: templates/404.php:3
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "Cette page n’existe pas !"
+
+#: templates/index.php:3 templates/search.php:5
+msgid "Sorry, no results were found."
+msgstr "Il n’y a pas de résultats !"
+
+#: templates/layouts/base.php:8
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+"Vous utilisez une version obsolète de votre navigateur. Veuillez le  <a "
+"href=« http://browsehappy.com/« >mettre à jour</a> pour visionner votre "
+"site correctement."
+
+#: templates/page-accueil.php:16 templates/page-accueil.php:46
+msgid "Why"
+msgstr "Pourquoi"
+
+#: templates/page-accueil.php:74
+msgid "For professionals"
+msgstr "Pour les pros"
+
+#: templates/page-accueil.php:86
+msgid "Home building"
+msgstr "Bâtiment neuf"
+
+#: templates/page-accueil.php:112
+msgid "Home improvment"
+msgstr "Bâtiment ancien"
+
+#: templates/page-accueil.php:137
+msgid "Interior remodeling"
+msgstr "Agencement intérieur"
+
+#: templates/page-accueil.php:158
+msgid "Exterior design"
+msgstr "Agencement extérieur"
+
+#: templates/page-accueil.php:180
+msgid "Design"
+msgstr "Dessiner"
+
+#: templates/page-accueil.php:190 templates/page-accueil.php:208
+#: templates/page-accueil.php:226
+msgid "Find out more"
+msgstr "Accéder"
+
+#: templates/page-accueil.php:198
+msgid "Remodel"
+msgstr "Aménager"
+
+#: templates/page-accueil.php:216
+msgid "Enhance"
+msgstr "Valoriser"
+
+#: templates/page-accueil.php:233
+msgid "Gallery"
+msgstr "Galerie"
+
+#: templates/page-accueil.php:275
+msgid "See all images"
+msgstr "Voir la galerie"
+
+#: templates/page-contact.php:61
+msgid "Contactez-nous"
+msgstr ""
+
+#: templates/page-galerie.php:28
+msgid "all"
+msgstr "Tous"
+
+#: templates/page-galerie.php:60 templates/partials/footer.php:45
+#: templates/partials/nav-secteurs.php:43
+msgid "Sorry, no posts matched your criteria."
+msgstr "Désolé, aucun article ne correspond à vos critères."
+
+#: templates/page-galerie.php:65
+msgid "see more"
+msgstr "Lire la suite"
+
+#: templates/page-tarifs.php:17
+msgid "Homeowner special"
+msgstr "Spécial particulier"
+
+#: templates/page-tarifs.php:41 templates/page-tarifs.php:146
+#: templates/page-tarifs.php:253 templates/page-tarifs.php:351
+msgid "&euro; HT"
+msgstr ""
+
+#: templates/page-tarifs.php:43 templates/page-tarifs.php:148
+#: templates/page-tarifs.php:255
+msgid "projects"
+msgstr "projets"
+
+#: templates/page-tarifs.php:43
+msgid "Unlimited projects"
+msgstr "projets illimités"
+
+#: templates/page-tarifs.php:44
+msgid "Renderings"
+msgstr "Visuels"
+
+#: templates/page-tarifs.php:48 templates/page-tarifs.php:153
+#: templates/page-tarifs.php:260
+msgid "Unlimited test renderings"
+msgstr "Visuels de travail illimités"
+
+#: templates/page-tarifs.php:49 templates/page-tarifs.php:154
+#: templates/page-tarifs.php:261
+msgid "Optionnal test renderings"
+msgstr "Visuels de travail optionnels"
+
+#: templates/page-tarifs.php:50 templates/page-tarifs.php:155
+#: templates/page-tarifs.php:262
+msgid "Test renderings"
+msgstr "Visuels de travail"
+
+#: templates/page-tarifs.php:56
+msgid "Unlimited HD renderings"
+msgstr "Visuels HD illimités"
+
+#: templates/page-tarifs.php:57
+msgid "Optionnal HD renderings"
+msgstr "Visuels HD optionnels"
+
+#: templates/page-tarifs.php:58 templates/page-tarifs.php:163
+#: templates/page-tarifs.php:270
+msgid "HD renderings"
+msgstr "Visuels HD"
+
+#: templates/page-tarifs.php:64 templates/page-tarifs.php:169
+#: templates/page-tarifs.php:276
+msgid "Unlimited print renderings"
+msgstr "Visuels print illimités "
+
+#: templates/page-tarifs.php:65 templates/page-tarifs.php:170
+#: templates/page-tarifs.php:277
+msgid "Optionnal print renderings"
+msgstr "Visuels print illimités"
+
+#: templates/page-tarifs.php:66 templates/page-tarifs.php:171
+#: templates/page-tarifs.php:278
+msgid "print renderings"
+msgstr "Visuels print"
+
+#: templates/page-tarifs.php:72 templates/page-tarifs.php:177
+#: templates/page-tarifs.php:284
+msgid "Unlimited virtual visits"
+msgstr "Visites virtuelles illimitées"
+
+#: templates/page-tarifs.php:73 templates/page-tarifs.php:178
+#: templates/page-tarifs.php:285
+msgid "Optionnal virtual visits"
+msgstr "Visites virtuelles optionnelles"
+
+#: templates/page-tarifs.php:74 templates/page-tarifs.php:179
+#: templates/page-tarifs.php:286
+msgid "Virtual visits"
+msgstr "Visites virtuelles"
+
+#: templates/page-tarifs.php:77 templates/page-tarifs.php:182
+#: templates/page-tarifs.php:289
+msgid "Support"
+msgstr "Support"
+
+#: templates/page-tarifs.php:79 templates/page-tarifs.php:184
+#: templates/page-tarifs.php:291
+msgid "Tutorials"
+msgstr "Accès aux tutoriels"
+
+#: templates/page-tarifs.php:82 templates/page-tarifs.php:187
+#: templates/page-tarifs.php:294
+msgid "Forums"
+msgstr "Accès aux Forums"
+
+#: templates/page-tarifs.php:85 templates/page-tarifs.php:190
+#: templates/page-tarifs.php:297
+msgid "Knowledge Base"
+msgstr "Accès à la Knowledge Base"
+
+#: templates/page-tarifs.php:88 templates/page-tarifs.php:193
+#: templates/page-tarifs.php:300
+msgid "E-mail"
+msgstr "Support personnalisé par mail"
+
+#: templates/page-tarifs.php:91 templates/page-tarifs.php:196
+#: templates/page-tarifs.php:303
+msgid "Instant messaging"
+msgstr "Support personnalisé par chat"
+
+#: templates/page-tarifs.php:93 templates/page-tarifs.php:198
+#: templates/page-tarifs.php:305 templates/partials/navigation-desktop.php:6
+msgid "Features"
+msgstr "Fonctionnalités"
+
+#: templates/page-tarifs.php:95 templates/page-tarifs.php:200
+#: templates/page-tarifs.php:307
+msgid "Plan 2D avancé"
+msgstr ""
+
+#: templates/page-tarifs.php:95 templates/page-tarifs.php:200
+#: templates/page-tarifs.php:307
+msgid "Plan 2D standard"
+msgstr ""
+
+#: templates/page-tarifs.php:98 templates/page-tarifs.php:203
+#: templates/page-tarifs.php:310
+msgid "Accès à la bibliothèque de <br/> revêtements étendue"
+msgstr ""
+
+#: templates/page-tarifs.php:98 templates/page-tarifs.php:203
+#: templates/page-tarifs.php:310
+msgid "Accès à la bibliothèque de <br/> revêtements free"
+msgstr ""
+
+#: templates/page-tarifs.php:101 templates/page-tarifs.php:206
+#: templates/page-tarifs.php:313
+msgid "Accès aux packs <br/> d'aménagement intérieur"
+msgstr ""
+
+#: templates/page-tarifs.php:104 templates/page-tarifs.php:209
+#: templates/page-tarifs.php:316
+msgid "Accès aux packs <br/> d'aménagement extérieur"
+msgstr ""
+
+#: templates/page-tarifs.php:106 templates/page-tarifs.php:211
+#: templates/page-tarifs.php:318
+msgid "Start"
+msgstr "Démarrer"
+
+#: templates/page-tarifs.php:122
+msgid "Businnes monthly"
+msgstr "Professionnels mensuels"
+
+#: templates/page-tarifs.php:146 templates/page-tarifs.php:148
+#: templates/page-tarifs.php:155 templates/page-tarifs.php:163
+#: templates/page-tarifs.php:171 templates/page-tarifs.php:179
+msgid "month"
+msgstr "mois"
+
+#: templates/page-tarifs.php:148 templates/page-tarifs.php:255
+msgid "unlimited projects"
+msgstr "projets illimités"
+
+#: templates/page-tarifs.php:149 templates/page-tarifs.php:256
+msgid "Visuels"
+msgstr ""
+
+#: templates/page-tarifs.php:161 templates/page-tarifs.php:268
+msgid "HD renderings unlimited"
+msgstr ""
+
+#: templates/page-tarifs.php:162 templates/page-tarifs.php:269
+msgid "HD renderings optionnal"
+msgstr ""
+
+#: templates/page-tarifs.php:227
+msgid "Businnes Annually"
+msgstr "Professionnels Annuels"
+
+#: templates/page-tarifs.php:229
+msgid "Save 20% - 2 months free"
+msgstr "Économisez 20% sur l’année"
+
+#: templates/page-tarifs.php:253 templates/page-tarifs.php:255
+#: templates/page-tarifs.php:262 templates/page-tarifs.php:270
+#: templates/page-tarifs.php:278
+msgid "year"
+msgstr "An"
+
+#: templates/page-tarifs.php:286
+msgid "year "
+msgstr "An"
+
+#: templates/page-tarifs.php:334
+msgid "Packages"
+msgstr "Nos Packs"
+
+#: templates/page-tarifs.php:352
+msgid "Choose"
+msgstr "Choisissez"
+
+#: templates/page-tarifs.php:372
+msgid "FAQs"
+msgstr "FAQs"
+
+#: templates/partials/comments.php:9
+#, php-format
+msgctxt "comments title"
+msgid "One response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/partials/comments.php:19
+msgid "&larr; Older comments"
+msgstr ""
+
+#: templates/partials/comments.php:22
+msgid "Newer comments &rarr;"
+msgstr "Commentaires récents &rarr;"
+
+#: templates/partials/comments.php:31
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés"
+
+#: templates/partials/content-page.php:3
+#: templates/partials/content-single.php:11
+msgid "Pages:"
+msgstr "Pages:"
+
+#: templates/partials/footer.php:17
+msgid "Recent posts"
+msgstr "Articles Récents"
+
+#: templates/partials/footer.php:50
+msgid "Recent tweets"
+msgstr "Tweets récents"
+
+#: templates/partials/footer.php:54
+msgid "Follow us"
+msgstr "Nous suivre"
+
+#: templates/partials/navigation-desktop.php:15
+msgid "For businesses"
+msgstr "Pour qui ?"
+
+#: templates/partials/navigation-desktop.php:27
+msgid "My account"
+msgstr "Mon compte"
+
+#: templates/partials/navigation-desktop.php:32
+msgid "Login"
+msgstr "Se connecter"
+
+#: templates/partials/navigation-desktop.php:36
+msgid "Register"
+msgstr "S’inscrire"
+
+#. Theme Name of the plugin/theme
+msgid "Cedreo Designer"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://cedreo-designer.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"With Sage is a WordPress starter theme. <a href=\"https://github.com/roots/"
+"sage\">Contribute on GitHub</a>"
+msgstr ""
+"Sage est un thème de démarrage WordPress. <a href=« https://github.com/"
+"roots/sage »>Contribute sur GitHub</a>"
+
+#. Author of the plugin/theme
+msgid "wabdsgn"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wabdesign.fr/"
+msgstr ""
