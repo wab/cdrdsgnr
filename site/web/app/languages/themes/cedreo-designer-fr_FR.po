@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cedreo Designer\n"
 "POT-Creation-Date: 2016-10-28 23:35+0200\n"
-"PO-Revision-Date: 2016-10-28 23:53+0200\n"
+"PO-Revision-Date: 2016-11-02 21:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -333,15 +333,15 @@ msgstr "Économisez 20% sur l’année"
 #: templates/page-tarifs.php:262 templates/page-tarifs.php:270
 #: templates/page-tarifs.php:278
 msgid "year"
-msgstr "An"
+msgstr "an"
 
 #: templates/page-tarifs.php:286
 msgid "year "
-msgstr "An"
+msgstr "an"
 
 #: templates/page-tarifs.php:334
 msgid "Packages"
-msgstr "Nos Packs"
+msgstr "Packs"
 
 #: templates/page-tarifs.php:352
 msgid "Choose"

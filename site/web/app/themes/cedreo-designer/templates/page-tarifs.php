@@ -38,7 +38,7 @@
 
           <ul class="pricing-table no-bullet text-center">
             <li class="title"><?php echo $name; ?></li>
-            <li class="price"><?php echo $price . __('&euro; HT', 'cedreo-designer'); ?></li>
+            <li class="price"><?php echo $price . __('&dollar;', 'cedreo-designer'); ?></li>
             <li class="projects-number">
             <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projects', 'cedreo-designer'); } else { _e('Unlimited projects', 'cedreo-designer'); } ?></li>
             <li class="subtitle"><?php _e('Renderings', 'cedreo-designer'); ?></li>
@@ -119,7 +119,7 @@
 
     <div class="columns large-6 pro">
 
-      <h2 class="section--title"><span><?php _e('Businnes monthly', 'cedreo-designer'); ?></span></h2>
+      <h2 class="section--title"><span><?php _e('Business monthly', 'cedreo-designer'); ?></span></h2>
 
       <ul class="pricing-table--wrapper no-bullet">
 
@@ -143,15 +143,15 @@
 
           <ul class="pricing-table no-bullet text-center">
             <li class="title"><?php echo $name; ?></li>
-            <li class="price"><?php echo $price . __('&euro; HT', 'cedreo-designer') . ' / '. __('month', 'cedreo-designer'); ?></li>
+            <li class="price"><?php echo $price . __('&dollar;', 'cedreo-designer') . ' / '. __('month', 'cedreo-designer'); ?></li>
             <li class="projects-number">
-            <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projects', 'cedreo-designer') . ' / '. __('month', 'cedreo-designer'); } else { _e('unlimited projects', 'cedreo-designer'); } ?></li>
+            <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projects', 'cedreo-designer') . ' / '. __('month', 'cedreo-designer'); } else { _e('Unlimited projects', 'cedreo-designer'); } ?></li>
             <li class="subtitle"><?php _e('Visuels', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php
                 if($visual_1 == 0) { echo '-'; }
-                elseif ($visual_1 == -1) { _e('Unlimited test renderings', 'cedreo-designer'); }
-                elseif ($visual_1 == -2) { _e('Optionnal test renderings', 'cedreo-designer'); }
+                elseif ($visual_1 == -1) { _e('Unlimited Test renderings', 'cedreo-designer'); }
+                elseif ($visual_1 == -2) { _e('Optionnal Test renderings', 'cedreo-designer'); }
                 else { echo $visual_1 . '&nbsp;' . __('Test renderings', 'cedreo-designer') . ' / '. __('month', 'cedreo-designer'); }
               ?>
             </li>
@@ -207,8 +207,8 @@
             </li>
             <li class="item">
               <?php if( $features && in_array('a2', $features) ) { _e('Accès aux packs <br/> d\'aménagement extérieur', 'cedreo-designer'); } else { echo '- <br/> &nbsp;'; } ?>
-            </li>
-            <li class="link"><a href="<?php echo $link; ?>"><?php _e('Start', 'cedreo-designer'); ?></a></li> -->
+            </li> -->
+            <li class="link"><a href="<?php echo $link; ?>"><?php _e('Start', 'cedreo-designer'); ?></a></li>
           </ul>
 
         </li>
@@ -224,7 +224,7 @@
 
     <div class="columns pro2">
 
-      <h2 class="section--title"><span><?php _e('Businnes Annually', 'cedreo-designer'); ?></span></h2>
+      <h2 class="section--title"><span><?php _e('Business Yearly', 'cedreo-designer'); ?></span></h2>
 
       <p class="infoprice"><?php _e('Save 20% - 2 months free', 'cedreo-designer'); ?></p>
 
@@ -250,7 +250,7 @@
 
           <ul class="pricing-table no-bullet text-center">
             <li class="title"><?php echo $name; ?></li>
-            <li class="price"><?php echo $price . __('&euro; HT', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); ?></li>
+            <li class="price"><?php echo $price . __('&dollar;', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); ?></li>
             <li class="projects-number">
             <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projects', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); } else { _e('unlimited projects', 'cedreo-designer'); } ?></li>
             <li class="subtitle"><?php _e('Visuels', 'cedreo-designer'); ?></li>
@@ -273,9 +273,9 @@
             <li class="item">
               <?php
                 if($visual_print == 0) { echo '-'; }
-                elseif ($visual_print == -1) { _e('Unlimited print renderings', 'cedreo-designer'); }
-                elseif ($visual_print == -2) { _e('Optionnal print renderings', 'cedreo-designer'); }
-                else { echo $visual_print . '&nbsp;' . __('print renderings', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); }
+                elseif ($visual_print == -1) { _e('Unlimited Print renderings', 'cedreo-designer'); }
+                elseif ($visual_print == -2) { _e('Optionnal Print renderings', 'cedreo-designer'); }
+                else { echo $visual_print . '&nbsp;' . __('Print renderings', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); }
               ?>
             </li>
             <!-- <li class="item">
@@ -348,7 +348,7 @@
 
           <ul class="pricing-table no-bullet text-center">
             <li class="title"><?php echo $name; ?></li>
-            <li class="price"><?php echo $price . __('&euro; HT', 'cedreo-designer'); ?></li>
+            <li class="price"><?php echo $price . __('&dollar;', 'cedreo-designer'); ?></li>
             <li class="link"><a href="<?php echo $link; ?>"><?php _e('Choose', 'cedreo-designer'); ?></a></li>
           </ul>
 
