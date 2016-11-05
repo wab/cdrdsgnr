@@ -13,11 +13,7 @@ $slugify = new Slugify();
   <div class="page-wrapper" >
     <div class="page-column page-contenu" id="page-contenu">
       <?php get_template_part('partials/content-page'); ?>
-      <?php
-
-        // check if the repeater field has rows of data
-        if( have_rows('tutoriels') ): ?>
-
+      <?php if( have_rows('tutoriels') ): ?>
 
          <?php while ( have_rows('tutoriels') ) : the_row(); ?>
 
@@ -40,16 +36,9 @@ $slugify = new Slugify();
 
     </div>
     <div class="page-column sidebar" data-sticky-container>
-      <nav class="tutoriels--navigation sticky" data-sticky data-anchor="page-contenu">
+      <nav class="tutoriels--navigation sticky show-for-large" data-sticky data-anchor="page-contenu">
         <h2>Liste des tutoriaux</h2>
-        <?php
-
-        // check if the repeater field has rows of data
-        if( have_rows('tutoriels') ):
-          // vars
-          $counter_menu = 0;
-
-        ?>
+        <?php if( have_rows('tutoriels') ): ?>
 
         <ul class="tutoriel--navigation--list menu vertical" data-magellan>
          <?php while ( have_rows('tutoriels') ) : the_row(); ?>

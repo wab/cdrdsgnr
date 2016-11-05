@@ -30,12 +30,11 @@
 .page-column {
   @include grid-col;
 
-  &.sidebar {
-    @include hide-for(medium);
-  }
-
   @include breakpoint(large) {
     @include grid-col-size(8);
+    &.sidebar {
+      @include grid-col-size(4);
+    }
   }
 }
 
