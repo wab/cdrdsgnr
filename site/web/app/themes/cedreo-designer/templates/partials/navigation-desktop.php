@@ -22,7 +22,7 @@
       <li class="menu-item menu-galerie <?php if(is_page(9) || is_page(icl_object_id(9, 'page', false))) {echo 'active'; } ?>"><?php icl_link_to_element(9);  ?></li>
       <li class="menu-item menu-tarifs <?php if(is_page(15) || is_page(icl_object_id(15, 'page', false))) {echo 'active'; } ?>"><?php icl_link_to_element(15);  ?></li>
       <li class="menu-item menu-support <?php if(is_page(1024) || is_page(icl_object_id(1024, 'page', false))) {echo 'active'; } ?>"><?php icl_link_to_element(1024);  ?></li>
-      <li class="menu-item menu-blog <?php if(is_home() || is_archive() || is_single() ) {echo 'active'; } ?>"><a href="<?php the_permalink(17); ?>"><?php echo get_the_title(17); ?></a></li>
+      <li class="menu-item menu-blog <?php if(is_home() || is_archive() || is_single() ) {echo 'active'; } ?>"><?php icl_link_to_element(17);  ?></li>
       <li class="menu-item link-login">
         <a data-toggle="menu-login"><svg class="icon-users"><use xlink:href="#icon-users"></use></svg><?php _e('My account', 'cedreo-designer') ?></a>
         <div class="dropdown-pane bottom" id="menu-login" data-dropdown data-hover="true" data-hover-pane="true" data-v-offset="0">
