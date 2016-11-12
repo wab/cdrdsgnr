@@ -560,7 +560,7 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.0.11",
+            "version": "3.0.15",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
@@ -640,15 +640,15 @@
         },
         {
             "name": "wpackagist-plugin/types",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/types/",
-                "reference": "tags/2.2.2"
+                "reference": "tags/2.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/types.2.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/types.2.2.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -680,15 +680,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.7.1",
+            "version": "3.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.7.1"
+                "reference": "tags/3.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.7.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.8.zip",
                 "reference": null,
                 "shasum": null
             },
