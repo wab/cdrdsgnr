@@ -5,7 +5,6 @@ import lightGallery from 'lightgallery';
 import 'lg-fullscreen';
 import 'lg-share';
 
-
 // init Isotope
 const grid = document.querySelector('.gallery--items');
 const filtersElem = document.querySelector('.gallery--filters');

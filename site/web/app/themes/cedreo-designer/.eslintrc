@@ -10,8 +10,9 @@
     "jquery": true,
     "node": true
   },
-  "parser": "babel-eslint",
   rules: {
+    "react/require-extension": 0,
+    "import/extensions": [1, { "js": "never" }],
     "no-console": 0,
     "no-unused-vars": 0,
     "new-cap": 0,

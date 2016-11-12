@@ -1,16 +1,12 @@
+'use strict'; // eslint-disable-line
+
 const webpack = require('webpack');
-const path = require('path');
 const qs = require('qs');
 const autoprefixer = require('autoprefixer');
 const CleanPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const imageminMozjpeg = require('imagemin-mozjpeg');
-
+const CopyGlobsPlugin = require('./webpack.plugin.copyglobs');
 const mergeWithConcat = require('./util/mergeWithConcat');
-const addHotMiddleware = require('./util/addHotMiddleware');
-const webpackConfigProduction = require('./webpack.config.production');
-const webpackConfigWatch = require('./webpack.config.watch');
 const config = require('./config');
 
 const assetsFilenames = (config.enabled.cacheBusting) ? config.cacheBusting : '[name]';
@@ -20,11 +16,8 @@ const jsLoader = {
   test: /\.js$/,
   exclude: [/(node_modules|bower_components)(?![/|\\](bootstrap|foundation-sites))/],
   loaders: [{
-    loader: 'babel',
-    query: {
-      presets: [[path.resolve('./node_modules/babel-preset-es2015'), { modules: false }]],
-      cacheDirectory: true,
-    },
+    loader: 'buble',
+    query: { objectAssign: 'Object.assign' },
   }],
 };
 
@@ -32,7 +25,7 @@ if (config.enabled.watcher) {
   jsLoader.loaders.unshift('monkey-hot?sourceType=module');
 }
 
-const webpackConfig = {
+let webpackConfig = {
   context: config.paths.assets,
   entry: config.entry,
   devtool: (config.enabled.sourceMaps ? '#source-map' : undefined),
@@ -42,15 +35,14 @@ const webpackConfig = {
     filename: `scripts/${assetsFilenames}.js`,
   },
   module: {
-    preLoaders: [
+    rules: [
+      jsLoader,
       {
+        enforce: 'pre',
         test: /\.js?$/,
         include: config.paths.assets,
         loader: 'eslint',
       },
-    ],
-    loaders: [
-      jsLoader,
       {
         test: /\.css$/,
         include: config.paths.assets,
@@ -76,11 +68,11 @@ const webpackConfig = {
         }),
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/,
+        test: /\.(png|jpe?g|gif|svg|ico)$/,
         include: config.paths.assets,
         loaders: [
           `file?${qs.stringify({
-            name: '[path][name].[ext]',
+            name: `[path]${assetsFilenames}.[ext]`,
           })}`,
         ],
       },
@@ -110,44 +102,32 @@ const webpackConfig = {
       },
     ],
   },
-  modules: [
-    config.paths.assets,
-    'node_modules',
-    'bower_components',
-  ],
-  enforceExtensions: false,
-  externals: {
-    jquery: 'jQuery',
-  },
   resolve: {
+    modules: [
+      config.paths.assets,
+      'node_modules',
+      'bower_components',
+    ],
+    enforceExtension: false,
     alias: {
       masonry: 'masonry-layout',
       isotope: 'isotope-layout',
     },
   },
+  externals: {
+    jquery: 'jQuery',
+  },
   plugins: [
-    new CleanPlugin([config.paths.dist], config.paths.root),
-    new ImageminPlugin({
-      optipng: {
-        optimizationLevel: 7,
-      },
-      gifsicle: {
-        optimizationLevel: 3,
-      },
-      pngquant: {
-        quality: '65-90',
-        speed: 4,
-      },
-      svgo: {
-        removeUnknownsAndDefaults: false,
-        cleanupIDs: false,
-        removeUselessDefs: false,
-      },
-      jpegtran: null,
-      plugins: [imageminMozjpeg({
-        quality: 75,
-      })],
-      disable: (config.enabled.watcher),
+    new CleanPlugin([config.paths.dist], {
+      root: config.paths.root,
+      verbose: false,
+    }),
+    new CopyGlobsPlugin({
+      // It would be nice to switch to copy-webpack-plugin, but unfortunately it doesn't
+      // provide a reliable way of tracking the before/after file names
+      pattern: config.copy,
+      output: `[path]${assetsFilenames}.[ext]`,
+      manifest: config.manifest,
     }),
     new ExtractTextPlugin({
       filename: `styles/${assetsFilenames}.css`,
@@ -167,57 +147,56 @@ const webpackConfig = {
         : false,
     }),
     new webpack.LoaderOptionsPlugin({
-      minimize: config.enabled.minify,
+      minimize: config.enabled.optimize,
       debug: config.enabled.watcher,
-      stats: {
-        colors: true,
-        hash: false,
-        version: false,
-        timings: false,
-        assets: false,
-        chunks: false,
-        modules: false,
-        reasons: false,
-        children: false,
-        source: false,
-        errors: false,
-        errorDetails: false,
-        warnings: false,
-        publicPath: false,
+      stats: { colors: true },
+    }),
+    new webpack.LoaderOptionsPlugin({
+      test: /\.s?css$/,
+      options: {
+        output: { path: config.paths.dist },
+        context: config.paths.assets,
+        postcss: [
+          autoprefixer({ browsers: ['last 2 versions', 'android 4', 'opera 12'] }),
+        ],
       },
-      postcss: [
-        autoprefixer({
-          browsers: [
-            'last 2 versions',
-            'android 4',
-            'opera 12',
-          ],
-        }),
-      ],
-      eslint: {
-        failOnWarning: false,
-        failOnError: true,
+    }),
+    new webpack.LoaderOptionsPlugin({
+      test: /\.js$/,
+      options: {
+        eslint: { failOnWarning: false, failOnError: true },
       },
     }),
   ],
 };
 
-module.exports = webpackConfig;
+/* eslint-disable global-require */ /** Let's only load dependencies as needed */
+
+if (config.env.optimize) {
+  webpackConfig = mergeWithConcat(webpackConfig, require('./webpack.config.optimize'));
+}
 
 if (config.env.production) {
-  module.exports = mergeWithConcat(webpackConfig, webpackConfigProduction);
+  webpackConfig.plugins.push(new webpack.NoErrorsPlugin());
 }
 
-if (config.enabled.watcher) {
-  module.exports = mergeWithConcat(webpackConfig, webpackConfigWatch, {
-    entry: addHotMiddleware(webpackConfig.entry),
-  });
-}
+if (config.enabled.cacheBusting) {
+  const WebpackAssetsManifest = require('webpack-assets-manifest');
 
-if (config.enabled.uglifyJs) {
-  module.exports.plugins.push(
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: config.enabled.sourceMaps,
+  webpackConfig.plugins.push(
+    new WebpackAssetsManifest({
+      output: 'assets.json',
+      space: 2,
+      writeToDisk: false,
+      assets: config.manifest,
+      replacer: require('./util/assetManifestsFormatter'),
     })
   );
 }
+
+if (config.enabled.watcher) {
+  webpackConfig.entry = require('./util/addHotMiddleware')(webpackConfig.entry);
+  webpackConfig = mergeWithConcat(webpackConfig, require('./webpack.config.watch'));
+}
+
+module.exports = webpackConfig;
