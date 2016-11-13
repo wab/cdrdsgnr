@@ -177,7 +177,7 @@
   <div class="section feature draw">
     <a name="f1" id="f1" class="anchor"></a>
     <div class="feature--wrapper">
-      <div class="feature--column"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/img-dessiner.png" alt="<?php echo __('Design', 'cedreo-designer'); ?>"></div>
+      <div class="feature--column"><img src="<?php the_field('f1_img'); ?>" alt="<?php echo __('Design', 'cedreo-designer'); ?>"></div>
       <div class="feature--column">
         <h2 class="section--title">
           <svg class="picto--title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.2 55.3">
@@ -195,7 +195,7 @@
   <div class="section feature">
     <a name="f2" id="f2" class="anchor"></a>
     <div class="feature--wrapper">
-      <div class="feature--column"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/img-amenager.png" alt="<?php echo __('Remodel', 'cedreo-designer'); ?>"></div>
+      <div class="feature--column"><img src="<?php the_field('f2_img'); ?>" alt="<?php echo __('Remodel', 'cedreo-designer'); ?>"></div>
       <div class="feature--column">
         <h2 class="section--title">
         <svg class="picto--title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 39">
@@ -213,7 +213,7 @@
   <div class="section feature">
     <a name="f3" id="f3" class="anchor"></a>
     <div class="feature--wrapper">
-      <div class="feature--column"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/img-valoriser.png" alt="<?php echo __('Enhance', 'cedreo-designer'); ?>"></div>
+      <div class="feature--column"><img src="<?php the_field('f3_img'); ?>" alt="<?php echo __('Enhance', 'cedreo-designer'); ?>"></div>
       <div class="feature--column">
         <h2 class="section--title">
           <svg class="picto--title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55">
