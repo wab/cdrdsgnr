@@ -64,7 +64,7 @@
   <div class="ours text-center">
     <div class="row column">
       <div class="scrollreveal">
-       <?php icl_link_to_element(382);  ?> - <?php icl_link_to_element(385);  ?> - &copy; copyright <?php echo date("Y") ?> <?php bloginfo('title') ?>
+       <?php icl_link_to_element(382);  ?> - <?php icl_link_to_element(385);  ?> - &copy; copyright <?php echo date("Y") ?> Cedreo Interactive
       </div>
     </div>
   </div>

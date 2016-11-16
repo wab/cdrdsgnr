@@ -221,3 +221,10 @@
   color: map-get($foundation-palette, primary-dark);
   background: transparent;
 }
+
+.lang-item {
+  font-size: $small-font-size;
+  a {
+    color: $medium-gray;
+  }
+}

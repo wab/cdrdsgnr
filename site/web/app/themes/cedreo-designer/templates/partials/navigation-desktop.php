@@ -1,4 +1,5 @@
-<?php if (get_locale() == 'fr-FR') {$lg == 'fr';} else {$lg = 'en';} ?>
+<?php if (get_locale() == 'fr_FR') {$lg = 'fr';} else {$lg = 'en';} ?>
+
 <nav class="main--navigation navigation-desktop show-for-large">
     <ul id="menu-navigation-principale" class="main--navigation--menu show-for-large horizontal menu">
       <?php if (has_nav_menu('features_navigation')) : ?>
@@ -29,7 +30,7 @@
           <ul class="sub-menu">
             <li class="menu-item">
               <svg class="icon-power"><use xlink:href="#icon-power"></use></svg>
-              <a href="http://app.cedreo-designer.com/<?php echo $lg; ?>/login"><?php _e('Login', 'cedreo-designer') ?></a>
+              <a href="http://app.cedreo-designer.com/<?php echo $lg; ?>/profile"><?php _e('Log In', 'cedreo-designer') ?></a>
             </li>
             <li class="menu-item">
               <svg class="icon-key"><use xlink:href="#icon-key"></use></svg>
@@ -38,6 +39,8 @@
           </ul>
         </div>
       </li>
-      <?php pll_the_languages(array('show_flags'=>1,'show_names'=>0, 'hide_current'=> 1));?>
+      <li class="menu-item">
+        <?php pll_the_languages(array('dropdown'=> '0', 'show_flags'=>1,'show_names'=>1, 'hide_current'=> 1));?>
+
     </ul>
 </nav>
