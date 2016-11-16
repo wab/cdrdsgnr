@@ -227,4 +227,13 @@
   a {
     color: $medium-gray;
   }
+
+  &:not(:last-child) a {
+    padding-right: 0!important;
+  }
+
+  &.current-lang a {
+    color: $dark-gray;
+    font-weight: bold;
+  }
 }
