@@ -40,7 +40,7 @@
         </div>
       </li>
       <li class="menu-item">
-        <?php pll_the_languages(array('dropdown'=> '0', 'show_flags'=>1,'show_names'=>1, 'hide_current'=> 0));?>
+        <?php pll_the_languages(array('display_names_as'=> 'slug', 'show_flags'=>1,'show_names'=>1, 'hide_current'=> 0));?>
 
     </ul>
 </nav>

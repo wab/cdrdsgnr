@@ -226,6 +226,7 @@
   font-size: $small-font-size;
   a {
     color: $medium-gray;
+    text-transform: uppercase;
   }
 
   &:not(:last-child) a {
