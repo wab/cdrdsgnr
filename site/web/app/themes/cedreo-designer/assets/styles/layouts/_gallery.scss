@@ -1,12 +1,21 @@
 .gallery--filters {
-  @include button-group-expand('.gallery--filter');
+
+//  @include button-group-stack('.gallery--filter');
+
+  @include breakpoint(medium) {
+    ///@include button-group-expand('.gallery--filter');
+  }
 }
 
 .gallery--filter {
   @include button(false, $body-font-color, darken($body-font-color, 10%), $white, hollow);
+  font-size: .8rem;
   &.is-checked {
     @include button(false, $primary-color, $primary-color, $white, solid);
+    font-size: .8rem;
   }
+
+
 }
 
 .gallery--items {
@@ -34,7 +43,6 @@
   position: absolute;
   top: .5rem;
   left: .5rem;
-  padding: 1rem;
   width: calc(100% - 1rem);
   height: calc(100% - 1rem);
   background: rgba(0,0,0,0.8);
@@ -50,6 +58,8 @@
 }
 .gallery--item--overlay--container {
   @include absolute-center;
+  width: 100%;
+  padding: 1rem;
 }
 .gallery--item--wrapper:hover, .gallery--item--wrapper:focus {
   .gallery--item--overlay {

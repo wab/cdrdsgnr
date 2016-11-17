@@ -11,12 +11,16 @@ const filtersElem = document.querySelector('.gallery--filters');
 
 let iso = {};
 
+function determineIfElementMatches(element, selector) {
+  return element.matches(selector);
+}
+
 function radioButtonGroup(buttonGroup) {
   buttonGroup.addEventListener('click', (event) => {
     // only work with buttons
-    // if ( !matchesSelector( event.target, 'button' ) ) {
-    //   return;
-    // }
+    if (!determineIfElementMatches(event.target, 'button')) {
+      return;
+    }
     buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
     event.target.classList.add('is-checked');
   });
@@ -50,9 +54,9 @@ export default {
       // bind filter button click
       filtersElem.addEventListener('click', (event) => {
         // only work with buttons
-        // if (!matchesSelector(event.target, 'button')) {
-        //   return;
-        // }
+        if (!determineIfElementMatches(event.target, 'button')) {
+          return;
+        }
         const filterValue = event.target.getAttribute('data-filter');
         iso.arrange({ filter: filterValue });
       });
