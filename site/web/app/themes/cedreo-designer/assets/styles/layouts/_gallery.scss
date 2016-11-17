@@ -42,6 +42,10 @@
   opacity: 0;
   visibilty: hidden;
   transition: opacity 300ms ease;
+
+  &--title {
+    font-size: 1.2rem;
+  }
 }
 .gallery--item--overlay--container {
   @include absolute-center;
