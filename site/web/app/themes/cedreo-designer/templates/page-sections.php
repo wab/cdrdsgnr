@@ -1,15 +1,15 @@
-<?php while (have_posts()) : the_post(); ?>
+<?php
+/**
+ * Template Name: Page avec sections
+ */
 
-  <div class="page-wrapper" >
+while (have_posts()) : the_post(); ?>
 
-      <div class="page-column page-contenu" id="page-contenu">
-        <?php get_template_part('partials/content-page'); ?>
-      </div>
-       <div class="page-column sidebar hide-for-large">
-        <nav>
-          <?= App\list_child_pages(); ?>
-        </nav>
-      </div>
+  <div class="row">
+
+    <div class="columns large-8 large-centered" id="page-contenu">
+      <?php get_template_part('partials/content-page'); ?>
+    </div>
 
   </div>
 
