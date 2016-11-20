@@ -9,7 +9,7 @@ $terms = wp_get_object_terms( $post->ID,  'gallerytag' );
     <button class="gallery--item--overlay" data-src="<?php echo $image['url']; ?>" data-sub-html=".gallery--item--caption" data-pinterest-text="<?php the_title(); ?> - image produite avec <?php bloginfo('title'); ?>" data-tweet-text="<?php the_title(); ?> - image produite avec <?php bloginfo('title'); ?>" data-facebook-share-url="<?php echo $image['url']; ?>" data-twitter-share-url="<?php echo $image['url']; ?>" data-googleplus-share-url="<?php echo $image['url']; ?>" data-pinterest-share-url="<?php echo $image['url']; ?>">
       <div class="gallery--item--overlay--container text-center">
           <h2 class="gallery--item--overlay--title"><?php the_title(); ?></h2>
-          <?php
+          <!-- <?php
             if ( ! empty( $terms ) ) {
               if ( ! is_wp_error( $terms ) ) {
                 echo '<ul class="gallery--terms">';
@@ -19,7 +19,7 @@ $terms = wp_get_object_terms( $post->ID,  'gallerytag' );
                 echo '</ul>';
               }
             }
-          ?>
+          ?> -->
           <span class="gallery--item--button"><svg class="icon-search"><use xlink:href="#icon-search"></use></svg></span>
       </div>
       <div class="gallery--item--caption">

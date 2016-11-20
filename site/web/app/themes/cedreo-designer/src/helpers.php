@@ -85,7 +85,7 @@ function list_child_pages() {
     ));
 
     if ($children) {
-        return '<p><strong> Plus de détails ?</strong></p><ul class="menu vertical">'.$children.'</ul>';
+        return '<p><strong>' . _e('More details ?', 'cedreo-designer') . '</strong></p><ul class="menu vertical">'.$children.'</ul>';
     }
 
 }

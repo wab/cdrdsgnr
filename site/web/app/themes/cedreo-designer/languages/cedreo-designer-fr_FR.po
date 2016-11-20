@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cedreo Designer\n"
 "POT-Creation-Date: 2016-11-20 21:03+0100\n"
-"PO-Revision-Date: 2016-11-20 21:08+0100\n"
+"PO-Revision-Date: 2016-11-20 21:05+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -44,7 +44,7 @@ msgstr "Non trouvé"
 
 #: src/helpers.php:88
 msgid "More details ?"
-msgstr "Plus d’informations ?"
+msgstr "Plus d’informations"
 
 #: src/setup.php:47
 msgid "Primary Navigation"

@@ -3,18 +3,24 @@
  * Template Name: Galerie d'images
  */
 
+$current_language = pll_current_language();
+
 $args = array(
     'post_type' => 'imgallery',
-    'order' => 'ASC'
+    'order' => 'ASC',
+    'lang' => $current_language
 );
 
 $terms = get_terms( 'gallerytag', array(
-    'hide_empty' => true
+    'hide_empty' => true,
+    'taxonomy' => 'gallerytag'
 ));
 ?>
 <?php while (have_posts()) : the_post(); ?>
 
   <div class="page-wrapper">
+
+    <div class="columns">
 
         <div class="text-center">
         <?php if(get_field('subtitle')):  ?>
@@ -64,6 +70,8 @@ $terms = get_terms( 'gallerytag', array(
             <p class="text-center">
                 <button class="load-more button secondary large hollow"><?php _e('see more', 'cerdeo-designer'); ?></button>
             </p>
+
+        </div>
 
 
     </div>
