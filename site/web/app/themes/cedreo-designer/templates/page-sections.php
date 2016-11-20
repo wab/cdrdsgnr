@@ -29,7 +29,7 @@ while (have_posts()) : the_post(); ?>
       <div class="row">
 
         <div class="columns large-6">
-         <h2 class="section--title"><?php echo $title; ?></h2>
+         <h2 class="section--title"><span><?php echo $title; ?></span></h2>
           <?php echo $content; ?>
         </div>
         <?php if( !empty($image) ): ?>
