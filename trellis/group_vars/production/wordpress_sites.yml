@@ -5,16 +5,18 @@
 wordpress_sites:
   cedreo-designer.com:
     site_hosts:
+      - canonical: cedreo-designer.com
+        redirects:
+          - www.cedreo-designer.com
+      - canonical: cedreo-designer.fr
+        redirects:
+          - www.cedreo-designer.fr
       - canonical: cedar-architect.com
         redirects:
           - www.cedar-architect.com
-          - cedreo-designer.com
-          - www.cedreo-designer.com
       - canonical: cedar-architect.fr
         redirects:
           - www.cedar-architect.fr
-          - cedreo-designer.fr
-          - www.cedreo-designer.fr
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:wab/cdrdsgnr.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
