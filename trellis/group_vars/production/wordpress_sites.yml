@@ -28,8 +28,8 @@ wordpress_sites:
       provider: letsencrypt
       hsts_include_subdomains: false
     env:
-      wp_home: https://cedar-architect.com
-      wp_siteurl: https://cedar-architect.com/wp
+      wp_home: https://cedreo-designer.com
+      wp_siteurl: https://cedreo-designer.com/wp
     cache:
       enabled: true
       duration: 30s
