@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cedreo Designer\n"
-"POT-Creation-Date: 2016-11-20 21:03+0100\n"
-"PO-Revision-Date: 2016-11-20 21:05+0100\n"
+"POT-Creation-Date: 2016-11-23 20:24+0100\n"
+"PO-Revision-Date: 2016-11-23 20:25+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -80,8 +80,8 @@ msgid ""
 "browsehappy.com/\">upgrade your browser</a> to improve your experience."
 msgstr ""
 "Vous utilisez une version obsolète de votre navigateur. Veuillez le  <a "
-"href=« http://browsehappy.com/« >mettre à jour</a> pour visionner votre "
-"site correctement."
+"href=« http://browsehappy.com/« >mettre à jour</a> pour visionner votre site "
+"correctement."
 
 #: templates/page-accueil.php:16 templates/page-accueil.php:46
 msgid "Why"
@@ -162,7 +162,8 @@ msgstr "projets"
 msgid "Unlimited projects"
 msgstr "projets illimités"
 
-#: templates/page-tarifs.php:44
+#: templates/page-tarifs.php:44 templates/page-tarifs.php:149
+#: templates/page-tarifs.php:256
 msgid "Renderings"
 msgstr "Visuels"
 
@@ -299,10 +300,6 @@ msgstr "Professionnel mensuel"
 msgid "month"
 msgstr "mois"
 
-#: templates/page-tarifs.php:149 templates/page-tarifs.php:256
-msgid "Visuels"
-msgstr ""
-
 #: templates/page-tarifs.php:153
 msgid "Unlimited Test renderings"
 msgstr "Visuels de travail illimités"
@@ -411,8 +408,8 @@ msgid "For businesses"
 msgstr "Pour qui ?"
 
 #: templates/partials/navigation-desktop.php:28
-msgid "My account"
-msgstr "Mon compte"
+msgid "Application"
+msgstr "Application"
 
 #: templates/partials/navigation-desktop.php:33
 msgid "Log In"
@@ -435,8 +432,8 @@ msgid ""
 "With Sage is a WordPress starter theme. <a href=\"https://github.com/roots/"
 "sage\">Contribute on GitHub</a>"
 msgstr ""
-"Sage est un thème de démarrage WordPress. <a href=« https://github.com/"
-"roots/sage »>Contribute sur GitHub</a>"
+"Sage est un thème de démarrage WordPress. <a href=« https://github.com/roots/"
+"sage »>Contribute sur GitHub</a>"
 
 #. Author of the plugin/theme
 msgid "wabdsgn"
@@ -445,3 +442,6 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://wabdesign.fr/"
 msgstr ""
+
+#~ msgid "My account"
+#~ msgstr "Mon compte"

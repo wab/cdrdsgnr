@@ -146,7 +146,7 @@
             <li class="price"><?php echo $price . __('&dollar;', 'cedreo-designer') . ' / '. __('month', 'cedreo-designer'); ?></li>
             <li class="projects-number">
             <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projects', 'cedreo-designer') . ' / '. __('month', 'cedreo-designer'); } else { _e('Unlimited projects', 'cedreo-designer'); } ?></li>
-            <li class="subtitle"><?php _e('Visuels', 'cedreo-designer'); ?></li>
+            <li class="subtitle"><?php _e('Renderings', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php
                 if($visual_1 == 0) { echo '-'; }
@@ -253,7 +253,7 @@
             <li class="price"><?php echo $price . __('&dollar;', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); ?></li>
             <li class="projects-number">
             <?php if ($number_project != -1) { echo $number_project . '&nbsp;' .  __('projects', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); } else { _e('unlimited projects', 'cedreo-designer'); } ?></li>
-            <li class="subtitle"><?php _e('Visuels', 'cedreo-designer'); ?></li>
+            <li class="subtitle"><?php _e('Renderings', 'cedreo-designer'); ?></li>
             <li class="item">
               <?php
                 if($visual_1 == 0) { echo '-'; }
