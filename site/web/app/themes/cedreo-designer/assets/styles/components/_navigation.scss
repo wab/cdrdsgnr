@@ -105,7 +105,7 @@
     }
   }
 
-  &#menu-login {
+  &#menu-login, &#menu-lg {
     width: 100%;
     padding: .5rem;
 
@@ -222,19 +222,11 @@
   background: transparent;
 }
 
-.lang-item {
-  font-size: $small-font-size;
-  a {
-    color: $medium-gray;
-    text-transform: uppercase;
-  }
+.menu-lg > a {
+  min-width: 4rem;
+  text-transform: uppercase;
+}
 
-  &:not(:last-child) a {
-    padding-right: 0!important;
-  }
-
-  &.current-lang a {
-    color: $dark-gray;
-    font-weight: bold;
-  }
+.current-lang {
+  font-weight: bold;
 }

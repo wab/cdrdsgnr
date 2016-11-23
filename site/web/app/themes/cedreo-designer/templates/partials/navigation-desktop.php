@@ -39,8 +39,13 @@
           </ul>
         </div>
       </li>
-      <li class="menu-item">
-        <?php pll_the_languages(array('display_names_as'=> 'slug', 'show_flags'=>1,'show_names'=>1, 'hide_current'=> 0));?>
-
+      <li class="menu-item menu-lg">
+        <a data-toggle="menu-lg"><?php echo pll_current_language(); ?></a>
+        <div class="dropdown-pane bottom" id="menu-lg" data-dropdown data-hover="true" data-hover-pane="true" data-close-on-click="true" data-v-offset="0">
+          <ul class="sub-menu">
+            <?php pll_the_languages(array('dropdown' => '0', 'display_names_as'=> 'slug', 'show_flags'=>1,'show_names'=>1, 'hide_current'=> 0));?>
+          </ul>
+        </div>
+      </li>
     </ul>
 </nav>
