@@ -105,7 +105,7 @@
     }
   }
 
-  &#menu-login, &#menu-lg {
+  &#menu-login {
     width: 100%;
     padding: .5rem;
 
@@ -123,6 +123,12 @@
         font-size: .9rem;
       }
     }
+  }
+
+  &#menu-lg {
+    width: 150px;
+    left: auto!important;
+    right: 0;
   }
 }
 .submenu, .sub-menu {
@@ -223,7 +229,7 @@
 }
 
 .menu-lg > a {
-  min-width: 4rem;
+  width: 50px;
   text-transform: uppercase;
 }
 

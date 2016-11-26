@@ -1,4 +1,11 @@
-<?php if (get_locale() == 'fr_FR') {$lg = 'fr';} else {$lg = 'en';} ?>
+<?php
+  $plugins_url = plugins_url();
+  if (pll_current_language() == 'en') {
+    $current_flag = $plugins_url . '/polylang/flags/us.png';
+  } else {
+    $current_flag = $plugins_url . '/polylang/flags/' . pll_current_language() . '.png';
+  }
+?>
 
 <nav class="main--navigation navigation-desktop show-for-large">
     <ul id="menu-navigation-principale" class="main--navigation--menu show-for-large horizontal menu">
@@ -30,20 +37,20 @@
           <ul class="sub-menu">
             <li class="menu-item">
               <svg class="icon-power"><use xlink:href="#icon-power"></use></svg>
-              <a href="http://app.cedreo-designer.com/<?php echo $lg; ?>/profile"><?php _e('Log In', 'cedreo-designer') ?></a>
+              <a href="http://app.cedreo-designer.com/<?php echo pll_current_language(); ?>/profile"><?php _e('Log In', 'cedreo-designer') ?></a>
             </li>
             <li class="menu-item">
               <svg class="icon-key"><use xlink:href="#icon-key"></use></svg>
-              <a href="http://app.cedreo-designer.com/<?php echo $lg; ?>/register"><?php _e('Register', 'cedreo-designer') ?></a>
+              <a href="http://app.cedreo-designer.com/<?php echo pll_current_language(); ?>/register"><?php _e('Register', 'cedreo-designer') ?></a>
             </li>
           </ul>
         </div>
       </li>
       <li class="menu-item menu-lg">
-        <a data-toggle="menu-lg"><?php echo pll_current_language(); ?></a>
+        <a data-toggle="menu-lg"><img src="<?php echo $current_flag; ?>" alt="<?php echo pll_current_language('name'); ?>"></a>
         <div class="dropdown-pane bottom" id="menu-lg" data-dropdown data-hover="true" data-hover-pane="true" data-close-on-click="true" data-v-offset="0">
           <ul class="sub-menu">
-            <?php pll_the_languages(array('dropdown' => '0', 'display_names_as'=> 'slug', 'show_flags'=>1,'show_names'=>1, 'hide_current'=> 0));?>
+            <?php pll_the_languages(array('dropdown' => '0', 'display_names_as'=> 'name', 'show_flags'=>1,'show_names'=>1, 'hide_current'=> 0));?>
           </ul>
         </div>
       </li>

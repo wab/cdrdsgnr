@@ -9,7 +9,7 @@ $args = array(
     'post_type' => 'imgallery',
     'order' => 'ASC',
     'lang' => $current_language,
-    'post_per_page' => -1
+    'posts_per_page'=> -1
 );
 
 $terms = get_terms( 'gallerytag', array(
