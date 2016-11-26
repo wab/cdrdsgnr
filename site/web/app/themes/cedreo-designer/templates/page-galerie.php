@@ -8,7 +8,8 @@ $current_language = pll_current_language();
 $args = array(
     'post_type' => 'imgallery',
     'order' => 'ASC',
-    'lang' => $current_language
+    'lang' => $current_language,
+    'post_per_page' => -1
 );
 
 $terms = get_terms( 'gallerytag', array(
@@ -67,9 +68,9 @@ $terms = get_terms( 'gallerytag', array(
         <?php endif; ?>
 
 
-            <p class="text-center">
+           <!--  <p class="text-center">
                 <button class="load-more button secondary large hollow"><?php _e('see more', 'cerdeo-designer'); ?></button>
-            </p>
+            </p> -->
 
         </div>
 
