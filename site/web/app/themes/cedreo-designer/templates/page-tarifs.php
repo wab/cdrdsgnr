@@ -63,7 +63,7 @@
                 if($visual_print == 0) { echo '-'; }
                 elseif ($visual_print == -1) { _e('Unlimited print renderings', 'cedreo-designer'); }
                 elseif ($visual_print == -2) { _e('Optionnal print renderings', 'cedreo-designer'); }
-                else { echo $visual_print . '&nbsp;' . __('print renderings', 'cedreo-designer'); }
+                else { echo $visual_print . '&nbsp;' . e_('Print renderings', 'cedreo-designer'); }
               ?>
             </li>
             <!-- <li class="item">
@@ -168,7 +168,7 @@
                 if($visual_print == 0) { echo '-'; }
                 elseif ($visual_print == -1) { _e('Unlimited print renderings', 'cedreo-designer'); }
                 elseif ($visual_print == -2) { _e('Optionnal print renderings', 'cedreo-designer'); }
-                else { echo $visual_print . '&nbsp;' . __('print renderings') . ' / ' . __('month', 'cedreo-designer'); }
+                else { echo $visual_print . '&nbsp;' . _e('Print renderings') . ' / ' . __('month', 'cedreo-designer'); }
               ?>
             </li>
             <!-- <li class="item">
@@ -275,7 +275,7 @@
                 if($visual_print == 0) { echo '-'; }
                 elseif ($visual_print == -1) { _e('Unlimited Print renderings', 'cedreo-designer'); }
                 elseif ($visual_print == -2) { _e('Optionnal Print renderings', 'cedreo-designer'); }
-                else { echo $visual_print . '&nbsp;' . __('Print renderings', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); }
+                else { echo $visual_print . '&nbsp;' . _e('Print renderings', 'cedreo-designer'). ' / '. __('year', 'cedreo-designer'); }
               ?>
             </li>
             <!-- <li class="item">

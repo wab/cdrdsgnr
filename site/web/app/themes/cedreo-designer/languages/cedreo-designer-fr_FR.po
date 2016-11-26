@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cedreo Designer\n"
-"POT-Creation-Date: 2016-11-23 20:24+0100\n"
-"PO-Revision-Date: 2016-11-23 20:25+0100\n"
+"POT-Creation-Date: 2016-11-26 10:25+0100\n"
+"PO-Revision-Date: 2016-11-26 10:26+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -19,6 +19,7 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
 
 #: functions.php:58
 #, php-format
@@ -199,11 +200,7 @@ msgstr "Visuels print illimités "
 
 #: templates/page-tarifs.php:65 templates/page-tarifs.php:170
 msgid "Optionnal print renderings"
-msgstr "Visuels print illimités"
-
-#: templates/page-tarifs.php:66 templates/page-tarifs.php:171
-msgid "print renderings"
-msgstr "Visuels print"
+msgstr "Visuels print optionnels"
 
 #: templates/page-tarifs.php:72 templates/page-tarifs.php:177
 #: templates/page-tarifs.php:284
@@ -316,6 +313,10 @@ msgstr "Rendus HD illimités"
 msgid "HD renderings optionnal"
 msgstr "Visuels HD optionnels"
 
+#: templates/page-tarifs.php:171 templates/page-tarifs.php:278
+msgid "Print renderings"
+msgstr "Visuels print"
+
 #: templates/page-tarifs.php:227
 msgid "Business Yearly"
 msgstr "Professionnel mensuel"
@@ -341,10 +342,6 @@ msgstr "Visuels print illimités "
 #: templates/page-tarifs.php:277
 msgid "Optionnal Print renderings"
 msgstr "Visuels print optionnels"
-
-#: templates/page-tarifs.php:278
-msgid "Print renderings"
-msgstr "Visuels print"
 
 #: templates/page-tarifs.php:286
 msgid "year "
@@ -442,6 +439,9 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://wabdesign.fr/"
 msgstr ""
+
+#~ msgid "print renderings"
+#~ msgstr "Visuels print"
 
 #~ msgid "My account"
 #~ msgstr "Mon compte"
