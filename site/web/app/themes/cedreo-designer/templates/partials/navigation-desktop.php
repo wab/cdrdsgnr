@@ -32,7 +32,7 @@
       <li class="menu-item menu-support <?php if(is_page(1024) || is_page(icl_object_id(1024, 'page', false))) {echo 'active'; } ?>"><?php icl_link_to_element(1024);  ?></li>
       <li class="menu-item menu-blog <?php if(is_home() || is_archive() || is_single() ) {echo 'active'; } ?>"><?php icl_link_to_element(17);  ?></li>
       <li class="menu-item link-login">
-        <a data-toggle="menu-login"><svg class="icon-users"><use xlink:href="#icon-users"></use></svg><?php _e('Application', 'cedreo-designer') ?></a>
+        <a data-toggle="menu-login"><?php _e('Application', 'cedreo-designer') ?></a>
         <div class="dropdown-pane bottom" id="menu-login" data-dropdown data-hover="true" data-hover-pane="true" data-close-on-click="true" data-v-offset="0">
           <ul class="sub-menu">
             <li class="menu-item">
