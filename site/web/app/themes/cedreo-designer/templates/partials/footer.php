@@ -29,7 +29,7 @@
         <?php while ( $lastposts->have_posts() ) : $lastposts->the_post(); ?>
           <li class="scrollreveal widget--item">
             <strong class="textcolor"><?php the_date(); ?></strong>
-            <h4 class="post--title"><?php the_title(); ?></h4>
+            <p class="post--title"><?php the_title(); ?></p>
             <?= App\easy_excerpt(20); ?><br>
             <a href="<?php the_permalink(); ?>">&rarr; Lire</a>
           </li>
