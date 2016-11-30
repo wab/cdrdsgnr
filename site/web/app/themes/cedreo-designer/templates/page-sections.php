@@ -7,9 +7,13 @@ while (have_posts()) : the_post(); ?>
 
   <div class="row">
 
-    <div class="columns large-8 large-centered" id="page-contenu">
-      <?php get_template_part('partials/content-page'); ?>
+    <div class="columns large-8">
+      <div class="page-wrapper">
+        <?php get_template_part('partials/content-page'); ?>
+      </div>
+
     </div>
+
 
   </div>
 
@@ -33,7 +37,7 @@ while (have_posts()) : the_post(); ?>
           <?php echo $content; ?>
         </div>
         <?php if( !empty($image) ): ?>
-          <div class="columns-large-6"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" /></div>
+          <div class="columns large-6"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" /></div>
         <?php endif; ?>
 
       </div>
