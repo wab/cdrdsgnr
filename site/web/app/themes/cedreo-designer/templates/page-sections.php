@@ -32,7 +32,7 @@ while (have_posts()) : the_post(); ?>
 
       <div class="row">
 
-        <div class="columns large-6">
+        <div class="columns <?php if( !empty($image) ) { echo 'large-6';} else {echo 'large-8';} ?>">
          <h2 class="section--title"><span><?php echo $title; ?></span></h2>
           <?php echo $content; ?>
         </div>
