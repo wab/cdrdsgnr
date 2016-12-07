@@ -93,16 +93,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.6.1",
+            "version": "4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3"
+                "reference": "b327faa6feea3a4058178dee7ac8b512bd957e92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3",
-                "reference": "aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/b327faa6feea3a4058178dee7ac8b512bd957e92",
+                "reference": "b327faa6feea3a4058178dee7ac8b512bd957e92",
                 "shasum": ""
             },
             "require": {
@@ -126,7 +126,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-09-07 15:01:47"
+            "time": "2016-12-06 18:46:46"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -560,16 +560,16 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.0.15",
+            "version": "3.0.19",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "trunk"
+                "reference": "tags/3.0.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.zip",
-                "reference": "trunk",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.0.19.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -580,15 +580,15 @@
         },
         {
             "name": "wpackagist-plugin/polylang",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/polylang/",
-                "reference": "tags/2.0.9"
+                "reference": "tags/2.0.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/polylang.2.0.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.2.0.10.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -640,16 +640,16 @@
         },
         {
             "name": "wpackagist-plugin/types",
-            "version": "2.2.3",
+            "version": "2.2.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/types/",
-                "reference": "tags/2.2.3"
+                "reference": "tags/2.2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/types.2.2.3.zip",
-                "reference": "tags/2.2.3",
+                "url": "https://downloads.wordpress.org/plugin/types.2.2.5.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -700,16 +700,16 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.8",
+            "version": "3.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.8"
+                "reference": "tags/3.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.8.zip",
-                "reference": "tags/3.8",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.9.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -742,16 +742,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed"
+                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
-                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9b324f3a1132459a7274a0ace2e1b766ba80930f",
+                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f",
                 "shasum": ""
             },
             "require": {
@@ -816,7 +816,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-09-01 23:53:02"
+            "time": "2016-11-30 04:02:31"
         }
     ],
     "aliases": [],
