@@ -80,3 +80,20 @@
 #map {
   height: 500px;
 }
+
+.page-section-row {
+  @extend %alternate;
+  .page-section-column {
+    @extend %alternate-column;
+
+    &.without-image {
+      @extend %alternate-column--only;
+    }
+  }
+
+  .section:nth-child(2n + 2) & {
+    .page-section-column:first-child {
+      order: 1;
+    }
+  }
+}

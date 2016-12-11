@@ -90,6 +90,25 @@
   }
 }
 
+%alternate {
+  @include flex-grid-row;
+  @include flex-align(spaced, middle);
+
+  &-column {
+
+    @include flex-grid-column(12);
+    @include breakpoint(medium) {
+      @include flex-grid-column(6);
+    }
+
+    &--only {
+       @include breakpoint(medium) {
+        @include flex-grid-column(8);
+      }
+    }
+  }
+}
+
 .sidebar-primary .container {
   padding: $global-padding 0;
 }
