@@ -92,7 +92,7 @@
 
 %alternate {
   @include flex-grid-row;
-  @include flex-align(spaced, middle);
+  @include flex-align(justify, middle);
 
   &-column {
 
