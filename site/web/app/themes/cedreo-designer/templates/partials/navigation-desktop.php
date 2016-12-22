@@ -37,11 +37,11 @@
           <ul class="sub-menu">
             <li class="menu-item">
               <svg class="icon-power"><use xlink:href="#icon-power"></use></svg>
-              <a href="http://app.cedreo-designer.com/<?php echo pll_current_language(); ?>/profile"><?php _e('Log In', 'cedreo-designer') ?></a>
+              <a href="http://app.cedar-architect.com/<?php echo pll_current_language(); ?>/profile"><?php _e('Log In', 'cedreo-designer') ?></a>
             </li>
             <li class="menu-item">
               <svg class="icon-key"><use xlink:href="#icon-key"></use></svg>
-              <a href="http://app.cedreo-designer.com/<?php echo pll_current_language(); ?>/register"><?php _e('Register', 'cedreo-designer') ?></a>
+              <a href="http://app.cedar-architect.com/<?php echo pll_current_language(); ?>/register"><?php _e('Register', 'cedreo-designer') ?></a>
             </li>
           </ul>
         </div>
