@@ -58,7 +58,7 @@
   </div>
   <section class="section">
     <div class="page-wrapper">
-      <h2 class="section--title scrollreveal"><span><?php echo __('Contactez-nous', 'cedreo-designer'); ?></span></h2>
+      <h2 class="section--title scrollreveal"><span><?php _e('Contact us', 'cedreo-designer'); ?></span></h2>
       <div class="scrollreveal">
         <?php the_content(); ?>
       </div>
@@ -94,7 +94,7 @@
       },
     ];
 
-    const myLatLng = { lat: 47.2394772, lng: -1.6609276 };
+    const myLatLng = { lat: 47.2109176, lng: -1.6245157 };
 
     const map = new google.maps.Map(document.getElementById('map'), {
       zoom: 12,
@@ -103,7 +103,7 @@
       scrollwheel: false,
     });
 
-    const icon = '<?php echo get_template_directory_uri(); ?>/dist/images/marker.png';
+    const icon = '<?php echo get_template_directory_uri(); ?>/marker.png';
 
     const marker = new google.maps.Marker({
       position: myLatLng,

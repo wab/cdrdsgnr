@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cedreo Designer\n"
-"POT-Creation-Date: 2016-11-26 10:25+0100\n"
-"PO-Revision-Date: 2016-11-26 10:26+0100\n"
+"POT-Creation-Date: 2017-01-09 22:13+0100\n"
+"PO-Revision-Date: 2017-01-09 22:13+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -71,7 +71,7 @@ msgstr "Pied de page"
 msgid "Sorry, but the page you were trying to view does not exist."
 msgstr "Cette page n’existe pas !"
 
-#: templates/index.php:3 templates/page-galerie.php:66 templates/search.php:5
+#: templates/index.php:3 templates/page-galerie.php:67 templates/search.php:5
 msgid "Sorry, no results were found."
 msgstr "Il n’y a pas de résultats !"
 
@@ -134,14 +134,14 @@ msgid "See all images"
 msgstr "Voir la galerie"
 
 #: templates/page-contact.php:61
-msgid "Contactez-nous"
-msgstr ""
+msgid "Contact us"
+msgstr "Contactez-nous"
 
-#: templates/page-galerie.php:34
+#: templates/page-galerie.php:35
 msgid "all"
 msgstr "Tous"
 
-#: templates/page-galerie.php:71
+#: templates/page-galerie.php:72
 msgid "see more"
 msgstr "en voir plus"
 
@@ -202,6 +202,11 @@ msgstr "Visuels print illimités "
 msgid "Optionnal print renderings"
 msgstr "Visuels print optionnels"
 
+#: templates/page-tarifs.php:66 templates/page-tarifs.php:171
+#: templates/page-tarifs.php:278
+msgid "Print renderings"
+msgstr "Visuels print"
+
 #: templates/page-tarifs.php:72 templates/page-tarifs.php:177
 #: templates/page-tarifs.php:284
 msgid "Unlimited virtual visits"
@@ -248,7 +253,7 @@ msgid "Instant messaging"
 msgstr "Support personnalisé par chat"
 
 #: templates/page-tarifs.php:93 templates/page-tarifs.php:198
-#: templates/page-tarifs.php:305 templates/partials/navigation-desktop.php:7
+#: templates/page-tarifs.php:305 templates/partials/navigation-desktop.php:14
 msgid "Features"
 msgstr "Fonctionnalités"
 
@@ -312,10 +317,6 @@ msgstr "Rendus HD illimités"
 #: templates/page-tarifs.php:162 templates/page-tarifs.php:269
 msgid "HD renderings optionnal"
 msgstr "Visuels HD optionnels"
-
-#: templates/page-tarifs.php:171 templates/page-tarifs.php:278
-msgid "Print renderings"
-msgstr "Visuels print"
 
 #: templates/page-tarifs.php:227
 msgid "Business Yearly"
@@ -388,6 +389,10 @@ msgstr "Pages:"
 msgid "Recent posts"
 msgstr "Articles Récents"
 
+#: templates/partials/footer.php:34
+msgid "Read"
+msgstr "Lire"
+
 #: templates/partials/footer.php:45 templates/partials/nav-secteurs.php:43
 msgid "Sorry, no posts matched your criteria."
 msgstr "Désolé, aucun article ne correspond à vos critères."
@@ -400,19 +405,19 @@ msgstr "Tweets récents"
 msgid "Follow us"
 msgstr "Nous suivre"
 
-#: templates/partials/navigation-desktop.php:16
+#: templates/partials/navigation-desktop.php:23
 msgid "For businesses"
 msgstr "Pour qui ?"
 
-#: templates/partials/navigation-desktop.php:28
+#: templates/partials/navigation-desktop.php:35
 msgid "Application"
 msgstr "Application"
 
-#: templates/partials/navigation-desktop.php:33
+#: templates/partials/navigation-desktop.php:40
 msgid "Log In"
 msgstr "Se connecter"
 
-#: templates/partials/navigation-desktop.php:37
+#: templates/partials/navigation-desktop.php:44
 msgid "Register"
 msgstr "S’inscrire"
 
@@ -421,7 +426,7 @@ msgid "Cedreo Designer"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://cedreo-designer.com"
+msgid "https://cedar-architect.com"
 msgstr ""
 
 #. Description of the plugin/theme

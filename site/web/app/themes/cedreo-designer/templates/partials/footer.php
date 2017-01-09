@@ -31,7 +31,7 @@
             <strong class="textcolor"><?php the_date(); ?></strong>
             <p class="post--title"><?php the_title(); ?></p>
             <?= App\easy_excerpt(20); ?><br>
-            <a href="<?php the_permalink(); ?>">&rarr; Lire</a>
+            <a href="<?php the_permalink(); ?>">&rarr; <?php _e('Read', 'cedreo-designer'); ?></a>
           </li>
         <?php endwhile; ?>
         <!-- end of the loop -->
