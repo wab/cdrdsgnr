@@ -24,6 +24,7 @@ import common from './routes/Common';
 import home from './routes/Home';
 import aboutUs from './routes/About';
 import galerie from './routes/Gallery';
+import gallery from './routes/Gallery';
 
 // Use this variable to set up the common and page specific functions. If you
 // rename this variable, you will also need to rename the namespace below.
@@ -35,6 +36,7 @@ const routes = {
   // About us page, note the change from about-us to aboutUs.
   aboutUs,
   galerie,
+  gallery,
 };
 
 // Load Events
