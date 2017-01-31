@@ -8,13 +8,19 @@ use Roots\Sage\Template;
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('font', 'https://fonts.googleapis.com/css?family=Raleway:300,400,700', false, null);
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
-    wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true); // pass Ajax Url to main.js
-    wp_localize_script('sage/main.js', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
+    wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+    wp_register_script('gallery', asset_path('scripts/gallery.js'), ['sage/main.js'], null, true);
 
     wp_register_script('gmaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyC9YJxZm4Y7ZkX8nZ_h3RHNqvhb9IHA5oY&callback=initMap', [], null, true);
 
     if (is_page_template('templates/page-contact.php')) {
         wp_enqueue_script('gmaps');
+    }
+
+    if (is_page_template('templates/page-galerie.php')) {
+        wp_enqueue_script('gallery');
+        // pass Ajax Url to gallery.js
+        wp_localize_script('gallery', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
     }
 
 }, 100);
