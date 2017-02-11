@@ -11,7 +11,7 @@
   @include flex-grid-row(null, 100%, null, true, 1rem) {}
 }
 .pricing-table--column {
-   @include flex-grid-column(null, 1rem);
+  @include flex-grid-column(12, 1rem);
   margin-bottom: 2rem;
 
   .pro2 & {
