@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9140a3981fc8bb3a7a8ff20baee31d07",
-    "content-hash": "ec2fda120ab9efadfd6231425f970bd8",
+    "hash": "e88de494a4f7d774d6301a2775231f3b",
+    "content-hash": "6dde0a6bc8018e99adc0ee88193db13c",
     "packages": [
         {
             "name": "composer/installers",
@@ -399,6 +399,70 @@
             "time": "2016-09-01 10:05:43"
         },
         {
+            "name": "wp-sync-db/wp-sync-db",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-sync-db/wp-sync-db.git",
+                "reference": "8f18390a83374089acfac202491e78d4938616fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-sync-db/wp-sync-db/zipball/8f18390a83374089acfac202491e78d4938616fd",
+                "reference": "8f18390a83374089acfac202491e78d4938616fd",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "WP Sync DB eliminates the manual work of migrating a WP database.",
+            "homepage": "https://github.com/wp-sync-db/wp-sync-db",
+            "keywords": [
+                "db",
+                "plugin",
+                "wordpress",
+                "wp-sync-db"
+            ],
+            "time": "2016-04-24 08:56:12"
+        },
+        {
+            "name": "wp-sync-db/wp-sync-db-media-files",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-sync-db/wp-sync-db-media-files.git",
+                "reference": "cebf64eb528532d627284353278b284bb12e7ef1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-sync-db/wp-sync-db-media-files/zipball/cebf64eb528532d627284353278b284bb12e7ef1",
+                "reference": "cebf64eb528532d627284353278b284bb12e7ef1",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "WP Sync DB Media File Addon for WP Sync DB",
+            "homepage": "https://github.com/wp-sync-db/wp-sync-db-media-files",
+            "keywords": [
+                "media",
+                "plugin",
+                "wordpress",
+                "wp-sync-db"
+            ],
+            "time": "2016-03-07 16:34:12"
+        },
+        {
             "name": "wpackagist-plugin/acf-content-analysis-for-yoast-seo",
             "version": "1.2.5",
             "source": {
@@ -469,7 +533,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/all-in-one-wp-migration.6.40.zip",
-                "reference": null,
+                "reference": "tags/6.40",
                 "shasum": null
             },
             "require": {
@@ -509,7 +573,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/breadcrumb-navxt.5.6.0.zip",
-                "reference": null,
+                "reference": "tags/5.6.0",
                 "shasum": null
             },
             "require": {
@@ -569,7 +633,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/members.1.1.3.zip",
-                "reference": null,
+                "reference": "tags/1.1.3",
                 "shasum": null
             },
             "require": {
@@ -589,7 +653,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.0.27.zip",
-                "reference": null,
+                "reference": "tags/3.0.27",
                 "shasum": null
             },
             "require": {
@@ -609,7 +673,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/polylang.2.1.zip",
-                "reference": null,
+                "reference": "tags/2.1",
                 "shasum": null
             },
             "require": {
@@ -629,7 +693,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/redirection.2.5.zip",
-                "reference": null,
+                "reference": "tags/2.5",
                 "shasum": null
             },
             "require": {
@@ -669,7 +733,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/types.2.2.8.zip",
-                "reference": null,
+                "reference": "tags/2.2.8",
                 "shasum": null
             },
             "require": {
@@ -689,7 +753,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.5.1.zip",
-                "reference": null,
+                "reference": "tags/0.9.5.1",
                 "shasum": null
             },
             "require": {
@@ -729,7 +793,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.9.zip",
-                "reference": null,
+                "reference": "tags/3.9",
                 "shasum": null
             },
             "require": {
@@ -841,7 +905,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "wp-sync-db/wp-sync-db": 20,
+        "wp-sync-db/wp-sync-db-media-files": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

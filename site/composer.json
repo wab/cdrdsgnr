@@ -104,7 +104,9 @@
     "wpackagist-plugin/wordpress-importer": "^0.6",
     "wpackagist-plugin/google-document-embedder": "^2",
     "wpackagist-plugin/w3-total-cache": "0.9.5.1",
-    "wpackagist-plugin/all-in-one-wp-migration": "^6"
+    "wpackagist-plugin/all-in-one-wp-migration": "^6",
+    "wp-sync-db/wp-sync-db": "dev-master@dev",
+    "wp-sync-db/wp-sync-db-media-files": "dev-master"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
